@@ -8,7 +8,7 @@ Donne-lui un post complet ou des notes. Il travaille avec la matière disponible
 
 Les instructions du skill sont en anglais. Les accroches et leurs explications suivent la langue de ta demande sauf si tu choisis explicitement une autre langue.
 
-**Version de test : `0.1.0-preview.4`.** Un seul skill est disponible. Les autres catégories seront ajoutées quand leurs premiers skills seront prêts.
+**Version de test : `0.1.0-preview.5`.** Un seul skill est disponible. Les autres catégories seront ajoutées quand leurs premiers skills seront prêts.
 
 ## Le premier skill
 
@@ -18,8 +18,8 @@ Les instructions du skill sont en anglais. Les accroches et leurs explications s
 
 - [Lire le SKILL.md](skills/linkedin-hook-generator/SKILL.md)
 - [Ouvrir le Markdown brut](https://raw.githubusercontent.com/kconde2/barakasocial-linkedin-claude-skills/main/skills/linkedin-hook-generator/SKILL.md)
-- [Télécharger le ZIP de la version de test](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.4/linkedin-hook-generator.zip)
-- [Voir la version publiée](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/tag/v0.1.0-preview.4)
+- [Télécharger le ZIP de la version de test](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.5/linkedin-hook-generator.zip)
+- [Voir la version publiée](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/tag/v0.1.0-preview.5)
 
 ## Installer dans Claude Code
 
@@ -30,7 +30,7 @@ Demande à copier dans Claude Code :
 ```text
 Installe le skill linkedin-hook-generator du dépôt public
 https://github.com/kconde2/barakasocial-linkedin-claude-skills
-à partir de la version v0.1.0-preview.4 dans mes skills personnels.
+à partir de la version v0.1.0-preview.5 dans mes skills personnels.
 Lis son SKILL.md avant l'installation. Si un skill du même nom existe déjà,
 compare son origine et son contenu avant de le remplacer.
 Ne modifie pas mes autres skills ni ma configuration MCP.

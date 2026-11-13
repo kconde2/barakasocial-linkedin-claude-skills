@@ -4,7 +4,7 @@
 
 Free skills to work on your LinkedIn content with Claude. Start with one specific task, test the output, and improve the skill.
 
-**Preview version: `0.1.0-preview.4`.** One skill is available. More categories will be added when their first skills are ready.
+**Preview version: `0.1.0-preview.5`.** One skill is available. More categories will be added when their first skills are ready.
 
 Give it a complete post or rough notes. It works with the material you have and asks a focused question only when necessary.
 
@@ -18,8 +18,8 @@ The skill instructions are written in English. Hooks and explanations follow the
 
 - [Read SKILL.md](skills/linkedin-hook-generator/SKILL.md)
 - [Open the raw Markdown](https://raw.githubusercontent.com/kconde2/barakasocial-linkedin-claude-skills/main/skills/linkedin-hook-generator/SKILL.md)
-- [Download the preview ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.4/linkedin-hook-generator.zip)
-- [View the release](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/tag/v0.1.0-preview.4)
+- [Download the preview ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.5/linkedin-hook-generator.zip)
+- [View the release](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/tag/v0.1.0-preview.5)
 
 ## Install in Claude Code
 
@@ -30,7 +30,7 @@ Copy this request into Claude Code:
 ```text
 Install linkedin-hook-generator from the public repository
 https://github.com/kconde2/barakasocial-linkedin-claude-skills
-using release v0.1.0-preview.4 in my personal skills directory.
+using release v0.1.0-preview.5 in my personal skills directory.
 Read its SKILL.md before installing. If a skill with the same name already exists,
 compare its origin and contents before replacing it.
 Do not modify my other skills or my MCP configuration.
