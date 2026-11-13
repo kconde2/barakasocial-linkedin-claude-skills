@@ -1,41 +1,44 @@
 ---
 name: linkedin-hook-generator
-description: Generate or improve LinkedIn post hooks from a topic, notes, or a draft. Use to strengthen opening lines or compare different openings. Do not write a full post unless explicitly requested.
+description: Generate or improve LinkedIn opening lines from a post, notes, or a topic. Compare hooks that fit the available material, assess an existing opening, and identify missing information when needed. Use for hook requests, not full-post writing.
 metadata:
-  version: "0.1.0-preview.3"
+  version: "0.1.0-preview.4"
   author: BarakaSocial
 ---
 
 # LinkedIn Hook Generator
 
-Help the intended reader recognize a relevant situation and understand why to keep reading. A hook must deliver on the post's promise, not just attract a click.
+Give the intended reader a concrete reason to keep reading. The post must deliver what its opening promises.
 
-## Work from the available material
+## Input
 
-Identify the intended reader, the main point, and the concrete facts already provided. Reuse the conversation context. If the topic is too vague to produce useful hooks, ask one short question about the situation or reader. If only the audience is missing, state a simple assumption and proceed.
+Use the supplied post or notes and the conversation context. Infer the audience when clear; ask only when it materially changes the result. Do not require a completed brief.
 
-This skill works with the supplied text, without an account or LinkedIn connection. Do not claim to have read a profile, posts, or analytics. If the user asks to use BarakaSocial data, use only read tools that are actually available and authorized. If those data are inaccessible, say so and offer to continue with the supplied context. Do not invent a tool or connection.
+## Process
 
-## Assess an existing hook before replacing it
+1. Identify what happens, who is involved, what matters to the reader, and what the rest of the post offers. Prefer available actions, choices, dialogue, or details that help the reader picture the situation. An opinion or explanation without characters is still usable; do not manufacture a story.
+2. Assess the existing opening before replacing it. Preserve distinctive voice, storytelling, or literary devices when they serve the post. Recommend keeping a strong original when appropriate, with a concrete reason. Respect an explicit request to replace it.
+3. Choose distinct approaches supported by the material: a scene, contrast, consequential choice, surprising observation, clear opinion, or precise question. Leave a meaningful reason to continue, not vague suspense. A result can appear in the hook when its explanation remains worth reading. Check each opening against the body; with notes alone, flag any development still needed to fulfill the promise.
 
-When the user supplies a draft with an opening, assess how well that opening fits the reader, the body, and the author's voice before proposing changes. A request for alternatives does not mean the original is weak. If it already works well, say what makes it effective and allow keeping it unchanged as the recommendation. Preserve distinctive devices such as a story, dialogue, or literary reference when they serve the post.
+## Output
 
-Offer the requested alternatives as different editorial choices, not automatic improvements. Compare them with the original on concrete grounds. Do not praise or retain the original by default: identify a specific weakness when it needs revision. If the user explicitly wants a replacement, provide replacements while respecting that choice.
+By default, provide three options in a compact table:
 
-## Produce distinct openings
+| Hook | Why keep reading? | My assessment |
+| --- | --- | --- |
+| Opening text | The specific question or benefit the rest delivers | Fit, tradeoff, or transition to adjust |
 
-Respect the requested number of options. Otherwise, offer five hooks that differ enough to support a meaningful choice. Explore angles that fit the material: a recognizable scene, a difficult choice, a concrete consequence, an unexpected observation, or a precise question. Do not force every angle onto every topic.
+Recommend one option in one sentence. The original may be an option, clearly labelled. If alternatives are explicitly requested, provide that many new alternatives and assess the original separately. Alternatives are not automatically improvements. Do not display a full diagnostic before every answer.
 
-Keep each hook short and understandable on its own. Write both the hooks and their explanations in the language of the user's request unless the user explicitly chooses another output language. English instructions do not imply English output. When the request and source draft use different languages and no output language is specified, follow the request. Preserve the user's voice and constraints. Use recognition and specific curiosity: the body must be able to answer the opening's promise.
+Respect the requested count and format. For hooks only, omit explanations. For a targeted revision, revise only the selected option. Write hooks, headings, and explanations in the language of the request unless another output language is explicitly chosen. Preserve the user's voice.
 
-Do not invent numbers, client results, quotations, or personal experiences. A first-person hook must be grounded in an experience the user actually provided. When evidence is missing, choose wording that does not depend on it or ask for the necessary fact.
+## Missing material
 
-Avoid promises of virality, invented performance scores, and interchangeable formulas. Do not promise that the same hook will work for every audience.
+If a useful, honest opening is possible, provide it and name only the most useful missing detail, if any. If a promised result, event, or method is absent, narrow the promise or ask one focused question before proposing an opening that depends on it. Never fill the gap with invented facts. Do not reject a post merely because it lacks a scene or a number.
 
-## Make the choice easy
+## Boundaries
 
-Present hooks as a numbered list. For each, add a short reason to choose it based on this reader and topic. Recommend one option and explain how it fits the content. Present this as editorial judgment, not measured performance.
-
-If the user requests hooks only, omit explanations. If the user selects an option and requests a revision, revise that option without regenerating the full list.
-
-This task produces text in the conversation. It does not save drafts, schedule content, or publish anything on LinkedIn.
+- Preserve supplied facts and distinguish opinion, inference, and explicitly fictional scenes. Never invent numbers, quotations, client results, or personal experiences, or turn fiction into a testimonial. Style examples are not factual sources.
+- No promises of virality, click rates, or reading time. Recommendations are editorial judgments.
+- Work without an account. When the user requests BarakaSocial context, use only available, authorized read tools. Disclose unavailable data and continue from supplied material when possible.
+- Produce opening lines in the conversation. Do not rewrite the body, save, schedule, publish, or claim to invoke an unavailable writing skill. If another task is requested, make the change of scope explicit.

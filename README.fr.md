@@ -4,9 +4,11 @@ Des skills gratuits pour travailler ses contenus LinkedIn avec Claude. Commencer
 
 [English](README.md) | **Français**
 
+Donne-lui un post complet ou des notes. Il travaille avec la matière disponible et pose une question ciblée seulement si nécessaire.
+
 Les instructions du skill sont en anglais. Les accroches et leurs explications suivent la langue de ta demande sauf si tu choisis explicitement une autre langue.
 
-**Version de test : `0.1.0-preview.3`.** Un seul skill est disponible. Les autres catégories seront ajoutées quand leurs premiers skills seront prêts.
+**Version de test : `0.1.0-preview.4`.** Un seul skill est disponible. Les autres catégories seront ajoutées quand leurs premiers skills seront prêts.
 
 ## Le premier skill
 
@@ -16,8 +18,8 @@ Les instructions du skill sont en anglais. Les accroches et leurs explications s
 
 - [Lire le SKILL.md](skills/linkedin-hook-generator/SKILL.md)
 - [Ouvrir le Markdown brut](https://raw.githubusercontent.com/kconde2/barakasocial-linkedin-claude-skills/main/skills/linkedin-hook-generator/SKILL.md)
-- [Télécharger le ZIP de la version de test](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.3/linkedin-hook-generator.zip)
-- [Voir la version publiée](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/tag/v0.1.0-preview.3)
+- [Télécharger le ZIP de la version de test](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.4/linkedin-hook-generator.zip)
+- [Voir la version publiée](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/tag/v0.1.0-preview.4)
 
 ## Installer dans Claude Code
 
@@ -28,7 +30,7 @@ Demande à copier dans Claude Code :
 ```text
 Installe le skill linkedin-hook-generator du dépôt public
 https://github.com/kconde2/barakasocial-linkedin-claude-skills
-à partir de la version v0.1.0-preview.3 dans mes skills personnels.
+à partir de la version v0.1.0-preview.4 dans mes skills personnels.
 Lis son SKILL.md avant l'installation. Si un skill du même nom existe déjà,
 compare son origine et son contenu avant de le remplacer.
 Ne modifie pas mes autres skills ni ma configuration MCP.
@@ -48,10 +50,10 @@ Coller les instructions dans une conversation permet de les essayer. Cela ne con
 Utilise linkedin-hook-generator.
 Je m'adresse aux freelances. Mon sujet : un client ajoute des demandes
 après la validation du devis. Mon idée : préciser le périmètre avant de commencer.
-Propose cinq accroches sobres sans inventer de chiffres ni de résultats clients.
+Propose des accroches sobres sans inventer de chiffres ni de résultats clients.
 ```
 
-Le skill fournit des options et explique brièvement son choix. Si ton accroche fonctionne déjà, il peut recommander de la conserver plutôt que de la remplacer sans raison. Il ne garantit pas une portée, un taux d'engagement ou une performance mesurée.
+Par défaut, le skill compare trois accroches dans un tableau : l'ouverture, la raison de lire la suite et son avis éditorial. Il recommande ensuite une option. Tu peux demander un autre nombre ou format. Si ton accroche fonctionne déjà, il peut recommander de la conserver plutôt que de la remplacer sans raison. Il ne garantit pas une portée, un taux d'engagement ou une performance mesurée.
 
 ## Mettre à jour
 
