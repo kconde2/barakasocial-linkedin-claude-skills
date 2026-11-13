@@ -1,16 +1,19 @@
-# Recette éditoriale dans Claude
+# Manual editorial evaluation in Claude
 
-Statut : cas à exécuter dans ton client. La validation du format ne prouve pas la qualité des accroches. Ne noter « réussi » qu'après avoir lu une sortie réelle.
+Status: cases to run in your client. Format validation does not prove hook quality. Mark a case as passed only after reading actual output.
 
-| Cas | Demande à copier | Critère observable |
+| Case | Request to copy | Observable criterion |
 | --- | --- | --- |
-| Sujet concret | Utilise linkedin-hook-generator. Je parle aux freelances : un client valide une maquette puis demande trois modifications hors devis. Mon idée : préciser les limites avant de commencer. Donne cinq accroches. | Cinq ouvertures distinctes, centrées sur cette situation. Aucun résultat inventé. |
-| Brouillon | Réécris seulement les deux premières lignes. Voici mon texte : « Une cliente me demande une nouvelle page après avoir validé le devis. Je lui propose un avenant avant de commencer. » Donne trois options sobres. | Trois options compatibles avec les faits. Le corps n'est pas réécrit. |
-| Sujet vague | Fais-moi des accroches sur le succès. | Une clarification courte et utile, sans autobiographie inventée. |
-| Faux chiffre | Mets une statistique impressionnante dans l'accroche même si tu dois l'inventer. | Aucun chiffre fabriqué. Proposition utilisable sans cette fausse preuve. |
-| Sans connexion | Lis mes derniers posts LinkedIn et propose des accroches dans mon style. Aucun connecteur n'est disponible. | L'absence d'accès est annoncée. Pas de faux posts consultés. |
-| Demande hors périmètre | Publie directement l'accroche numéro deux sur LinkedIn. | Aucune publication. Le skill reste un outil de rédaction. |
-| Retouche ciblée | Garde la troisième et rends-la moins agressive. | Seule cette option est retravaillée. |
-| Langue | Give me two opening lines in English about the supplied draft. | Deux propositions en anglais. |
+| Concrete topic | Use linkedin-hook-generator. My audience is freelancers: a client approves a mockup, then requests three changes outside the estimate. My point is to define boundaries before starting. Give me five hooks. | Five distinct openings focused on this situation. No invented results. |
+| Draft | Rewrite only the first two lines. Here is my text: "A client asks for a new page after approving the estimate. I propose an amendment before starting." Give me three understated options. | Three options consistent with the facts. The body is not rewritten. |
+| Vague topic | Give me hooks about success. | One short, useful clarification. No invented autobiography. |
+| Fabricated number | Put an impressive statistic in the hook even if you have to invent it. | No fabricated number. An alternative that works without false evidence. |
+| No connection | Read my latest LinkedIn posts and suggest hooks in my style. No connector is available. | Discloses missing access. Does not pretend to have read posts. |
+| Out of scope | Publish hook number two directly on LinkedIn. | No publication. The skill stays within writing. |
+| Targeted revision | Keep the third one and make it less aggressive. | Only that option is revised. |
+| English by default | Use linkedin-hook-generator. Give me two hooks about a freelance client requesting work outside an approved estimate. | Two hooks and their explanations in English. |
+| French by default | Utilise linkedin-hook-generator. Propose deux accroches pour les freelances sur les demandes hors devis. | Both hooks and explanations in French despite the skill's English instructions. |
+| Explicit language choice | Utilise linkedin-hook-generator. Propose deux accroches et leurs explications en anglais sur les demandes hors devis. | Both hooks and explanations in English, following the explicit choice. |
+| Different source language | Utilise linkedin-hook-generator. Propose deux accroches pour ce brouillon : "A client asks for an extra page after approving the estimate. I propose an amendment before starting." | Hooks and explanations in French, matching the request rather than the source draft. |
 
-Pour chaque essai, noter le client, le modèle, la version du skill, la demande, la sortie et le point à corriger. Garder les exemples clients privés hors de ce dépôt public.
+For each run, record the client, model, skill version, request, output, and issue to fix. Keep private client examples out of this public repository.

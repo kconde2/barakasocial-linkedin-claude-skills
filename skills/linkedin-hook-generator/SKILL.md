@@ -1,35 +1,35 @@
 ---
 name: linkedin-hook-generator
-description: Proposer ou retravailler les accroches d'un post LinkedIn à partir d'un sujet, de notes ou d'un brouillon. Utiliser pour améliorer les premières lignes ou comparer plusieurs ouvertures. Ne pas rédiger un post complet sauf demande explicite.
+description: Generate or improve LinkedIn post hooks from a topic, notes, or a draft. Use to strengthen opening lines or compare different openings. Do not write a full post unless explicitly requested.
 metadata:
-  version: "0.1.0-preview.1"
+  version: "0.1.0-preview.2"
   author: BarakaSocial
 ---
 
-# Accroches LinkedIn
+# LinkedIn Hook Generator
 
-Aider le lecteur visé à reconnaître une situation qui le concerne et à comprendre pourquoi lire la suite. Une accroche doit tenir la promesse du post, pas seulement attirer un clic.
+Help the intended reader recognize a relevant situation and understand why to keep reading. A hook must deliver on the post's promise, not just attract a click.
 
-## Partir de la matière disponible
+## Work from the available material
 
-Relever le lecteur visé, l'idée défendue et les éléments concrets déjà fournis. Réutiliser le contexte de la conversation. Si le sujet est trop vague pour proposer des accroches utiles, poser une question courte sur la situation ou le lecteur. Si seul le public manque, annoncer une hypothèse simple puis avancer.
+Identify the intended reader, the main point, and the concrete facts already provided. Reuse the conversation context. If the topic is too vague to produce useful hooks, ask one short question about the situation or reader. If only the audience is missing, state a simple assumption and proceed.
 
-Le skill fonctionne avec le texte fourni, sans compte ni connexion LinkedIn. Ne pas prétendre avoir consulté un profil, des publications ou des statistiques. Si l'utilisateur demande de s'appuyer sur des données BarakaSocial, utiliser uniquement les outils de lecture réellement disponibles et autorisés. Si ces données sont inaccessibles, le préciser et proposer de poursuivre avec le contexte fourni. Ne pas inventer un outil ou une connexion.
+This skill works with the supplied text, without an account or LinkedIn connection. Do not claim to have read a profile, posts, or analytics. If the user asks to use BarakaSocial data, use only read tools that are actually available and authorized. If those data are inaccessible, say so and offer to continue with the supplied context. Do not invent a tool or connection.
 
-## Produire des ouvertures différentes
+## Produce distinct openings
 
-Respecter le nombre demandé. Sinon, proposer cinq accroches suffisamment différentes pour permettre un choix. Explorer les angles qui conviennent à la matière : une scène reconnaissable, un choix difficile, une conséquence concrète, une observation inattendue ou une question précise. Ne pas forcer chaque angle sur chaque sujet.
+Respect the requested number of options. Otherwise, offer five hooks that differ enough to support a meaningful choice. Explore angles that fit the material: a recognizable scene, a difficult choice, a concrete consequence, an unexpected observation, or a precise question. Do not force every angle onto every topic.
 
-Garder chaque accroche courte et compréhensible seule. Respecter la langue, la voix et les contraintes de l'utilisateur. Utiliser la reconnaissance d'une situation et une curiosité précise : le corps doit pouvoir apporter la réponse annoncée.
+Keep each hook short and understandable on its own. Write both the hooks and their explanations in the language of the user's request unless the user explicitly chooses another output language. English instructions do not imply English output. When the request and source draft use different languages and no output language is specified, follow the request. Preserve the user's voice and constraints. Use recognition and specific curiosity: the body must be able to answer the opening's promise.
 
-Ne pas inventer de chiffres, de résultats clients, de citations ou d'expériences personnelles. Une accroche à la première personne doit s'appuyer sur une expérience réellement fournie. Quand une preuve manque, choisir une formulation qui n'en dépend pas ou demander le fait nécessaire.
+Do not invent numbers, client results, quotations, or personal experiences. A first-person hook must be grounded in an experience the user actually provided. When evidence is missing, choose wording that does not depend on it or ask for the necessary fact.
 
-Éviter les promesses de viralité, les scores de performance inventés et les formules interchangeables. Ne pas promettre que la même accroche fonctionnera pour toutes les audiences.
+Avoid promises of virality, invented performance scores, and interchangeable formulas. Do not promise that the same hook will work for every audience.
 
-## Rendre le choix facile
+## Make the choice easy
 
-Présenter les accroches dans une liste numérotée. Pour chacune, ajouter une courte raison de la choisir en lien avec ce lecteur et ce sujet. Recommander une option en expliquant son adéquation au contenu. Présenter ce choix comme un jugement éditorial, pas comme une performance mesurée.
+Present hooks as a numbered list. For each, add a short reason to choose it based on this reader and topic. Recommend one option and explain how it fits the content. Present this as editorial judgment, not measured performance.
 
-Si l'utilisateur demande uniquement les accroches, omettre les explications. S'il choisit une option et demande une retouche, retravailler cette option sans relancer toute la liste.
+If the user requests hooks only, omit explanations. If the user selects an option and requests a revision, revise that option without regenerating the full list.
 
-Cette tâche produit du texte dans la conversation. Elle ne sauvegarde pas de brouillon, ne programme rien et ne publie rien sur LinkedIn.
+This task produces text in the conversation. It does not save drafts, schedule content, or publish anything on LinkedIn.

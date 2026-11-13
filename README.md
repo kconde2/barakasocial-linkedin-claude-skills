@@ -1,93 +1,104 @@
 # Claude Skills for LinkedIn · BarakaSocial
 
-Des skills gratuits pour travailler ses contenus LinkedIn avec Claude. Commencer par une tâche précise, tester le résultat puis améliorer le skill.
+**English** | [Français](README.fr.md)
 
-**Première version de test : `0.1.0-preview.1`.** Un seul skill est disponible. Les autres catégories seront ajoutées quand leurs premiers skills seront prêts.
+Free skills to work on your LinkedIn content with Claude. Start with one specific task, test the output, and improve the skill.
 
-## Le premier skill
+**Preview version: `0.1.0-preview.2`.** One skill is available. More categories will be added when their first skills are ready.
 
-| Skill | Catégorie | Ce qu'il fait | Prérequis |
+The skill instructions are written in English. Hooks and explanations follow the language of your request unless you explicitly choose another language. You can use the skill in French without changing its instructions.
+
+## The first skill
+
+| Skill | Category | What it does | Requirements |
 | --- | --- | --- | --- |
-| [LinkedIn Hook Generator](skills/linkedin-hook-generator/SKILL.md) | Écriture | Propose des accroches cohérentes avec ton sujet ou ton brouillon, sans inventer de faits. | Le texte ou le sujet à travailler. Aucun compte BarakaSocial requis. |
+| [LinkedIn Hook Generator](skills/linkedin-hook-generator/SKILL.md) | Writing | Suggests hooks that fit your topic or draft without inventing facts. | A topic or text to work on. No BarakaSocial account required. |
 
-- [Lire le SKILL.md](skills/linkedin-hook-generator/SKILL.md)
-- [Ouvrir le Markdown brut](https://raw.githubusercontent.com/kconde2/barakasocial-linkedin-claude-skills/main/skills/linkedin-hook-generator/SKILL.md)
-- [Télécharger le ZIP de la version de test](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.1/linkedin-hook-generator.zip)
-- [Voir la version publiée](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/tag/v0.1.0-preview.1)
+- [Read SKILL.md](skills/linkedin-hook-generator/SKILL.md)
+- [Open the raw Markdown](https://raw.githubusercontent.com/kconde2/barakasocial-linkedin-claude-skills/main/skills/linkedin-hook-generator/SKILL.md)
+- [Download the preview ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.2/linkedin-hook-generator.zip)
+- [View the release](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/tag/v0.1.0-preview.2)
 
-## Installer dans Claude Code
+## Install in Claude Code
 
-Un dossier contenant `SKILL.md` peut être installé dans `~/.claude/skills/` pour un usage personnel ou `.claude/skills/` dans un projet. [Documentation officielle](https://code.claude.com/docs/en/skills).
+A folder containing `SKILL.md` can be installed in `~/.claude/skills/` for personal use or `.claude/skills/` within a project. [Official documentation](https://code.claude.com/docs/en/skills).
 
-Demande à copier dans Claude Code :
+Copy this request into Claude Code:
 
 ```text
-Installe le skill linkedin-hook-generator du dépôt public
+Install linkedin-hook-generator from the public repository
 https://github.com/kconde2/barakasocial-linkedin-claude-skills
-à partir de la version v0.1.0-preview.1 dans mes skills personnels.
-Lis son SKILL.md avant l'installation. Si un skill du même nom existe déjà,
-compare son origine et son contenu avant de le remplacer.
-Ne modifie pas mes autres skills ni ma configuration MCP.
+using release v0.1.0-preview.2 in my personal skills directory.
+Read its SKILL.md before installing. If a skill with the same name already exists,
+compare its origin and contents before replacing it.
+Do not modify my other skills or my MCP configuration.
 ```
 
-Le chemin source est `skills/linkedin-hook-generator/SKILL.md`. Après installation, demande explicitement d'utiliser `linkedin-hook-generator` ou invoque `/linkedin-hook-generator` dans Claude Code.
+The source path is `skills/linkedin-hook-generator/SKILL.md`. After installation, explicitly ask to use `linkedin-hook-generator` or invoke `/linkedin-hook-generator` in Claude Code.
 
-## Installer dans Claude
+## Install in Claude
 
-Télécharge le ZIP du skill puis importe-le dans **Personnaliser / Customize > Skills**, via l'ajout d'un skill. Les capacités requises et les contrôles peuvent varier selon ton espace. [Procédure officielle](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
+Download the skill ZIP and upload it through **Customize > Skills** using the option to add a skill. Required capabilities and controls may vary by workspace. [Official instructions](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
-Coller les instructions dans une conversation permet de les essayer. Cela ne constitue pas une installation persistante dans tous les clients.
+Pasting the instructions into a conversation lets you try them. It does not create a persistent installation in every client.
 
-## Essayer
+## Try it
 
 ```text
-Utilise linkedin-hook-generator.
-Je m'adresse aux freelances. Mon sujet : un client ajoute des demandes
-après la validation du devis. Mon idée : préciser le périmètre avant de commencer.
-Propose cinq accroches sobres sans inventer de chiffres ni de résultats clients.
+Use linkedin-hook-generator.
+My audience is freelancers. My topic: a client adds requests after approving
+an estimate. My point: define the scope before starting the work.
+Suggest five understated hooks without inventing numbers or client results.
 ```
 
-Le skill fournit des options et explique brièvement son choix. Il ne garantit pas une portée, un taux d'engagement ou une performance mesurée.
-
-## Mettre à jour
-
-Les versions téléchargées ne se mettent pas à jour automatiquement depuis ce dépôt.
-
-Dans Claude Code :
+For French output, simply ask in French:
 
 ```text
-Compare mon skill linkedin-hook-generator avec la dernière version publiée sur
+Utilise linkedin-hook-generator. Je parle aux freelances : un client ajoute
+une demande après la validation du devis. Propose trois accroches sobres.
+```
+
+The skill provides options and briefly explains its recommendation. It does not guarantee reach, engagement, or measured performance.
+
+## Update
+
+Downloaded versions do not automatically update from this repository.
+
+In Claude Code:
+
+```text
+Compare my linkedin-hook-generator skill with the latest published release at
 https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases
-Indique les changements puis mets-le à jour en conservant mes adaptations locales.
-Si mon skill vient d'un autre dépôt, signale-le avant de le remplacer.
-Ne touche pas aux autres skills ni à la configuration MCP.
+Explain the changes, then update it while preserving my local adaptations.
+If my skill comes from another repository, flag that before replacing it.
+Do not modify other skills or the MCP configuration.
 ```
 
-Dans Claude, télécharge le ZIP de la nouvelle version et remplace la version installée depuis l'interface de gestion des skills.
+In Claude, download the new version's ZIP and replace the installed version through the skill management interface.
 
-## Tester et contribuer
+## Test and contribute
 
-Les [cas de recette](tests/manual-cases.md) servent à tester une sortie réelle dans Claude. Ils couvrent les sujets concrets, les informations manquantes, les chiffres inventés, la langue et les demandes hors périmètre. La version initiale n'a pas encore été évaluée dans le compte Claude de l'utilisateur.
+The [manual evaluation cases](tests/manual-cases.md) help assess actual output in Claude. They cover concrete topics, missing information, fabricated numbers, language, and out-of-scope requests. The preview has not yet been evaluated in the user's Claude account.
 
-Les fichiers restent simples :
+The repository stays simple:
 
 ```text
-skills/linkedin-hook-generator/SKILL.md   Instructions installables
-tests/manual-cases.md                    Recette éditoriale manuelle
-scripts/package_skill.py                 Fabrication du ZIP
+skills/linkedin-hook-generator/SKILL.md   Installable instructions
+tests/manual-cases.md                    Manual editorial evaluation
+scripts/package_skill.py                 ZIP packaging
 ```
 
-Pour vérifier le packaging et reconstruire le ZIP avec Python 3 :
+Check the packaging and rebuild the ZIP with Python 3:
 
 ```sh
 python3 -m unittest discover -s tests -p 'test_*.py'
 python3 scripts/package_skill.py linkedin-hook-generator
 ```
 
-Le dossier `dist/` est généré et ignoré par Git. Chaque ZIP est construit à partir des fichiers du skill, sans configuration locale ni données utilisateur.
+The generated `dist/` directory is ignored by Git. Each ZIP contains only the skill's files, without local configuration or user data.
 
 ## BarakaSocial
 
-[BarakaSocial](https://barakasocial.com) aide à préparer et organiser ses contenus LinkedIn. Ce premier skill fonctionne indépendamment de l'application. Aucune connexion MCP n'est installée automatiquement.
+[BarakaSocial](https://barakasocial.com) helps you prepare and organize LinkedIn content. This first skill works independently of the application. No MCP connection is installed automatically.
 
-Le projet est indépendant d'Anthropic et de LinkedIn. Les skills et la documentation de ce dépôt sont distribués sous [licence MIT](LICENSE).
+This project is independent of Anthropic and LinkedIn. Its skills and documentation are distributed under the [MIT license](LICENSE).
