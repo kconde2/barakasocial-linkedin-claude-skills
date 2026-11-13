@@ -62,6 +62,20 @@ une demande après la validation du devis. Propose trois accroches sobres.
 
 By default, the skill compares three hooks in a compact table: the opening, the reason to keep reading, and its editorial assessment. It then recommends one option. You can request another count or format. If your existing opening already works well, it can recommend keeping it rather than replacing it for the sake of change. It does not guarantee reach, engagement, or measured performance.
 
+## How it works
+
+| You provide | The skill does | You receive |
+| --- | --- | --- |
+| A complete post | Checks the opening and what the body actually delivers. | Three hooks in a comparison table and one recommendation, which may be to keep the original. |
+| Notes or a topic | Uses the available material without inventing a story. | Supported openings and, if needed, one focused question or a missing detail to develop. |
+| Feedback on one option | Revises the selected opening while preserving the facts. | A targeted revision, without rewriting the whole post. |
+
+It selects angles already present in your material: identification, contrast, consequence, injustice, discovery, dilemma, or practical value. These are choices, not a checklist to force into every post.
+
+It favors natural, active narration. In French, that means narrative present or passé composé when appropriate, while preserving chronology and intentional literary effects. Quantities use digits (2 calls, 6 months); articles and exact quotations are preserved.
+
+No account or MCP is required. If you explicitly request BarakaSocial context, the skill uses only available, authorized read tools and discloses missing access. It does not rewrite the body, save a draft, schedule, or publish.
+
 ## Update
 
 Downloaded versions do not automatically update from this repository.

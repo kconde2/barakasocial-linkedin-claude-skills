@@ -55,6 +55,20 @@ Propose des accroches sobres sans inventer de chiffres ni de résultats clients.
 
 Par défaut, le skill compare trois accroches dans un tableau : l'ouverture, la raison de lire la suite et son avis éditorial. Il recommande ensuite une option. Tu peux demander un autre nombre ou format. Si ton accroche fonctionne déjà, il peut recommander de la conserver plutôt que de la remplacer sans raison. Il ne garantit pas une portée, un taux d'engagement ou une performance mesurée.
 
+## Comment ça fonctionne
+
+| Tu fournis | Le skill travaille sur | Tu reçois |
+| --- | --- | --- |
+| Un post complet | L'ouverture existante et ce que le corps apporte réellement. | 3 accroches comparées et une recommandation, qui peut être de garder l'originale. |
+| Des notes ou un sujet | La matière disponible, sans inventer d'histoire. | Des ouvertures adaptées et, si nécessaire, une question ciblée ou un élément à développer. |
+| Un retour sur une option | L'accroche choisie, en conservant les faits. | Une retouche ciblée, sans réécrire tout le post. |
+
+Il choisit des angles déjà présents dans ta matière : identification, contraste, conséquence, injustice, découverte, dilemme ou utilité pratique. Ce sont des possibilités, pas des cases à cocher pour chaque post.
+
+Il privilégie une narration orale et active. En français, le présent de narration ou le passé composé servent la scène, tout en préservant la chronologie et les effets littéraires voulus. Les quantités s'écrivent en chiffres (2 appels, 6 mois). Les articles comme « un client » et les citations exactes sont préservés.
+
+Aucun compte ni MCP n'est requis. Si tu demandes explicitement le contexte BarakaSocial, le skill utilise uniquement les outils de lecture disponibles et autorisés. Il signale les accès manquants. Il ne réécrit pas le corps, n'enregistre pas de brouillon et ne programme ni ne publie rien.
+
 ## Mettre à jour
 
 Les versions téléchargées ne se mettent pas à jour automatiquement depuis ce dépôt.
