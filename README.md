@@ -4,7 +4,7 @@
 
 Free skills to work on your LinkedIn content with Claude. Start with one specific task, test the output, and improve the skill.
 
-**Preview version: `0.1.0-preview.2`.** One skill is available. More categories will be added when their first skills are ready.
+**Preview version: `0.1.0-preview.3`.** One skill is available. More categories will be added when their first skills are ready.
 
 The skill instructions are written in English. Hooks and explanations follow the language of your request unless you explicitly choose another language. You can use the skill in French without changing its instructions.
 
@@ -16,8 +16,8 @@ The skill instructions are written in English. Hooks and explanations follow the
 
 - [Read SKILL.md](skills/linkedin-hook-generator/SKILL.md)
 - [Open the raw Markdown](https://raw.githubusercontent.com/kconde2/barakasocial-linkedin-claude-skills/main/skills/linkedin-hook-generator/SKILL.md)
-- [Download the preview ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.2/linkedin-hook-generator.zip)
-- [View the release](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/tag/v0.1.0-preview.2)
+- [Download the preview ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.3/linkedin-hook-generator.zip)
+- [View the release](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/tag/v0.1.0-preview.3)
 
 ## Install in Claude Code
 
@@ -28,7 +28,7 @@ Copy this request into Claude Code:
 ```text
 Install linkedin-hook-generator from the public repository
 https://github.com/kconde2/barakasocial-linkedin-claude-skills
-using release v0.1.0-preview.2 in my personal skills directory.
+using release v0.1.0-preview.3 in my personal skills directory.
 Read its SKILL.md before installing. If a skill with the same name already exists,
 compare its origin and contents before replacing it.
 Do not modify my other skills or my MCP configuration.
@@ -58,7 +58,7 @@ Utilise linkedin-hook-generator. Je parle aux freelances : un client ajoute
 une demande après la validation du devis. Propose trois accroches sobres.
 ```
 
-The skill provides options and briefly explains its recommendation. It does not guarantee reach, engagement, or measured performance.
+The skill provides options and briefly explains its recommendation. If your existing opening already works well, it can recommend keeping it rather than replacing it for the sake of change. It does not guarantee reach, engagement, or measured performance.
 
 ## Update
 

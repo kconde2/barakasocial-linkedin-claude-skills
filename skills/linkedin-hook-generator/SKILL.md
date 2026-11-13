@@ -2,7 +2,7 @@
 name: linkedin-hook-generator
 description: Generate or improve LinkedIn post hooks from a topic, notes, or a draft. Use to strengthen opening lines or compare different openings. Do not write a full post unless explicitly requested.
 metadata:
-  version: "0.1.0-preview.2"
+  version: "0.1.0-preview.3"
   author: BarakaSocial
 ---
 
@@ -15,6 +15,12 @@ Help the intended reader recognize a relevant situation and understand why to ke
 Identify the intended reader, the main point, and the concrete facts already provided. Reuse the conversation context. If the topic is too vague to produce useful hooks, ask one short question about the situation or reader. If only the audience is missing, state a simple assumption and proceed.
 
 This skill works with the supplied text, without an account or LinkedIn connection. Do not claim to have read a profile, posts, or analytics. If the user asks to use BarakaSocial data, use only read tools that are actually available and authorized. If those data are inaccessible, say so and offer to continue with the supplied context. Do not invent a tool or connection.
+
+## Assess an existing hook before replacing it
+
+When the user supplies a draft with an opening, assess how well that opening fits the reader, the body, and the author's voice before proposing changes. A request for alternatives does not mean the original is weak. If it already works well, say what makes it effective and allow keeping it unchanged as the recommendation. Preserve distinctive devices such as a story, dialogue, or literary reference when they serve the post.
+
+Offer the requested alternatives as different editorial choices, not automatic improvements. Compare them with the original on concrete grounds. Do not praise or retain the original by default: identify a specific weakness when it needs revision. If the user explicitly wants a replacement, provide replacements while respecting that choice.
 
 ## Produce distinct openings
 
