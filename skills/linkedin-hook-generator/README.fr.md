@@ -6,7 +6,7 @@ Trouve une ouverture qui donne envie de lire la suite à partir des faits de ton
 
 **Prérequis :** un sujet, des notes ou un brouillon. Aucun compte BarakaSocial nécessaire.
 
-[Installer](#install) · [Utiliser](#use) · [Personnaliser](#personalize)
+[Installer](#install) · [Utiliser](#use) · [Exemples à copier](#examples) · [Personnaliser](#personalize)
 
 <a id="install"></a>
 ## Installer ce skill
@@ -40,6 +40,34 @@ Je parle aux freelances. Un client ajoute une demande après la validation du de
 **Ce que tu obtiens :** 3 accroches comparées dans un tableau et une recommandation. Une ouverture existante efficace peut être conservée.
 
 Le skill répond dans la langue demandée. Il n'enregistre ni ne publie de post.
+
+<a id="examples"></a>
+## Demandes prêtes à copier
+
+Ces demandes sont à coller dans la conversation après installation. Remplace les éléments entre crochets par tes informations. Ce ne sont pas des commandes de terminal.
+
+### Améliorer un post existant
+
+```text
+Utilise linkedin-hook-generator.
+Propose 3 accroches pour ce post. Compare-les dans un tableau et recommande la plus adaptée. Garde les faits et ne réécris pas le corps :
+[colle ton post]
+```
+
+### Partir de notes
+
+```text
+Utilise linkedin-hook-generator.
+Mon public : [public]. Mon idée : [idée]. Mes faits : [faits disponibles]. Propose des accroches sans inventer de scène. Si une information essentielle manque, demande-la.
+```
+
+### Retravailler une accroche choisie
+
+```text
+Utilise linkedin-hook-generator.
+Retravaille uniquement cette accroche : [accroche]. Je veux un ton [ton souhaité]. Voici le post pour vérifier que la promesse correspond au contenu :
+[post]
+```
 
 <a id="personalize"></a>
 ## Personnaliser

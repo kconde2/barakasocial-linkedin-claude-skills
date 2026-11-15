@@ -6,7 +6,7 @@ Turn your notes or draft into a complete LinkedIn post while keeping your facts 
 
 **Requires:** a topic, notes or a draft. No BarakaSocial account needed.
 
-[Install](#install) · [Use](#use) · [Personalize](#personalize)
+[Install](#install) · [Use](#use) · [Copyable examples](#examples) · [Personalize](#personalize)
 
 <a id="install"></a>
 ## Install this skill
@@ -40,6 +40,37 @@ Write one post: a client approves my mockup, then requests 2 extra screens. I pr
 **What you get:** One post or coherent variants, according to your request. A chosen opening is preserved. Missing essential material is flagged rather than invented.
 
 The skill responds in the requested language. It does not save or publish posts.
+
+<a id="examples"></a>
+## Ready-to-copy requests
+
+Paste these requests into your conversation after installation. Replace bracketed placeholders with your information. These are not terminal commands.
+
+### Write one post
+
+```text
+Use linkedin-post-writer.
+Write one post for [audience] from these notes:
+[notes]
+Voice: [voice]. Do not invent facts. If the material is too thin, explain what is missing.
+```
+
+### Compare alternatives
+
+```text
+Use linkedin-post-writer.
+Suggest 3 versions with distinct angles. Preserve my facts and voice. Use linkedin-hook-generator if available, then choose a fitting hook for each version:
+[draft]
+```
+
+### Develop an approved hook
+
+```text
+Use linkedin-post-writer.
+Keep this hook: [approved hook]. Write one post from this material:
+[facts and notes]
+If the material cannot deliver the hook's promise, flag it.
+```
 
 <a id="personalize"></a>
 ## Personalize

@@ -23,7 +23,7 @@ Le tableau décrit les outils pertinents disponibles. Les accroches et la rédac
 | `linkedin-hook-generator` | Accroches à partir du texte fourni. Lectures MCP facultatives pour enrichir le contexte. |
 | `linkedin-post-writer` | Post ou variantes à partir de la matière fournie. Lectures MCP facultatives et recours au skill d'accroches s'il est disponible. |
 | `linkedin-post-analyzer` | MCP obligatoire. Aperçu par défaut. Diagnostic enregistré uniquement sur demande explicite. |
-| `linkedin-profile-optimizer` | Audit et réécritures du profil fourni. Lectures du profil et de la voix facultatives et autorisées. Aucun score ni changement du compte. |
+| `linkedin-profile-optimizer` | Titre, description et bannière avec validation par élément. Lectures du profil et de la voix facultatives et autorisées. Outil d'image du client si disponible. Aucun score ni changement du compte. |
 
 Pour l'analyse, le modèle client produit l'évaluation selon `get_analysis_criteria`. BarakaSocial applique ensuite le calcul officiel avec `preview_post_analysis` ou `submit_post_analysis`. Ces outils ne déclenchent pas le modèle d'analyse interne du serveur. `submit_post_analysis` conserve le diagnostic avec la provenance `mcp-client`. `get_post_analysis` lit un diagnostic existant sans lancer d'analyse. Ce parcours ne consomme aucun crédit.
 

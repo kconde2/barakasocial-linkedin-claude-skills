@@ -6,7 +6,7 @@ Understand what works in a draft and the most useful improvement, using BarakaSo
 
 **Requires:** a BarakaSocial account and its MCP connector available in your client. Installing the skill does not connect your account.
 
-[Install](#install) · [Use](#use) · [Personalize](#personalize)
+[Install](#install) · [Use](#use) · [Copyable examples](#examples) · [Personalize](#personalize)
 
 <a id="install"></a>
 ## Install this skill
@@ -40,6 +40,43 @@ Analyze this draft without saving anything. Keep the text unchanged and identify
 **What you get:** Strengths, the main weakness, suggested changes and the score returned by BarakaSocial. The assistant evaluates the text; BarakaSocial calculates the score. It does not predict reach.
 
 By default, no diagnostic is saved and the text remains unchanged. Explicitly request correction or saving the diagnostic if needed. Without MCP, the skill explains what is missing and stops. It does not create or publish posts.
+
+<a id="examples"></a>
+## Ready-to-copy requests
+
+Paste these requests into your conversation after installation. Replace bracketed placeholders with your information. These are not terminal commands.
+
+All these examples require BarakaSocial MCP. Saving a diagnostic does not create or edit a post.
+
+### Analyze text without saving
+
+```text
+Use linkedin-post-analyzer.
+Analyze this text without saving or rewriting anything. Explain the main improvement to make:
+[post]
+```
+
+### Analyze an account post
+
+```text
+Use linkedin-post-analyzer.
+Read my BarakaSocial post [post ID] and analyze its current version without saving the diagnostic or modifying the post.
+```
+
+### Analyze then revise in chat
+
+```text
+Use linkedin-post-analyzer.
+Analyze this text, then propose a revised version in this conversation. Do not change any account post or save anything:
+[post]
+```
+
+### Save only the diagnostic
+
+```text
+Use linkedin-post-analyzer.
+Analyze my BarakaSocial post [post ID] and save its diagnostic in BarakaSocial. Keep the post text unchanged.
+```
 
 <a id="personalize"></a>
 ## Personalize

@@ -6,7 +6,7 @@ Comprends ce qui fonctionne dans un brouillon et l'amélioration la plus utile a
 
 **Prérequis :** un compte BarakaSocial et son connecteur MCP accessibles dans ton client. Installer le skill ne connecte pas le compte.
 
-[Installer](#install) · [Utiliser](#use) · [Personnaliser](#personalize)
+[Installer](#install) · [Utiliser](#use) · [Exemples à copier](#examples) · [Personnaliser](#personalize)
 
 <a id="install"></a>
 ## Installer ce skill
@@ -40,6 +40,43 @@ Analyse ce brouillon sans rien enregistrer. Garde le texte inchangé et identifi
 **Ce que tu obtiens :** Les points forts, le défaut principal, les retouches proposées et le score renvoyé par BarakaSocial. L'assistant évalue le texte puis BarakaSocial calcule le score. Cette note ne prédit pas la portée.
 
 Par défaut, aucun diagnostic n'est enregistré et le texte reste inchangé. Demande explicitement une correction ou la sauvegarde du diagnostic si tu le souhaites. Sans MCP, le skill explique ce qui manque puis s'arrête. Il ne crée ni ne publie de post.
+
+<a id="examples"></a>
+## Demandes prêtes à copier
+
+Ces demandes sont à coller dans la conversation après installation. Remplace les éléments entre crochets par tes informations. Ce ne sont pas des commandes de terminal.
+
+Tous ces exemples nécessitent le MCP BarakaSocial. Enregistrer un diagnostic ne crée ni ne modifie un post.
+
+### Analyser un texte sans sauvegarde
+
+```text
+Utilise linkedin-post-analyzer.
+Analyse ce texte sans rien enregistrer ni réécrire. Explique le principal point à améliorer :
+[post]
+```
+
+### Analyser un post du compte
+
+```text
+Utilise linkedin-post-analyzer.
+Lis mon post BarakaSocial [ID du post] et analyse sa version actuelle sans enregistrer le diagnostic ni modifier le post.
+```
+
+### Analyser puis corriger dans le chat
+
+```text
+Utilise linkedin-post-analyzer.
+Analyse ce texte puis propose une version corrigée dans cette conversation. Ne modifie aucun post du compte et n'enregistre rien :
+[post]
+```
+
+### Enregistrer uniquement le diagnostic
+
+```text
+Utilise linkedin-post-analyzer.
+Analyse mon post BarakaSocial [ID du post] et enregistre son diagnostic dans BarakaSocial. Garde le texte du post inchangé.
+```
 
 <a id="personalize"></a>
 ## Personnaliser

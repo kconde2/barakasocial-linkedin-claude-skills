@@ -25,7 +25,7 @@ L'analyse utilise les critères actuels et le calcul du score de BarakaSocial. U
 2. Copie sa demande **Installer ce skill** dans Claude Code ou Codex.
 3. Essaie l'exemple de cette même fiche avec ta propre matière.
 
-**Tu utilises Claude avec import ZIP ?** La version `0.1.0-preview.8` est disponible sous forme de sources. Ses ZIP ne sont pas encore publiés. [Voir les options d'installation](docs/guide.fr.md).
+**Tu utilises Claude avec import ZIP ?** Les sources sont en `preview.8` pour les accroches, la rédaction et l'analyse et en `preview.9` pour Profile Optimizer. Les ZIP de ces versions ne sont pas encore publiés. [Voir les options d'installation](docs/guide.fr.md).
 
 ## Personnalisation
 

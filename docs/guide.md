@@ -24,7 +24,7 @@ The source path is `skills/linkedin-hook-generator/SKILL.md`. After installation
 
 ## Install in Claude
 
-The current source version is `0.1.0-preview.8`. It does not have a packaged release yet. The [preview.5 hook ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.5/linkedin-hook-generator.zip) is an older version without shared personalization. To build a ZIP from current sources, see the [contribution guide](contributing.md).
+Sources are at `0.1.0-preview.8` for hooks, writing and analysis and `0.1.0-preview.9` for Profile Optimizer. Neither version has a packaged release yet. The [preview.5 hook ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.5/linkedin-hook-generator.zip) is an older version without shared personalization. To build a ZIP from current sources, see the [contribution guide](contributing.md).
 
 Once you have the desired ZIP, upload it through **Customize > Skills** using the option to add a skill. Required capabilities and controls may vary by workspace. [Official instructions](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
@@ -102,7 +102,7 @@ Use linkedin-profile-optimizer. Review my headline and About for startup founder
 [paste the current sections]
 ```
 
-You receive findings tied to the supplied material and up to 3 priorities with copyable rewrites. Missing sections or unseen images are not assessed. There is no official profile score and no account update. A request for one section stays focused on that section.
+Choose headline, About, banner or a combination. Experience provides evidence without being rewritten. Approve the proposed elements and receive a summary table and copyable text. An available image tool can generate or edit the requested banner; otherwise the output is a clearly labeled brief. Unseen elements are not assessed. Apply the changes yourself on LinkedIn. No official score or account save.
 
 <a id="personalize-the-3-skills"></a>
 ## Personalize the skills

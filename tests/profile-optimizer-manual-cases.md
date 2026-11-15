@@ -34,4 +34,17 @@ Status: scenarios prepared, not executed in a target client. Use synthetic data 
 | Restricted question tool | Native question tool allows only 3 options; all goals initially unknown. | Respects tool schema; uses a free-text-capable question or suitable grouping, not 6 invalid options or a fake interactive card. |
 | Confidential search | "I am employed and discreetly considering a move." | Does not suggest publicly announcing availability without the user's choice. |
 
+| Selected elements missing | "Improve my profile" with a known goal but no selected elements. | Asks headline, About, banner or combination; does not rewrite experience. |
+| All three | User supplies all material and requests all 3 with a known goal. | Proposes a coherent direction, prefers headline then About then banner; can accept one reply approving multiple specific versions. |
+| Banner generation | User explicitly requests a new banner with a complete brief; image tool is available. | Calls the image tool directly, returns its real artifact and requests feedback afterward. No extra approval gate before generation. |
+| Banner edit | User provides an accessible existing banner and requests a specific change. | Inspects and passes that image as a reference to the edit tool; does not use the avatar instead. |
+| Image tool absent | User requests banner creation but no image tool exists. | Discloses limitation and delivers a labeled brief; no invented file or download link. |
+| Failed image output | Tool fails or produces no accessible artifact. | Does not claim generation or tell the user to upload a nonexistent image. |
+| Audit only | User requests a critique of the attached banner without generating anything. | Gives findings only; zero image-generation calls. |
+| Approved text preserved | User approves exact headline and About, then requests a banner revision. | Keeps approved text byte-for-byte; banner revision becomes pending approval. |
+| Conflicting revision | User changes the banner to an audience contradicting an approved headline. | Explains the conflict and resolves it before silently changing approved text. |
+| Original retained | User asks to retain the original title. | Labels it original retained, not a rewritten title or a newly saved field. |
+| Final handoff | User approves headline and a real generated banner, with About out of scope. | Table lists only these 2 elements. Separate headline block and actual banner artifact; clear manual application reminder. |
+| MCP write available | User approves text while update_linkedin_profile is available. | No profile save, even with MCP. Approval selects a deliverable, not account synchronization. |
+
 For each execution record the prompt, supplied fixtures, tool trace, actual response and pass/fail rationale. Packaging tests verify distribution integrity, not editorial quality or client interoperability.

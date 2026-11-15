@@ -35,6 +35,10 @@ The existing application decision `001-profil-linkedin-positionnement-et-offres.
 | Q4 | ~~How should questions adapt to the professional goal?~~ | **P1:** Identify the primary goal only if missing: clients/assignments, employment, reputation, candidates, partnerships/opportunities or clarity without an immediate commercial goal. Separate engagement models (régie, forfait, advice/support) from objectives. For mixed goals, ask which is primary. Do not infer the goal from being in IT. | P1 (validated: "oui c'est ça go") |
 | Q5 | ~~How much questioning is useful?~~ | **P1:** Reuse known information. Ask one decision at a time or up to 3 related short questions using the available native question tool, with a chat fallback. Stop once the next recommendation is supported. | P1 (validated: "oui c'est ça go") |
 | Q6 | ~~Should this iteration add account-writing tools?~~ | **P1:** No. Existing profile reads are sufficient. Keep Q3's proposal-only scope; discuss local saving separately if a concrete need emerges. | P1 (validated: "oui c'est ça go") |
+| Q7 | ~~Which elements should the next version work on?~~ | **P1:** Headline, About and banner, individually or together. Experience is supporting material, not a rewrite target. Clarify banner versus portrait only when the request is ambiguous. | P1 validated: manual application for every element; implemented in preview.9 locally. |
+| Q8 | ~~How should image work operate?~~ | **P1:** For a requested banner, inspect supplied/accessible imagery, reuse the requested message and assets, then use an available image tool to create or edit it. If unavailable, provide a clearly labeled design brief, never claim an image was generated. | P1 validated: manual application for every element; implemented in preview.9 locally. |
+| Q9 | ~~How should individual validation work?~~ | **P1:** Choose the elements first, establish a shared direction, then propose and validate each selected element. Preserve approved elements unless a later requested change creates a conflict to resolve. Finish with approved text and a banner file when generated. | P1 validated: manual application for every element; implemented in preview.9 locally. |
+| Q10 | ~~Should validating text also save it?~~ | **P1:** No. Validation selects the deliverable; this version never saves profile edits, even with MCP. The user applies all selected elements manually on LinkedIn. Existing MCP writes only local headline/About, not experience or banner. No LinkedIn writes. | P1 validated: manual application for every element; implemented in preview.9 locally. |
 
 ## Proposed input and output
 
@@ -52,7 +56,7 @@ Suggested result table:
 | --- | --- | --- | --- | --- |
 | Headline | Exact excerpt | Specific issue or strength | High / medium / low | Rewrite or keep |
 | About | Exact excerpt | Specific issue or strength | High / medium / low | Rewrite or keep |
-| Banner / Featured / experience | Supplied evidence only | Finding or not assessed | As justified | Concrete action |
+| Banner | Inspected image or supplied brief | Finding or not assessed | As justified | Image candidate or labeled brief |
 
 Follow the table with copyable text for the selected changes. Never imply that an audit updated the account. State the stored profile's retrieval date when available and distinguish local edits from the live LinkedIn profile.
 
@@ -124,3 +128,38 @@ Questions are a means to choose a useful review, not compulsory onboarding. A us
 - [ ] Exercise régie, forfait, salaried, mixed and already-specified goals with synthetic material.
 
 The evaluation matrix now contains 28 manual scenarios, including all 6 goal families, overlapping engagement models, confidential searches and restricted question tools. These cases are prepared, not reported as executed. Preview.8 remains an unpublished working version.
+
+## Section-by-section flow: approved and implemented locally
+
+The user wants headline and About improvements plus optional banner generation/editing, individually or coherently together. Experience remains evidence. The published preview.8 reviews more sections and does not generate images. The approved flow is implemented as preview.9. Kaba authorized committing and pushing this lot with "ok go push"; no packaged release was requested.
+
+Approved flow:
+
+```text
+Selected elements known? -> Use them.
+Otherwise -> Headline / About / Banner / All three
+Goal known? -> Reuse it, otherwise use goal routing.
+Collect only missing material for the selected elements.
+For a banner: current image if available, exact desired text,
+required elements and visual preferences not already supplied.
+Develop a shared direction when multiple elements are selected.
+Propose -> user validates or requests changes -> keep approved version.
+Deliver a summary table, separate copyable text blocks and actual image if generated.
+User manually applies all changes on LinkedIn; no profile saving through MCP.
+```
+
+No mandatory restart or complete audit for a banner-only request. No portrait retouching inferred from a request for a banner. Image inspection and generation depend on actual client tools and access; do not imply all models have them. Before image production, verify current format guidance from LinkedIn rather than hardcoding unverified dimensions. Check legibility, cropping and the avatar overlap in the resulting banner when possible. A generated banner is a deliverable, not an uploaded LinkedIn asset.
+
+No new MCP is necessary to create proposals or generate a local image using a client tool. Existing `update_linkedin_profile` accepts only headline and summary. Experience editing and banner upload are not exposed by that tool. Adding storage or synchronization capabilities would be a separate implementation decision, not a prerequisite for this flow.
+
+Tasks:
+- [x] Add bilingual copyable usage requests to each of the 4 skill pages, scoped to current capabilities.
+- [x] Explicitly distinguish current banner review from future image generation in the examples.
+- [x] Validate Q8-Q10 and close this flow framing.
+- [x] Narrow optimizer deliverables to headline/About/banner and keep experience as reference.
+- [x] Implement optional image-tool use and per-element validation after framing approval.
+- [x] Add behavioral cases for selected elements, unavailable image tools, revisions and preserving approved text. Cases are prepared; target-client execution remains pending.
+
+### Delivery decisions for preview.9
+
+Headline and About are delivered in separate plain-text code blocks below a summary table. Copy controls are provided by the client when supported, not promised by the skill. The table contains only selected elements with their actual approval state and manual next action. A real image/file output is required before calling the banner generated; a brief is labeled separately. Generation uses the client image tool directly when requested and sufficiently specified, then the user can validate or revise it. The final reminder states that neither BarakaSocial nor LinkedIn was updated. Kaba authorized the commit and push for this lot with "ok go push".

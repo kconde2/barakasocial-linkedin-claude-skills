@@ -6,7 +6,7 @@ Find an opening that makes readers want to continue, using the facts in your top
 
 **Requires:** a topic, notes or a draft. No BarakaSocial account needed.
 
-[Install](#install) · [Use](#use) · [Personalize](#personalize)
+[Install](#install) · [Use](#use) · [Copyable examples](#examples) · [Personalize](#personalize)
 
 <a id="install"></a>
 ## Install this skill
@@ -40,6 +40,34 @@ My audience is freelancers. A client adds a request after approving the estimate
 **What you get:** 3 openings compared in a table and one recommendation. An effective original opening can be kept.
 
 The skill responds in the requested language. It does not save or publish posts.
+
+<a id="examples"></a>
+## Ready-to-copy requests
+
+Paste these requests into your conversation after installation. Replace bracketed placeholders with your information. These are not terminal commands.
+
+### Improve an existing post
+
+```text
+Use linkedin-hook-generator.
+Suggest 3 hooks for this post. Compare them in a table and recommend the best fit. Preserve the facts and do not rewrite the body:
+[paste your post]
+```
+
+### Start from notes
+
+```text
+Use linkedin-hook-generator.
+My audience: [audience]. My point: [idea]. My facts: [available facts]. Suggest hooks without inventing a scene. Ask if essential information is missing.
+```
+
+### Refine a selected hook
+
+```text
+Use linkedin-hook-generator.
+Refine only this hook: [hook]. Use a [desired tone] voice. Here is the post so you can check the opening matches its content:
+[post]
+```
 
 <a id="personalize"></a>
 ## Personalize

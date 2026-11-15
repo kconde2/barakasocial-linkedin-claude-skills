@@ -6,7 +6,7 @@ Transforme tes notes ou ton brouillon en post LinkedIn complet en gardant tes fa
 
 **Prérequis :** un sujet, des notes ou un brouillon. Aucun compte BarakaSocial nécessaire.
 
-[Installer](#install) · [Utiliser](#use) · [Personnaliser](#personalize)
+[Installer](#install) · [Utiliser](#use) · [Exemples à copier](#examples) · [Personnaliser](#personalize)
 
 <a id="install"></a>
 ## Installer ce skill
@@ -40,6 +40,37 @@ Rédige un seul post : un client valide ma maquette puis demande 2 écrans suppl
 **Ce que tu obtiens :** Un post ou des variantes cohérentes selon ta demande. Une accroche choisie est conservée. La matière essentielle manquante est signalée plutôt qu'inventée.
 
 Le skill répond dans la langue demandée. Il n'enregistre ni ne publie de post.
+
+<a id="examples"></a>
+## Demandes prêtes à copier
+
+Ces demandes sont à coller dans la conversation après installation. Remplace les éléments entre crochets par tes informations. Ce ne sont pas des commandes de terminal.
+
+### Rédiger un seul post
+
+```text
+Utilise linkedin-post-writer.
+Rédige un seul post pour [public] à partir de ces notes :
+[notes]
+Ton : [ton]. N'invente aucun fait. Si la matière est trop pauvre, explique ce qui manque.
+```
+
+### Comparer plusieurs versions
+
+```text
+Utilise linkedin-post-writer.
+Propose 3 versions de ce post avec des angles distincts. Préserve les faits et ma voix. Utilise linkedin-hook-generator s'il est disponible puis choisis une accroche adaptée à chaque version :
+[brouillon]
+```
+
+### Développer une accroche validée
+
+```text
+Utilise linkedin-post-writer.
+Garde cette accroche : [accroche validée]. Écris un seul post à partir de cette matière :
+[faits et notes]
+Si la matière ne permet pas de tenir la promesse de l'accroche, signale-le.
+```
 
 <a id="personalize"></a>
 ## Personnaliser

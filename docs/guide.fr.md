@@ -24,7 +24,7 @@ Le chemin source est `skills/linkedin-hook-generator/SKILL.md`. Après installat
 
 ## Installer dans Claude
 
-La version source actuelle est `0.1.0-preview.8`. Elle ne possède pas encore de release avec les ZIP. Le [ZIP des accroches preview.5](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.5/linkedin-hook-generator.zip) est une ancienne version sans la personnalisation commune. Pour obtenir un ZIP des sources actuelles, consulte le [guide de contribution](contributing.fr.md).
+Les sources sont en `0.1.0-preview.8` pour les accroches, la rédaction et l'analyse et en `0.1.0-preview.9` pour Profile Optimizer. Ces versions ne possèdent pas encore de release avec les ZIP. Le [ZIP des accroches preview.5](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.5/linkedin-hook-generator.zip) est une ancienne version sans la personnalisation commune. Pour obtenir un ZIP des sources actuelles, consulte le [guide de contribution](contributing.fr.md).
 
 Quand tu disposes du ZIP souhaité, importe-le dans **Personnaliser / Customize > Skills**, via l'ajout d'un skill. Les capacités requises et les contrôles peuvent varier selon ton espace. [Procédure officielle](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
@@ -95,7 +95,7 @@ Utilise linkedin-profile-optimizer. Relis mon titre et ma section Infos pour des
 [colle les sections actuelles]
 ```
 
-Tu reçois des constats appuyés sur la matière fournie et jusqu'à 3 priorités avec des textes à copier. Les sections manquantes et les images non consultées ne sont pas évaluées. Aucun score officiel de profil ni aucune modification du compte. Une demande sur une seule section reste ciblée.
+Tu choisis le titre, la description, la bannière ou plusieurs éléments. Les expériences servent de preuves sans être réécrites. Tu valides les éléments proposés puis reçois un tableau récapitulatif et des textes à copier. Un outil d'image disponible peut générer ou retoucher la bannière demandée ; sinon, le résultat est un brief clairement identifié. Les éléments non consultés ne sont pas évalués. Tu appliques toi-même les changements sur LinkedIn. Aucun score officiel ni enregistrement dans le compte.
 
 <a id="personnaliser-les-3-skills"></a>
 ## Personnaliser les skills
