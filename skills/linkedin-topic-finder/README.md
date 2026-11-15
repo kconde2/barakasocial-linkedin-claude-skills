@@ -62,6 +62,19 @@ What I can support: [notes or resources]. I want something worth saving and send
 Propose 3 specific angles. Flag any missing evidence.
 ```
 
+### Find topics that genuinely divide opinion
+
+```text
+Use linkedin-topic-finder. Find 3 topics that genuinely divide opinion, new compared with our conversation and the supplied content. Keep my audience and intent.
+For each, show the real disagreement between 2 defensible positions and what supports them. Do not attribute any experience or opinion to me unless I have confirmed it. Suggest the topics without drafting the posts.
+```
+
+After choosing topics:
+
+```text
+Show me the posts for [selected IDs]. Reuse my material and perspective. If my position on a disagreement is missing, ask before drafting.
+```
+
 ### Prepare a sales campaign
 
 ```text

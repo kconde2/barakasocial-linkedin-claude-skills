@@ -62,6 +62,19 @@ Voici ma matière : [notes ou ressources]. Je veux un contenu utile à enregistr
 Propose 3 angles concrets. Signale les preuves manquantes.
 ```
 
+### Trouver des sujets qui divisent vraiment
+
+```text
+Utilise linkedin-topic-finder. Trouve 3 sujets qui divisent vraiment, nouveaux par rapport à notre conversation et aux contenus fournis. Garde mes lecteurs et mon intention.
+Pour chacun, montre le désaccord réel entre 2 positions défendables et ce qui les étaye. Ne me prête aucune expérience ou opinion que je n'ai pas validée. Propose les sujets sans rédiger les posts.
+```
+
+Après avoir choisi les sujets :
+
+```text
+Montre-moi les posts pour [IDs choisis]. Reprends ma matière et mon point de vue. S'il manque ma position sur un désaccord, demande-la avant de rédiger.
+```
+
 ### Préparer une campagne de vente
 
 ```text
