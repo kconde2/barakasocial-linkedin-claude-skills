@@ -26,7 +26,7 @@ The analyzer uses BarakaSocial's current criteria and score calculation. A score
 2. Copy its **Install this skill** request into Claude Code or Codex.
 3. Try the usage example on that same page with your own material.
 
-**Using Claude with ZIP import?** Sources are at `preview.10`. ZIP downloads for this version have not been released yet. [See installation options](docs/guide.md).
+**Using Claude with ZIP import?** Download the 5 skill ZIPs from [preview.10](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/tag/v0.1.0-preview.10). [See installation options](docs/guide.md).
 
 ## Personalization
 

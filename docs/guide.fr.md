@@ -24,7 +24,15 @@ Le chemin source est `skills/linkedin-hook-generator/SKILL.md`. Après installat
 
 ## Installer dans Claude
 
-Les sources sont en `0.1.0-preview.10`. Cette version ne possède pas encore de release avec les ZIP. Le [ZIP des accroches preview.5](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.5/linkedin-hook-generator.zip) est une ancienne version sans la personnalisation commune. Pour obtenir un ZIP des sources actuelles, consulte le [guide de contribution](contributing.fr.md).
+Les 5 ZIP sont disponibles dans la [prérelease preview.10](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/tag/v0.1.0-preview.10). Chacun contient `SKILL.md` et les 2 références de personnalisation communes. Télécharge le skill souhaité :
+
+- [linkedin-topic-finder](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-topic-finder.zip)
+- [linkedin-hook-generator](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-hook-generator.zip)
+- [linkedin-post-writer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-post-writer.zip)
+- [linkedin-post-analyzer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-post-analyzer.zip)
+- [linkedin-profile-optimizer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-profile-optimizer.zip)
+
+Pour construire un ZIP depuis les sources, consulte le [guide de contribution](contributing.fr.md).
 
 Quand tu disposes du ZIP souhaité, importe-le dans **Personnaliser / Customize > Skills**, via l'ajout d'un skill. Les capacités requises et les contrôles peuvent varier selon ton espace. [Procédure officielle](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
@@ -71,7 +79,7 @@ Pour une campagne, demande des sujets complémentaires autour de ton offre et de
 
 ## Rédiger un post complet
 
-Les sources de test de `linkedin-post-writer` sont disponibles dans ce dépôt. Construis son ZIP avec les commandes du [guide de contribution](contributing.fr.md) pour l'essayer.
+Télécharge le [ZIP linkedin-post-writer preview.10](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-post-writer.zip) pour l'essayer.
 
 ```text
 Utilise linkedin-post-writer. Rédige un seul post pour les designers freelances.
@@ -86,7 +94,7 @@ Si la matière conduit à un texte générique, il explique ce qui manque et pro
 
 ## Analyser un post
 
-`linkedin-post-analyzer` nécessite le MCP BarakaSocial. Sans les outils ou les accès requis, il explique ce qui manque puis s'arrête au lieu d'inventer un score officiel. Ses sources de test sont disponibles dans ce dépôt. Construis son ZIP avec le [guide de contribution](contributing.fr.md) pour l'essayer.
+`linkedin-post-analyzer` nécessite le MCP BarakaSocial. Sans les outils ou les accès requis, il explique ce qui manque puis s'arrête au lieu d'inventer un score officiel. Télécharge le [ZIP linkedin-post-analyzer preview.10](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-post-analyzer.zip) pour l'essayer.
 
 ```text
 Utilise linkedin-post-analyzer. Analyse ce brouillon sans rien enregistrer.
