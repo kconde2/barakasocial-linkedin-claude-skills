@@ -75,6 +75,14 @@ After choosing topics:
 Show me the posts for [selected IDs]. Reuse my material and perspective. If my position on a disagreement is missing, ask before drafting.
 ```
 
+### See drafts about those disagreements immediately
+
+```text
+Use linkedin-topic-finder. Find 3 new topics that genuinely divide freelancers and agency owners. Keep my intent.
+Exclude topics already covered in this conversation or my supplied content. For each, show the concrete disagreement, then write an opinion draft for discussion.
+Do not invent personal experiences or present these positions as mine.
+```
+
 ### Prepare a sales campaign
 
 ```text

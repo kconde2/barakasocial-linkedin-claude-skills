@@ -75,6 +75,14 @@ Après avoir choisi les sujets :
 Montre-moi les posts pour [IDs choisis]. Reprends ma matière et mon point de vue. S'il manque ma position sur un désaccord, demande-la avant de rédiger.
 ```
 
+### Voir directement des brouillons sur ces désaccords
+
+```text
+Utilise linkedin-topic-finder. Trouve 3 sujets nouveaux qui divisent vraiment les freelances et les dirigeants d'agences. Garde mon intention.
+Écarte les sujets déjà abordés dans cette conversation ou dans mes contenus fournis. Pour chacun, montre le désaccord concret puis rédige un brouillon d'opinion à discuter.
+N'invente aucun vécu et ne présente pas ces positions comme les miennes.
+```
+
 ### Préparer une campagne de vente
 
 ```text
