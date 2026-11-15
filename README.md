@@ -2,7 +2,7 @@
 
 **English** | [Français](README.fr.md)
 
-Find an opening, write or review a post, or improve your profile. Four free skills that work from your material and respond in your language.
+Find topics and openings, write or review a post, or improve your profile. Five free skills that work from your material and respond in your language.
 
 [Skills](#skills) · [Installation](#installation) · [Personalization](#personalization) · [Documentation](#documentation)
 
@@ -12,6 +12,7 @@ Open a skill's page for its description, installation instructions and usage exa
 
 | I want to… | Skill | Install | BarakaSocial account |
 | --- | --- | --- | --- |
+| Find topics or prepare a campaign | [Topic Finder](skills/linkedin-topic-finder/README.md) | [Install](skills/linkedin-topic-finder/README.md#install) | Not required |
 | Find a better opening | [Hook Generator](skills/linkedin-hook-generator/README.md) | [Install](skills/linkedin-hook-generator/README.md#install) | Not required |
 | Turn notes into a complete post | [Post Writer](skills/linkedin-post-writer/README.md) | [Install](skills/linkedin-post-writer/README.md#install) | Not required |
 | Understand what to improve in a draft | [Post Analyzer](skills/linkedin-post-analyzer/README.md) | [Install](skills/linkedin-post-analyzer/README.md#install) | Required, with the MCP connector |
@@ -25,11 +26,11 @@ The analyzer uses BarakaSocial's current criteria and score calculation. A score
 2. Copy its **Install this skill** request into Claude Code or Codex.
 3. Try the usage example on that same page with your own material.
 
-**Using Claude with ZIP import?** Sources are at `preview.8` for hooks, writing and analysis and `preview.9` for Profile Optimizer. ZIP downloads for these versions have not been released yet. [See installation options](docs/guide.md).
+**Using Claude with ZIP import?** Sources are at `preview.10`. ZIP downloads for this version have not been released yet. [See installation options](docs/guide.md).
 
 ## Personalization
 
-Tell the assistant your audience, tone and preferences. It asks only for what is missing. Configuration is optional and shared across the 4 skills.
+Tell the assistant your audience, tone and preferences. It asks only for what is missing. Configuration is optional and shared across the 5 skills.
 
 > Personalize these LinkedIn skills for small-agency leaders. Direct tone, light humor and no automatic final question. Use these preferences in this conversation.
 

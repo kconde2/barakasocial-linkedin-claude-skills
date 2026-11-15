@@ -2,7 +2,7 @@
 
 [English](README.md) | **Français**
 
-Trouver une accroche, rédiger ou relire un post ou améliorer son profil. Quatre skills gratuits qui travaillent avec ta matière et répondent dans ta langue.
+Trouver des sujets et des accroches, rédiger ou relire un post ou améliorer son profil. Cinq skills gratuits qui travaillent avec ta matière et répondent dans ta langue.
 
 [Skills](#skills) · [Installation](#installation) · [Personnalisation](#personnalisation) · [Documentation](#documentation)
 
@@ -12,6 +12,7 @@ Ouvre la fiche d'un skill pour retrouver sa description, son installation et un 
 
 | Je veux… | Skill | Installer | Compte BarakaSocial |
 | --- | --- | --- | --- |
+| Trouver des sujets ou préparer une campagne | [Topic Finder](skills/linkedin-topic-finder/README.fr.md) | [Installer](skills/linkedin-topic-finder/README.fr.md#install) | Pas nécessaire |
 | Trouver une meilleure ouverture | [Hook Generator](skills/linkedin-hook-generator/README.fr.md) | [Installer](skills/linkedin-hook-generator/README.fr.md#install) | Pas nécessaire |
 | Transformer mes notes en post complet | [Post Writer](skills/linkedin-post-writer/README.fr.md) | [Installer](skills/linkedin-post-writer/README.fr.md#install) | Pas nécessaire |
 | Comprendre quoi améliorer dans un brouillon | [Post Analyzer](skills/linkedin-post-analyzer/README.fr.md) | [Installer](skills/linkedin-post-analyzer/README.fr.md#install) | Nécessaire, avec le connecteur MCP |
@@ -25,11 +26,11 @@ L'analyse utilise les critères actuels et le calcul du score de BarakaSocial. U
 2. Copie sa demande **Installer ce skill** dans Claude Code ou Codex.
 3. Essaie l'exemple de cette même fiche avec ta propre matière.
 
-**Tu utilises Claude avec import ZIP ?** Les sources sont en `preview.8` pour les accroches, la rédaction et l'analyse et en `preview.9` pour Profile Optimizer. Les ZIP de ces versions ne sont pas encore publiés. [Voir les options d'installation](docs/guide.fr.md).
+**Tu utilises Claude avec import ZIP ?** Les sources sont en `preview.10`. Les ZIP de cette version ne sont pas encore publiés. [Voir les options d'installation](docs/guide.fr.md).
 
 ## Personnalisation
 
-Indique ton public, ton ton et tes préférences. L'assistant demande seulement ce qui manque. La configuration reste facultative et commune aux 4 skills.
+Indique ton public, ton ton et tes préférences. L'assistant demande seulement ce qui manque. La configuration reste facultative et commune aux 5 skills.
 
 > Personnalise ces skills LinkedIn pour les dirigeants de petites agences. Ton direct, humour léger et aucune question finale automatique. Utilise ces préférences dans cette conversation.
 

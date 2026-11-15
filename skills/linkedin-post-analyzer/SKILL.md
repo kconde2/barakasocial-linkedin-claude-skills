@@ -2,7 +2,7 @@
 name: linkedin-post-analyzer
 description: Analyze a LinkedIn post using the connected BarakaSocial MCP and its current criteria. Explain strengths and specific weaknesses, optionally correct the requested passages or save the diagnostic when explicitly requested. Requires BarakaSocial MCP; not a publishing or draft-saving skill.
 metadata:
-  version: "0.1.0-preview.8"
+  version: "0.1.0-preview.10"
   author: BarakaSocial
 ---
 

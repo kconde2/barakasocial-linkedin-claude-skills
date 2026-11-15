@@ -23,7 +23,7 @@ compare its origin and contents before replacing it.
 Preserve my personal preferences and MCP configuration.
 ```
 
-**In Claude with ZIP import:** upload this skill's archive through skill management. Version `0.1.0-preview.8` ZIPs have not been released yet. Sources are available here; the [contribution guide](../../docs/contributing.md) explains how to build an archive.
+**In Claude with ZIP import:** upload this skill's archive through skill management. Version `0.1.0-preview.10` ZIPs have not been released yet. Sources are available here; the [contribution guide](../../docs/contributing.md) explains how to build an archive.
 
 [Installation options and updates](../../docs/guide.md)
 
@@ -71,6 +71,15 @@ Keep this hook: [approved hook]. Write one post from this material:
 [facts and notes]
 If the material cannot deliver the hook's promise, flag it.
 ```
+
+### Write a selected topic
+
+```text
+Use linkedin-post-writer. Write one post from the topic I selected with linkedin-topic-finder.
+Keep the audience, intent, desired response, and evidence in the brief. Do not restart topic discovery.
+```
+
+The writer also works without Topic Finder. Discussion, saving, or sales goals guide the substance without forcing a final question or promotion.
 
 <a id="personalize"></a>
 ## Personalize

@@ -2,7 +2,7 @@
 name: linkedin-profile-optimizer
 description: Improve a LinkedIn headline, About section or banner, individually or together, using supplied material or an authorized BarakaSocial profile read. Create or edit a requested banner when an image tool is available. Validate selected elements with the user and deliver copyable text and image files for manual application, not account updates or post analysis.
 metadata:
-  version: "0.1.0-preview.9"
+  version: "0.1.0-preview.10"
   author: BarakaSocial
 ---
 

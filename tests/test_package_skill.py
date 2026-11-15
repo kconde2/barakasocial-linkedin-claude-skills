@@ -10,7 +10,9 @@ packaging = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(packaging)
 
 
-SKILLS = ("linkedin-hook-generator", "linkedin-post-writer", "linkedin-post-analyzer", "linkedin-profile-optimizer")
+REFERENCES = ("personalization.md", "profile-schema.md")
+
+SKILLS = ("linkedin-hook-generator", "linkedin-post-writer", "linkedin-post-analyzer", "linkedin-profile-optimizer", "linkedin-topic-finder")
 
 
 class SkillDistributionTest(unittest.TestCase):
@@ -19,12 +21,13 @@ class SkillDistributionTest(unittest.TestCase):
             with self.subTest(skill=name), tempfile.TemporaryDirectory() as directory:
                 archive = packaging.package_skill(name, Path(directory) / "skill.zip")
                 with zipfile.ZipFile(archive) as bundle:
-                    self.assertEqual(bundle.namelist(), [f"{name}/SKILL.md", f"{name}/references/personalization.md"])
+                    self.assertEqual(bundle.namelist(), [f"{name}/SKILL.md", *[f"{name}/references/{ref}" for ref in REFERENCES]])
                     bundle.extractall(Path(directory) / "skills")
                 installed = Path(directory) / "skills" / name / "SKILL.md"
                 self.assertEqual(installed.read_bytes(), (ROOT / "skills" / name / "SKILL.md").read_bytes())
-                reference = installed.parent / "references/personalization.md"
-                self.assertEqual(reference.read_bytes(), (ROOT / "skills" / name / "references/personalization.md").read_bytes())
+                for ref in REFERENCES:
+                    reference = installed.parent / "references" / ref
+                    self.assertEqual(reference.read_bytes(), (ROOT / "skills" / name / "references" / ref).read_bytes())
                 self.assertIn("references/personalization.md", installed.read_text())
 
     def test_archives_are_reproducible(self):
@@ -35,9 +38,11 @@ class SkillDistributionTest(unittest.TestCase):
                 self.assertEqual(first.read_bytes(), second.read_bytes())
 
     def test_all_skills_share_the_same_personalization_contract(self):
-        references = [(ROOT / "skills" / name / "references/personalization.md").read_bytes() for name in SKILLS]
-        self.assertTrue(references[0])
-        self.assertTrue(all(content == references[0] for content in references))
+        for ref in REFERENCES:
+            with self.subTest(reference=ref):
+                references = [(ROOT / "skills" / name / "references" / ref).read_bytes() for name in SKILLS]
+                self.assertTrue(references[0])
+                self.assertTrue(all(content == references[0] for content in references))
 
     def test_cannot_package_a_path_outside_the_skills_directory(self):
         with tempfile.TemporaryDirectory() as directory:

@@ -6,7 +6,7 @@
 
 Un dossier contenant `SKILL.md` peut être installé dans `~/.claude/skills/` pour un usage personnel ou `.claude/skills/` dans un projet. [Documentation officielle](https://code.claude.com/docs/en/skills).
 
-Pour installer les sources actuelles des accroches, copie cette demande dans Claude Code. Remplace le nom du skill par `linkedin-post-writer`, `linkedin-post-analyzer` ou `linkedin-profile-optimizer` pour installer un autre skill :
+Pour installer les sources actuelles des accroches, copie cette demande dans Claude Code. Remplace le nom du skill par `linkedin-topic-finder`, `linkedin-post-writer`, `linkedin-post-analyzer` ou `linkedin-profile-optimizer` pour installer un autre skill :
 
 ```text
 Installe le skill linkedin-hook-generator du dépôt public
@@ -24,7 +24,7 @@ Le chemin source est `skills/linkedin-hook-generator/SKILL.md`. Après installat
 
 ## Installer dans Claude
 
-Les sources sont en `0.1.0-preview.8` pour les accroches, la rédaction et l'analyse et en `0.1.0-preview.9` pour Profile Optimizer. Ces versions ne possèdent pas encore de release avec les ZIP. Le [ZIP des accroches preview.5](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.5/linkedin-hook-generator.zip) est une ancienne version sans la personnalisation commune. Pour obtenir un ZIP des sources actuelles, consulte le [guide de contribution](contributing.fr.md).
+Les sources sont en `0.1.0-preview.10`. Cette version ne possède pas encore de release avec les ZIP. Le [ZIP des accroches preview.5](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.5/linkedin-hook-generator.zip) est une ancienne version sans la personnalisation commune. Pour obtenir un ZIP des sources actuelles, consulte le [guide de contribution](contributing.fr.md).
 
 Quand tu disposes du ZIP souhaité, importe-le dans **Personnaliser / Customize > Skills**, via l'ajout d'un skill. Les capacités requises et les contrôles peuvent varier selon ton espace. [Procédure officielle](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
@@ -54,6 +54,20 @@ Il choisit des angles déjà présents dans ta matière : identification, contra
 Il privilégie une narration orale et active. En français, le présent de narration ou le passé composé servent la scène, tout en préservant la chronologie et les effets littéraires voulus. Les quantités s'écrivent en chiffres (2 appels, 6 mois). Les articles comme « un client » et les citations exactes sont préservés.
 
 Aucun compte ni MCP n'est requis. Si tu demandes explicitement le contexte BarakaSocial, le skill utilise uniquement les outils de lecture disponibles et autorisés. Il signale les accès manquants. Il ne réécrit pas le corps, n'enregistre pas de brouillon et ne programme ni ne publie rien.
+
+## Trouver des sujets ou préparer une campagne
+
+[LinkedIn Topic Finder](../skills/linkedin-topic-finder/README.fr.md) part de ton intention, de ton public et de la matière disponible. Il peut aider à définir une direction si nécessaire, sans imposer un questionnaire à chaque demande.
+
+```text
+Utilise linkedin-topic-finder. Je parle aux dirigeants de petites agences.
+Voici ma matière : [notes ou ressources]. Je veux que ce soit utile à enregistrer et à transmettre.
+Propose 3 sujets concrets avec leur angle et les éléments qui les soutiennent. Ne rédige pas encore.
+```
+
+Il distingue objectif, bénéfice lecteur et réaction souhaitée. Ses pistes peuvent venir du vécu, d'observations attribuées, de questions, de ressources ou de recherches autorisées. Une scène illustrative reste signalée comme telle. Sans matière suffisante, il précise ce qu'il faut chercher au lieu d'inventer.
+
+Pour une campagne, demande des sujets complémentaires autour de ton offre et de ton public. Aucun nombre de posts ou parcours TOFU/MOFU/BOFU n'est obligatoire. Choisir un sujet ne déclenche pas la rédaction. Demande ensuite « rédige le sujet choisi » : le writer reprend le brief sans recommencer les questions. Sans writer installé, l'assistant peut rédiger sur demande à partir du même brief.
 
 ## Rédiger un post complet
 
@@ -100,7 +114,7 @@ Tu choisis le titre, la description, la bannière ou plusieurs éléments. Les e
 <a id="personnaliser-les-3-skills"></a>
 ## Personnaliser les skills
 
-La personnalisation est commune aux skills. Ce n'est pas un skill supplémentaire à installer. Chaque ZIP candidat contient `references/personalization.md` pour rester utilisable seul.
+La personnalisation est commune aux skills. Ce n'est pas un skill supplémentaire à installer. Chaque ZIP candidat contient `references/personalization.md` et `references/profile-schema.md` pour rester utilisable seul.
 
 Tu peux demander :
 
@@ -114,9 +128,28 @@ Le skill peut proposer une configuration facultative au premier usage ou répond
 
 Tes instructions actuelles priment sur un profil enregistré. Une préférence pour un seul post ne devient pas automatiquement un réglage permanent. Les préférences communes orientent le ton, le public et la présentation. Elles ne remplacent pas les critères d'analyse de BarakaSocial et n'autorisent pas l'accès à un compte.
 
-Pour conserver les préférences entre les sessions, demande leur enregistrement dans un emplacement privé de ton choix. Avec un accès aux fichiers, l'emplacement proposé est `~/.config/barakasocial/editorial-profile.json`, hors du dépôt et des dossiers des skills installés. Les 4 skills peuvent partager ce fichier. Ils n'écrivent pas de profil sans demande. Une mise à jour des instructions doit laisser ce fichier intact. Ne jamais committer de profil personnel ni l'inclure dans un ZIP distribué.
+Pour conserver les préférences entre les sessions, demande leur enregistrement dans un emplacement privé de ton choix. Avec un accès aux fichiers, l'emplacement proposé est `~/.config/barakasocial/editorial-profile.json`, hors du dépôt et des dossiers des skills installés. Les 5 skills peuvent partager ce fichier. Ils n'écrivent pas de profil sans demande. Une mise à jour des instructions doit laisser ce fichier intact. Ne jamais committer de profil personnel ni l'inclure dans un ZIP distribué.
 
 Sans accès à un stockage durable, les préférences restent dans la conversation. L'assistant peut fournir un profil à copier ou télécharger sans prétendre l'avoir enregistré ni promettre de le retrouver automatiquement. La configuration ne modifie pas le MCP et ne lit pas automatiquement les données personnelles du compte. Pour personnaliser après installation, demande explicitement d'installer **et de configurer** le skill ou configure-le au premier usage. Aucun questionnaire universel d'installation n'est supposé.
+
+Le profil peut aussi conserver une direction éditoriale, des piliers, une expertise, des offres et des réactions souhaitées. Ces champs sont facultatifs. Les anciens profils restent utilisables sans migration. Une préférence de lien n'est pas une règle de portée LinkedIn. Les objectifs de campagne et les choix propres à un post restent temporaires sauf demande explicite. Les champs inconnus sont préservés lors des mises à jour. Plusieurs auteurs utilisent des profils distincts.
+
+### Construire et conserver le contexte partagé
+
+Le Topic Finder aide à définir le monde du lecteur : situations, aspirations, contraintes, questions, critères de décision et émotions rapportées ou supposées. Il réutilise le profil choisi et les souvenirs réellement accessibles dans le client. Il indique ce qu'il infère au lieu de présenter une interprétation comme ta conviction.
+
+Après avoir établi de nouvelles informations utiles, il propose de les enregistrer en précisant lesquelles. Accepter cette proposition autorise la sauvegarde annoncée. Refuser ou ne pas répondre laisse les informations dans la conversation. Les autres skills peuvent ensuite relire le même fichier privé sans refaire l'entretien.
+
+```text
+Utilise linkedin-topic-finder. Reprends mon profil éditorial et le contexte disponible.
+Aide-moi à préciser le monde de mes lecteurs puis propose 3 sujets.
+Distingue les observations des hypothèses et propose-moi de conserver les éléments utiles.
+Ne rédige pas encore.
+```
+
+Le [schéma partagé](../skills/linkedin-topic-finder/references/profile-schema.md) conserve la version 1. Il ajoute les champs facultatifs `editorial.reader_world` et `editorial.author_perspectives`. Chaque entrée garde un ID, son contenu, une origine et une distinction entre propos rapporté et inférence. Une date d'enregistrement est ajoutée quand elle est disponible. Répéter une sauvegarde identique ne crée pas de doublon.
+
+Ce profil contient des résumés utiles, pas une copie complète de tes échanges clients. Les sujets proposés, les brouillons et les objectifs propres à un post restent dans la conversation. Sans accès aux fichiers, le skill peut fournir le JSON à conserver sans prétendre l'avoir enregistré.
 
 ## Mettre à jour
 

@@ -23,7 +23,7 @@ compare son origine et son contenu avant de le remplacer.
 Conserve mes préférences personnelles et ma configuration MCP.
 ```
 
-**Dans Claude avec import ZIP :** importe l'archive de ce skill dans la gestion des skills. Les ZIP `0.1.0-preview.8` ne sont pas encore publiés. Les sources sont disponibles ici ; le [guide de contribution](../../docs/contributing.fr.md) permet de construire l'archive.
+**Dans Claude avec import ZIP :** importe l'archive de ce skill dans la gestion des skills. Les ZIP `0.1.0-preview.10` ne sont pas encore publiés. Les sources sont disponibles ici ; le [guide de contribution](../../docs/contributing.fr.md) permet de construire l'archive.
 
 [Voir les options d'installation et de mise à jour](../../docs/guide.fr.md)
 
@@ -71,6 +71,15 @@ Garde cette accroche : [accroche validée]. Écris un seul post à partir de cet
 [faits et notes]
 Si la matière ne permet pas de tenir la promesse de l'accroche, signale-le.
 ```
+
+### Rédiger un sujet choisi
+
+```text
+Utilise linkedin-post-writer. Rédige un seul post à partir du sujet que j'ai choisi avec linkedin-topic-finder.
+Garde le public, l'intention, la réaction souhaitée et les faits du brief. Ne recommence pas la recherche de sujets.
+```
+
+Le writer reste utilisable sans Topic Finder. Un objectif de discussion, d'enregistrement ou de vente oriente le contenu sans imposer une question finale ou une promotion.
 
 <a id="personalize"></a>
 ## Personnaliser

@@ -13,12 +13,14 @@ The [analyzer cases](../tests/analyzer-manual-cases.md) cover MCP availability, 
 The repository stays simple:
 
 ```text
+skills/linkedin-topic-finder/SKILL.md     Topic discovery and campaign subjects
 skills/linkedin-hook-generator/SKILL.md   Installable instructions
 tests/manual-cases.md                    Manual editorial evaluation
 skills/linkedin-post-writer/SKILL.md      Installable writing instructions
 tests/writer-manual-cases.md              Writer evaluation
 skills/linkedin-post-analyzer/SKILL.md    Analysis instructions
 skills/*/references/personalization.md   Shared personalization guidance in each ZIP
+skills/*/references/profile-schema.md   Shared private profile schema
 tests/analyzer-manual-cases.md           Analyzer evaluation
 tests/personalization-manual-cases.md    Personalization evaluation
 scripts/package_skill.py                 ZIP packaging
@@ -28,6 +30,7 @@ Check the packaging and rebuild the ZIP with Python 3:
 
 ```sh
 python3 -m unittest discover -s tests -p 'test_*.py'
+python3 scripts/package_skill.py linkedin-topic-finder
 python3 scripts/package_skill.py linkedin-hook-generator
 python3 scripts/package_skill.py linkedin-post-writer
 python3 scripts/package_skill.py linkedin-post-analyzer
@@ -37,3 +40,5 @@ python3 scripts/package_skill.py linkedin-profile-optimizer
 The generated `dist/` directory is ignored by Git. Each ZIP contains only the skill's files, without local configuration or user data.
 
 [Profile optimizer cases](../tests/profile-optimizer-manual-cases.md) cover supplied material, optional MCP, stale/local versions, unseen images and proposal-only boundaries. These scenarios still require execution in the target client.
+
+The [Topic Finder cases](../tests/topic-finder-manual-cases.md) cover responses, campaigns, writer handoff, and preferences. See the [preview.10 smoke results](../tests/topic-finder-smoke-results.md) for executed checks and remaining evaluation.

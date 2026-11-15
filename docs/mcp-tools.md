@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Français](mcp-tools.fr.md)
 
-Hooks and writing work without mandatory tools. They may use authorized MCP reads when the user requests account context. Analysis requires the connected BarakaSocial MCP. Availability depends on the tools exposed by the connector in the user's client.
+Topic discovery, hooks and writing work without mandatory tools. They may use authorized MCP reads when the user requests account context. Analysis requires the connected BarakaSocial MCP. Availability depends on the tools exposed by the connector in the user's client.
 
 The table lists relevant available tools. Hooks and writing use optional reads rather than a mandatory call sequence; the analyzer follows its criteria-and-score workflow described above.
 
@@ -20,6 +20,7 @@ The table lists relevant available tools. Hooks and writing use optional reads r
 
 | Skill | Intended use |
 | --- | --- |
+| `linkedin-topic-finder` | Topics and angles from available material. Account reads only when requested; no idea or campaign saves. |
 | `linkedin-hook-generator` | Openings from supplied text. Optional MCP reads to enrich context. |
 | `linkedin-post-writer` | A post or variants from supplied material. Optional MCP reads and use of the hook skill when available. |
 | `linkedin-post-analyzer` | Requires MCP. Preview by default; saves a diagnostic only when explicitly requested. |
@@ -27,6 +28,6 @@ The table lists relevant available tools. Hooks and writing use optional reads r
 
 For analysis, the client model produces the evaluation according to `get_analysis_criteria`. BarakaSocial then applies its official calculation through `preview_post_analysis` or `submit_post_analysis`. These tools do not invoke the server's internal analysis model. `submit_post_analysis` saves the diagnostic with `mcp-client` provenance. `get_post_analysis` reads an existing diagnostic without running an analysis. This workflow consumes no credits.
 
-The tools `save_post`, `update_post`, `schedule_post`, `prepare_post_image`, `confirm_post_image`, and `cancel_post_image` also exist. They remain outside all 4 skills' scope. Their presence in the connector does not authorize automatic saving, scheduling, or changes. This catalogue does not make every tool a mandatory step or authorize an action outside the requested scope.
+The tools `save_post`, `update_post`, `schedule_post`, `prepare_post_image`, `confirm_post_image`, and `cancel_post_image` also exist. They remain outside all 5 skills' scope. Their presence in the connector does not authorize automatic saving, scheduling, or changes. This catalogue does not make every tool a mandatory step or authorize an action outside the requested scope.
 
 The profile optimizer uses `get_linkedin_profile` only for a requested account read and may use `get_config_profile` for authorized voice preferences. Stored data can be stale or locally edited. `update_linkedin_profile` exists but remains outside this skill: it changes only the local headline and summary, never LinkedIn. Post-analysis tools are not a profile scoring service.

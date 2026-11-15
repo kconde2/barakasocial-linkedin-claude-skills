@@ -6,7 +6,7 @@
 
 A folder containing `SKILL.md` can be installed in `~/.claude/skills/` for personal use or `.claude/skills/` within a project. [Official documentation](https://code.claude.com/docs/en/skills).
 
-To install the current hook source, copy this request into Claude Code. Replace the skill name with `linkedin-post-writer`, `linkedin-post-analyzer`, or `linkedin-profile-optimizer` to install another skill:
+To install the current hook source, copy this request into Claude Code. Replace the skill name with `linkedin-topic-finder`, `linkedin-post-writer`, `linkedin-post-analyzer`, or `linkedin-profile-optimizer` to install another skill:
 
 ```text
 Install linkedin-hook-generator from the public repository
@@ -24,7 +24,7 @@ The source path is `skills/linkedin-hook-generator/SKILL.md`. After installation
 
 ## Install in Claude
 
-Sources are at `0.1.0-preview.8` for hooks, writing and analysis and `0.1.0-preview.9` for Profile Optimizer. Neither version has a packaged release yet. The [preview.5 hook ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.5/linkedin-hook-generator.zip) is an older version without shared personalization. To build a ZIP from current sources, see the [contribution guide](contributing.md).
+Sources are at `0.1.0-preview.10`. This version has no packaged release yet. The [preview.5 hook ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.5/linkedin-hook-generator.zip) is an older version without shared personalization. To build a ZIP from current sources, see the [contribution guide](contributing.md).
 
 Once you have the desired ZIP, upload it through **Customize > Skills** using the option to add a skill. Required capabilities and controls may vary by workspace. [Official instructions](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
@@ -61,6 +61,20 @@ It selects angles already present in your material: identification, contrast, co
 It favors natural, active narration. In French, that means narrative present or passé composé when appropriate, while preserving chronology and intentional literary effects. Quantities use digits (2 calls, 6 months); articles and exact quotations are preserved.
 
 No account or MCP is required. If you explicitly request BarakaSocial context, the skill uses only available, authorized read tools and discloses missing access. It does not rewrite the body, save a draft, schedule, or publish.
+
+## Find topics or prepare a campaign
+
+[LinkedIn Topic Finder](../skills/linkedin-topic-finder/README.md) starts with your intent, reader, and available material. It can help define a direction when necessary without a setup questionnaire for every request.
+
+```text
+Use linkedin-topic-finder. I write for small-agency leaders.
+My material: [notes or resources]. I want something useful to save and send to a colleague.
+Suggest 3 concrete topics with angles and supporting material. Do not write yet.
+```
+
+It separates the author's goal, reader benefit, and desired response. Topics can come from experience, attributed observations, questions, resources, or authorized research. Illustrations stay labeled as such. Missing substance becomes a research need instead of an invented fact.
+
+For a campaign, ask for complementary subjects around your offer and audience. No fixed post count or funnel sequence is required. Choosing a topic does not start writing. Ask to write the selected topic: the writer reuses the brief without repeating discovery. Without the writer installed, the assistant can draft from the same brief when requested.
 
 ## Write a complete post
 
@@ -107,7 +121,7 @@ Choose headline, About, banner or a combination. Experience provides evidence wi
 <a id="personalize-the-3-skills"></a>
 ## Personalize the skills
 
-Personalization is shared behavior, not a separate skill to install. Each candidate ZIP includes `references/personalization.md`, so the skill remains usable on its own.
+Personalization is shared behavior, not a separate skill to install. Each candidate ZIP includes `references/personalization.md` and `references/profile-schema.md`, so the skill remains usable on its own.
 
 Ask, for example:
 
@@ -121,9 +135,28 @@ The skill can offer optional setup on first use or respond to an explicit config
 
 Your current instructions take precedence over a saved profile. A preference for one post does not automatically become a permanent setting. Shared preferences guide tone, audience, and presentation; they do not replace BarakaSocial's analysis criteria or grant permission to access an account.
 
-To keep preferences across sessions, ask to save them to a private location you choose. With filesystem access, the suggested location is `~/.config/barakasocial/editorial-profile.json`, outside the repository and installed skill folders. The same file can serve all 4 skills. Skills do not write a profile unless requested, and updates to skill instructions should leave that file intact. Never commit personal profiles or include them in a distribution ZIP.
+To keep preferences across sessions, ask to save them to a private location you choose. With filesystem access, the suggested location is `~/.config/barakasocial/editorial-profile.json`, outside the repository and installed skill folders. The same file can serve all 5 skills. Skills do not write a profile unless requested, and updates to skill instructions should leave that file intact. Never commit personal profiles or include them in a distribution ZIP.
 
 Without durable storage access, preferences stay in the conversation; the assistant may provide a profile to copy or download, but must not claim it has saved or will automatically remember it. Setup does not change MCP configuration or automatically read personal account data. To configure after installation, explicitly ask to install **and configure** the skill, or configure it on first use; no universal installation questionnaire is assumed.
+
+The profile can also retain an editorial direction, pillars, expertise, offers, and preferred reader responses. These fields are optional; old profiles remain usable without migration. Link preferences are not LinkedIn reach rules. Campaign goals and one-post choices remain temporary unless explicitly saved. Updates preserve unknown fields. Different authors use distinct profiles.
+
+### Build and retain shared context
+
+The Topic Finder helps define the reader's world: situations, aspirations, constraints, questions, decision criteria, and reported or hypothesized emotions. It reuses the selected profile and memory genuinely available in the client, labeling inferences instead of presenting an interpretation as your settled belief.
+
+After establishing useful new context, it offers to save the named information. Accepting that offer authorizes the described write. Declining or not answering leaves the information in the conversation. Other skills can then read the same private file without repeating the interview.
+
+```text
+Use linkedin-topic-finder. Reuse my editorial profile and available context.
+Help clarify my readers' world, then suggest 3 topics.
+Separate observations from hypotheses and offer to retain the useful context.
+Do not write a post yet.
+```
+
+The [shared schema](../skills/linkedin-topic-finder/references/profile-schema.md) retains version 1 and adds optional `editorial.reader_world` and `editorial.author_perspectives` fields. Each entry keeps an ID, content, origin, and reported/inferred basis, plus a recording date when available. Repeating an identical save creates no duplicates.
+
+The profile holds useful summaries, not entire client exchanges. Proposed topics, drafts, and one-post objectives stay in the conversation. Without filesystem access, the skill can return JSON to retain without claiming it was saved.
 
 ## Update
 
