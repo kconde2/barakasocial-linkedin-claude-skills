@@ -1,4 +1,4 @@
-# Personalization shared by the three LinkedIn skills
+# Personalization shared by the LinkedIn skills
 
 ## Reuse before asking
 
@@ -27,4 +27,4 @@ For durable local storage, use the chosen private path or offer `~/.config/barak
 
 Verify the written file and report its path plus the preferences changed. If writing fails, report that nothing was durably saved. Without persistent file access, keep the answers in this chat or provide a profile the user can copy or download; do not promise cross-session memory. Never edit the distributed SKILL.md, install hooks, modify MCP configuration, or write account settings as part of personalization.
 
-The hook generator, writer and analyzer read the same selected profile. Installation alone does not execute a setup wizard; the user can request configuration on first use or at any later time.
+The hook generator, writer, post analyzer and profile optimizer read the same selected profile. Installation alone does not execute a setup wizard; the user can request configuration on first use or at any later time.

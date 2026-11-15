@@ -10,7 +10,7 @@ packaging = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(packaging)
 
 
-SKILLS = ("linkedin-hook-generator", "linkedin-post-writer", "linkedin-post-analyzer")
+SKILLS = ("linkedin-hook-generator", "linkedin-post-writer", "linkedin-post-analyzer", "linkedin-profile-optimizer")
 
 
 class SkillDistributionTest(unittest.TestCase):

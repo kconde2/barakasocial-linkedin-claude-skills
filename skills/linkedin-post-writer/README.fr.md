@@ -23,7 +23,7 @@ compare son origine et son contenu avant de le remplacer.
 Conserve mes préférences personnelles et ma configuration MCP.
 ```
 
-**Dans Claude avec import ZIP :** importe l'archive de ce skill dans la gestion des skills. Les ZIP `0.1.0-preview.7` ne sont pas encore publiés. Les sources sont disponibles ici ; le [guide de contribution](../../docs/contributing.fr.md) permet de construire l'archive.
+**Dans Claude avec import ZIP :** importe l'archive de ce skill dans la gestion des skills. Les ZIP `0.1.0-preview.8` ne sont pas encore publiés. Les sources sont disponibles ici ; le [guide de contribution](../../docs/contributing.fr.md) permet de construire l'archive.
 
 [Voir les options d'installation et de mise à jour](../../docs/guide.fr.md)
 
@@ -48,6 +48,6 @@ Tu peux préciser ton public, ton ton et ce que tu veux éviter. Le skill demand
 
 > Personnalise ce skill pour les dirigeants de petites agences. Ton direct, humour léger et aucune question finale automatique. Garde ces choix dans cette conversation.
 
-[Conserver des préférences partagées](../../docs/guide.fr.md#personnaliser-les-3-skills)
+[Conserver des préférences partagées](../../docs/guide.fr.md#personnaliser-les-skills)
 
 [Lire les instructions du skill](SKILL.md) · [Retour au catalogue](../../README.fr.md)

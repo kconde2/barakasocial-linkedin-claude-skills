@@ -29,6 +29,9 @@ python3 -m unittest discover -s tests -p 'test_*.py'
 python3 scripts/package_skill.py linkedin-hook-generator
 python3 scripts/package_skill.py linkedin-post-writer
 python3 scripts/package_skill.py linkedin-post-analyzer
+python3 scripts/package_skill.py linkedin-profile-optimizer
 ```
 
 Le dossier `dist/` est généré et ignoré par Git. Chaque ZIP est construit à partir des fichiers du skill, sans configuration locale ni données utilisateur.
+
+Les [cas de l'optimiseur de profil](../tests/profile-optimizer-manual-cases.md) couvrent la matière fournie, le MCP facultatif, les versions anciennes ou locales, les images non consultées et l'absence d'écriture. Ces scénarios restent à exécuter dans le client cible.

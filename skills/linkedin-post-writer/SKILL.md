@@ -2,7 +2,7 @@
 name: linkedin-post-writer
 description: Write or rework a complete LinkedIn post from notes, an idea, or a draft, with one version or coherent alternatives. Develop a chosen hook into a readable story or argument while preserving the author's facts and voice. Use for full-post writing, not hook-only requests or publishing.
 metadata:
-  version: "0.1.0-preview.7"
+  version: "0.1.0-preview.8"
   author: BarakaSocial
 ---
 

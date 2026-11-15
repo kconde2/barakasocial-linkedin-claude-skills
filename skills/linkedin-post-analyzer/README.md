@@ -23,7 +23,7 @@ compare its origin and contents before replacing it.
 Preserve my personal preferences and MCP configuration.
 ```
 
-**In Claude with ZIP import:** upload this skill's archive through skill management. Version `0.1.0-preview.7` ZIPs have not been released yet. Sources are available here; the [contribution guide](../../docs/contributing.md) explains how to build an archive.
+**In Claude with ZIP import:** upload this skill's archive through skill management. Version `0.1.0-preview.8` ZIPs have not been released yet. Sources are available here; the [contribution guide](../../docs/contributing.md) explains how to build an archive.
 
 [Installation options and updates](../../docs/guide.md)
 
@@ -48,6 +48,6 @@ Provide your audience, tone and things to avoid. The skill asks only for missing
 
 > Personalize this skill for small-agency leaders. Direct tone, light humor and no automatic final question. Keep these choices in this conversation.
 
-[Keep shared preferences](../../docs/guide.md#personalize-the-3-skills)
+[Keep shared preferences](../../docs/guide.md#personalize-the-skills)
 
 [Read the skill instructions](SKILL.md) · [Back to the catalogue](../../README.md)

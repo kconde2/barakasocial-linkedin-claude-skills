@@ -23,7 +23,10 @@ Le tableau décrit les outils pertinents disponibles. Les accroches et la rédac
 | `linkedin-hook-generator` | Accroches à partir du texte fourni. Lectures MCP facultatives pour enrichir le contexte. |
 | `linkedin-post-writer` | Post ou variantes à partir de la matière fournie. Lectures MCP facultatives et recours au skill d'accroches s'il est disponible. |
 | `linkedin-post-analyzer` | MCP obligatoire. Aperçu par défaut. Diagnostic enregistré uniquement sur demande explicite. |
+| `linkedin-profile-optimizer` | Audit et réécritures du profil fourni. Lectures du profil et de la voix facultatives et autorisées. Aucun score ni changement du compte. |
 
 Pour l'analyse, le modèle client produit l'évaluation selon `get_analysis_criteria`. BarakaSocial applique ensuite le calcul officiel avec `preview_post_analysis` ou `submit_post_analysis`. Ces outils ne déclenchent pas le modèle d'analyse interne du serveur. `submit_post_analysis` conserve le diagnostic avec la provenance `mcp-client`. `get_post_analysis` lit un diagnostic existant sans lancer d'analyse. Ce parcours ne consomme aucun crédit.
 
-Les outils `save_post`, `update_post`, `schedule_post`, `prepare_post_image`, `confirm_post_image` et `cancel_post_image` existent également. Ils restent hors du périmètre des 3 skills. Leur présence dans le connecteur n'autorise pas une sauvegarde, une programmation ou une modification automatique. Ce catalogue ne rend pas chaque outil obligatoire et n'autorise aucune action hors du périmètre demandé.
+Les outils `save_post`, `update_post`, `schedule_post`, `prepare_post_image`, `confirm_post_image` et `cancel_post_image` existent également. Ils restent hors du périmètre des 4 skills. Leur présence dans le connecteur n'autorise pas une sauvegarde, une programmation ou une modification automatique. Ce catalogue ne rend pas chaque outil obligatoire et n'autorise aucune action hors du périmètre demandé.
+
+L'optimiseur de profil utilise `get_linkedin_profile` pour une lecture demandée du compte et éventuellement `get_config_profile` pour les préférences de voix autorisées. Les données peuvent dater ou avoir été modifiées localement. `update_linkedin_profile` existe mais reste hors de ce skill : il change uniquement le titre et la description locaux, jamais LinkedIn. Les outils d'analyse de posts ne constituent pas un service de notation du profil.

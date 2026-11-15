@@ -6,12 +6,12 @@
 
 Un dossier contenant `SKILL.md` peut être installé dans `~/.claude/skills/` pour un usage personnel ou `.claude/skills/` dans un projet. [Documentation officielle](https://code.claude.com/docs/en/skills).
 
-Pour installer les sources actuelles des accroches, copie cette demande dans Claude Code. Remplace le nom du skill par `linkedin-post-writer` ou `linkedin-post-analyzer` pour installer un autre skill :
+Pour installer les sources actuelles des accroches, copie cette demande dans Claude Code. Remplace le nom du skill par `linkedin-post-writer`, `linkedin-post-analyzer` ou `linkedin-profile-optimizer` pour installer un autre skill :
 
 ```text
 Installe le skill linkedin-hook-generator du dépôt public
 https://github.com/kconde2/barakasocial-linkedin-claude-skills
-à partir du commit b2cd82d6c2917f5f1b01b96860881edc65947a1c dans mes skills personnels.
+à partir de la branche main dans mes skills personnels.
 Copie le dossier complet du skill, y compris references/.
 Lis son SKILL.md avant l'installation. Si un skill du même nom existe déjà,
 compare son origine et son contenu avant de le remplacer.
@@ -24,7 +24,7 @@ Le chemin source est `skills/linkedin-hook-generator/SKILL.md`. Après installat
 
 ## Installer dans Claude
 
-La version source actuelle est `0.1.0-preview.7`. Elle ne possède pas encore de release avec les ZIP. Le [ZIP des accroches preview.5](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.5/linkedin-hook-generator.zip) est une ancienne version sans la personnalisation commune. Pour obtenir un ZIP des sources actuelles, consulte le [guide de contribution](contributing.fr.md).
+La version source actuelle est `0.1.0-preview.8`. Elle ne possède pas encore de release avec les ZIP. Le [ZIP des accroches preview.5](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.5/linkedin-hook-generator.zip) est une ancienne version sans la personnalisation commune. Pour obtenir un ZIP des sources actuelles, consulte le [guide de contribution](contributing.fr.md).
 
 Quand tu disposes du ZIP souhaité, importe-le dans **Personnaliser / Customize > Skills**, via l'ajout d'un skill. Les capacités requises et les contrôles peuvent varier selon ton espace. [Procédure officielle](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
@@ -86,9 +86,21 @@ Le modèle du client produit l'évaluation éditoriale. BarakaSocial calcule le 
 
 Plusieurs relecteurs peuvent contribuer uniquement sur demande explicite et si le client le permet. Ils examinent le même texte avec des périmètres complémentaires puis l'agent principal rassemble leurs observations réelles en une évaluation. Il n'invente pas de relecteurs, ne moyenne pas des scores imaginaires et ne relance pas des boucles de notation. Le skill ne crée, ne modifie, ne programme et ne publie aucun post. Enregistrer un diagnostic n'enregistre pas un post.
 
-## Personnaliser les 3 skills
+## Améliorer un profil LinkedIn
 
-La personnalisation est commune aux skills. Ce n'est pas un quatrième skill à installer. Chaque ZIP candidat contient `references/personalization.md` pour rester utilisable seul.
+[LinkedIn Profile Optimizer](../skills/linkedin-profile-optimizer/README.fr.md) travaille avec du texte ou des captures fournis sans compte obligatoire. Si tu demandes le profil enregistré dans BarakaSocial, il peut utiliser `get_linkedin_profile` et indique la date de récupération lorsqu'elle est disponible. Cette copie peut contenir des changements locaux. Ce n'est pas une lecture en direct de LinkedIn.
+
+```text
+Utilise linkedin-profile-optimizer. Relis mon titre et ma section Infos pour des fondateurs de startup qui cherchent un développeur freelance. Propose des changements sans inventer de résultats :
+[colle les sections actuelles]
+```
+
+Tu reçois des constats appuyés sur la matière fournie et jusqu'à 3 priorités avec des textes à copier. Les sections manquantes et les images non consultées ne sont pas évaluées. Aucun score officiel de profil ni aucune modification du compte. Une demande sur une seule section reste ciblée.
+
+<a id="personnaliser-les-3-skills"></a>
+## Personnaliser les skills
+
+La personnalisation est commune aux skills. Ce n'est pas un skill supplémentaire à installer. Chaque ZIP candidat contient `references/personalization.md` pour rester utilisable seul.
 
 Tu peux demander :
 
@@ -102,7 +114,7 @@ Le skill peut proposer une configuration facultative au premier usage ou répond
 
 Tes instructions actuelles priment sur un profil enregistré. Une préférence pour un seul post ne devient pas automatiquement un réglage permanent. Les préférences communes orientent le ton, le public et la présentation. Elles ne remplacent pas les critères d'analyse de BarakaSocial et n'autorisent pas l'accès à un compte.
 
-Pour conserver les préférences entre les sessions, demande leur enregistrement dans un emplacement privé de ton choix. Avec un accès aux fichiers, l'emplacement proposé est `~/.config/barakasocial/editorial-profile.json`, hors du dépôt et des dossiers des skills installés. Les 3 skills peuvent partager ce fichier. Ils n'écrivent pas de profil sans demande. Une mise à jour des instructions doit laisser ce fichier intact. Ne jamais committer de profil personnel ni l'inclure dans un ZIP distribué.
+Pour conserver les préférences entre les sessions, demande leur enregistrement dans un emplacement privé de ton choix. Avec un accès aux fichiers, l'emplacement proposé est `~/.config/barakasocial/editorial-profile.json`, hors du dépôt et des dossiers des skills installés. Les 4 skills peuvent partager ce fichier. Ils n'écrivent pas de profil sans demande. Une mise à jour des instructions doit laisser ce fichier intact. Ne jamais committer de profil personnel ni l'inclure dans un ZIP distribué.
 
 Sans accès à un stockage durable, les préférences restent dans la conversation. L'assistant peut fournir un profil à copier ou télécharger sans prétendre l'avoir enregistré ni promettre de le retrouver automatiquement. La configuration ne modifie pas le MCP et ne lit pas automatiquement les données personnelles du compte. Pour personnaliser après installation, demande explicitement d'installer **et de configurer** le skill ou configure-le au premier usage. Aucun questionnaire universel d'installation n'est supposé.
 

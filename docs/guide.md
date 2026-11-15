@@ -6,12 +6,12 @@
 
 A folder containing `SKILL.md` can be installed in `~/.claude/skills/` for personal use or `.claude/skills/` within a project. [Official documentation](https://code.claude.com/docs/en/skills).
 
-To install the current hook source, copy this request into Claude Code. Replace the skill name with `linkedin-post-writer` or `linkedin-post-analyzer` to install another skill:
+To install the current hook source, copy this request into Claude Code. Replace the skill name with `linkedin-post-writer`, `linkedin-post-analyzer`, or `linkedin-profile-optimizer` to install another skill:
 
 ```text
 Install linkedin-hook-generator from the public repository
 https://github.com/kconde2/barakasocial-linkedin-claude-skills
-using commit b2cd82d6c2917f5f1b01b96860881edc65947a1c in my personal skills directory.
+using the main branch in my personal skills directory.
 Copy the entire skill folder, including references/.
 Read its SKILL.md before installing. If a skill with the same name already exists,
 compare its origin and contents before replacing it.
@@ -24,7 +24,7 @@ The source path is `skills/linkedin-hook-generator/SKILL.md`. After installation
 
 ## Install in Claude
 
-The current source version is `0.1.0-preview.7`. It does not have a packaged release yet. The [preview.5 hook ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.5/linkedin-hook-generator.zip) is an older version without shared personalization. To build a ZIP from current sources, see the [contribution guide](contributing.md).
+The current source version is `0.1.0-preview.8`. It does not have a packaged release yet. The [preview.5 hook ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.5/linkedin-hook-generator.zip) is an older version without shared personalization. To build a ZIP from current sources, see the [contribution guide](contributing.md).
 
 Once you have the desired ZIP, upload it through **Customize > Skills** using the option to add a skill. Required capabilities and controls may vary by workspace. [Official instructions](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
@@ -93,9 +93,21 @@ The model in the user's client produces the editorial evaluation. BarakaSocial c
 
 Several reviewers may contribute only when explicitly requested and supported by the client. They inspect the same text with complementary scopes, and the main agent combines their actual findings into one evaluation. It does not invent reviewers, average imaginary scores, or run repeated scoring loops. The skill never creates, edits, schedules, or publishes a post. Saving a diagnostic does not save a post.
 
-## Personalize the 3 skills
+## Improve a LinkedIn profile
 
-Personalization is shared behavior, not a fourth skill to install. Each candidate ZIP includes `references/personalization.md`, so the skill remains usable on its own.
+[LinkedIn Profile Optimizer](../skills/linkedin-profile-optimizer/README.md) works from supplied text or screenshots without an account. When you request the stored BarakaSocial profile, it can use `get_linkedin_profile` and reports the retrieval date when available. That copy may include local changes and is not a live LinkedIn read.
+
+```text
+Use linkedin-profile-optimizer. Review my headline and About for startup founders looking for a freelance developer. Suggest changes without inventing results:
+[paste the current sections]
+```
+
+You receive findings tied to the supplied material and up to 3 priorities with copyable rewrites. Missing sections or unseen images are not assessed. There is no official profile score and no account update. A request for one section stays focused on that section.
+
+<a id="personalize-the-3-skills"></a>
+## Personalize the skills
+
+Personalization is shared behavior, not a separate skill to install. Each candidate ZIP includes `references/personalization.md`, so the skill remains usable on its own.
 
 Ask, for example:
 
@@ -109,7 +121,7 @@ The skill can offer optional setup on first use or respond to an explicit config
 
 Your current instructions take precedence over a saved profile. A preference for one post does not automatically become a permanent setting. Shared preferences guide tone, audience, and presentation; they do not replace BarakaSocial's analysis criteria or grant permission to access an account.
 
-To keep preferences across sessions, ask to save them to a private location you choose. With filesystem access, the suggested location is `~/.config/barakasocial/editorial-profile.json`, outside the repository and installed skill folders. The same file can serve all 3 skills. Skills do not write a profile unless requested, and updates to skill instructions should leave that file intact. Never commit personal profiles or include them in a distribution ZIP.
+To keep preferences across sessions, ask to save them to a private location you choose. With filesystem access, the suggested location is `~/.config/barakasocial/editorial-profile.json`, outside the repository and installed skill folders. The same file can serve all 4 skills. Skills do not write a profile unless requested, and updates to skill instructions should leave that file intact. Never commit personal profiles or include them in a distribution ZIP.
 
 Without durable storage access, preferences stay in the conversation; the assistant may provide a profile to copy or download, but must not claim it has saved or will automatically remember it. Setup does not change MCP configuration or automatically read personal account data. To configure after installation, explicitly ask to install **and configure** the skill, or configure it on first use; no universal installation questionnaire is assumed.
 
