@@ -23,6 +23,8 @@ def package_skill(name, destination):
         raise ValueError("Symlinks are not packaged")
     if any(p.name.startswith(".") or p.suffix not in {".md", ".yaml"} for p in files):
         raise ValueError("Unexpected file in this text-only skill")
+    # Repository landing pages are for readers, not installed skill instructions.
+    files = [p for p in files if p.relative_to(source).as_posix() not in {"README.md", "README.fr.md"}]
     destination = Path(destination)
     destination.parent.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(destination, "w", compression=zipfile.ZIP_DEFLATED) as archive:
