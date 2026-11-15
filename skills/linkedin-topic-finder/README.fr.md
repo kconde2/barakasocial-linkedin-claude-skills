@@ -23,7 +23,7 @@ compare son origine et son contenu avant de le remplacer.
 Conserve mes préférences personnelles et ma configuration MCP.
 ```
 
-**Import ZIP :** preview.10 ne dispose pas encore de release avec les archives. Construis le ZIP depuis ces sources avec le [guide de contribution](../../docs/contributing.fr.md). Importe le paquet complet avec sa référence. [Options d'installation](../../docs/guide.fr.md).
+**Dans Claude avec import ZIP :** télécharge le [ZIP preview.10](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-topic-finder.zip) puis importe l'archive complète dans la gestion des skills. Elle contient `SKILL.md` et les 2 références communes. [Options d'installation](../../docs/guide.fr.md).
 
 <a id="use"></a>
 ## Utiliser le skill

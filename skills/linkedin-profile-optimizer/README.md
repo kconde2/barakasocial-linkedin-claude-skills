@@ -23,7 +23,7 @@ compare its origin and contents before replacing it.
 Preserve my personal preferences and MCP configuration.
 ```
 
-**In Claude with ZIP import:** upload this skill's archive through skill management. Version `0.1.0-preview.10` ZIPs have not been released yet. Sources are available here; the [contribution guide](../../docs/contributing.md) explains how to build an archive.
+**In Claude with ZIP import:** download the [preview.10 ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-profile-optimizer.zip) and upload the complete archive through skill management. It contains `SKILL.md` and the 2 shared references. [Installation options](../../docs/guide.md).
 
 A client card that only supports `SKILL.md` cannot install this complete package. Use the ZIP or a file-capable client; do not silently omit `references/`.
 
