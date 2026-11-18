@@ -23,7 +23,7 @@ compare its origin and contents before replacing it.
 Preserve my personal preferences and MCP configuration.
 ```
 
-**In Claude with ZIP import:** download the [preview.10 ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-topic-finder.zip) and upload the complete archive through skill management. It contains `SKILL.md` and the 2 shared references. [Installation options](../../docs/guide.md).
+**In Claude with ZIP import:** download the [preview.11 ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.11/linkedin-topic-finder.zip) and upload the complete archive through skill management. It contains `SKILL.md` and the 2 shared references. [Installation options](../../docs/guide.md).
 
 <a id="use"></a>
 ## Use the skill
@@ -34,7 +34,7 @@ A client approved a mockup, then requested 2 more screens. I offered a separate 
 Suggest 3 topics that help readers recognize this situation or discuss the trade-off. Do not write the posts yet.
 ```
 
-You receive a short table with stable IDs, topics/angles, why the reader would care, and available material or gaps. Goals and intended responses appear when they help you choose. The editorial question and supported contribution guide the selected brief without cluttering every row. A problem is optional. The skill recommends an option without claiming it will perform. Ask for a different count or format if useful.
+You receive a short table with stable IDs, topics/angles, why the reader would read now, and available material or gaps. A recurring situation or a lasting interest can give the reader a reason to stop. Goals and intended responses appear when they help you choose. The editorial question and supported contribution guide the selected brief without cluttering every row. The skill recommends an option without claiming it will perform. Ask for a different count or format if useful.
 
 Whether you bring a topic or choose a proposed ID, the assistant reuses what you already said. If needed, it asks what you think, noticed, experienced, or want to explore. Selecting a topic does not endorse a proposed conclusion. No repeated interview when the material is sufficient, and no forced opinion, personal story, or sales pitch.
 

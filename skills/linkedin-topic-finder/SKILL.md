@@ -2,7 +2,7 @@
 name: linkedin-topic-finder
 description: Find concrete LinkedIn topics and angles from an intention, a broad theme, notes, or past posts. Help define an editorial direction when needed or propose complementary topics for a campaign. Use before writing when the user wants subjects or angles, not for a local text edit.
 metadata:
-  version: "0.1.0-preview.10"
+  version: "0.1.0-preview.11"
   author: BarakaSocial
 ---
 
@@ -17,7 +17,7 @@ Read [shared personalization](references/personalization.md) to reuse the select
 - No idea: explore what the author wants to convey or achieve, whom they want to reach, and what material is available. Ask only missing information that changes the next choice, at most 3 short questions at once. Never make up the author's business or audience to fill a blank.
 - Broad theme: find a specific question, situation, decision, comparison, or observation that matters to that reader. A list of abstract themes is not a list of usable topics.
 - Notes, experience, resource, or past post: inspect that material first. Preserve the point instead of forcing it into a preferred formula.
-- Clear topic or brief: refine only what is requested. A request to write goes directly to the writer when available, without another round of topic selection; otherwise write from the same brief yourself and disclose that fallback.
+- Clear topic or brief: for a narrow request such as "give me one angle", deliver that result and stop. Leave out the topic table, extra brief, and optional follow-up questions. Ask one focused question only if missing information prevents the requested answer. A request to write goes directly to the writer when available, without another round of topic selection; otherwise write from the same brief yourself and disclose that fallback.
 
 If direction is the task, propose a short reader promise and relevant recurring territories (pillars), grounded in the author's expertise, interests, or offer. Treat the proposal as a choice, not a discovered fact about the author. A pillar is a subject territory, not a format or a funnel stage. Allow a reasoned one-off exploration without silently changing the profile. Do not impose a fixed number of pillars, publishing ratio, or TOFU/MOFU/BOFU sequence.
 
@@ -65,7 +65,7 @@ Do not require personal experience for every subject: a substantiated opinion, d
 
 Whether the author brings a topic or selects one you proposed, reuse their existing material and point of view before asking anything. Selecting a topic does not mean endorsing its proposed conclusion. If their contribution is still missing, ask a focused follow-up about what they think, noticed, experienced, question, or disagree with. Follow their answer rather than running a fixed interview: seek a concrete detail or decision when it changes the story. Do not require an opinion, emotion, lived scene, firm verdict, or sales goal for every post; an honest uncertainty or useful explanation can be the contribution.
 
-For a selected topic without a writing request, clarify only what is needed to develop it; do not draft yet. For a writing request, pass known answers and remaining gaps to the writer, which asks only essential follow-ups. If the material and intent are already sufficient, proceed without another interview. A request for a neutral explanation or an explicitly illustrative example does not require personal testimony.
+If the author selects a topic and wants to develop it further, clarify only what is needed next. For a writing request, pass known answers and remaining gaps to the writer, which asks only essential follow-ups. If the material and intent are already sufficient, proceed without another interview. A request for a neutral explanation or an explicitly illustrative example does not require personal testimony.
 
 ## Make the editorial question concrete
 
@@ -73,9 +73,17 @@ For each candidate, identify the reader's situation or stake, the precise questi
 
 Check that the material genuinely helps answer or explore that question. A generic question added after choosing an angle is not enough. An unresolved debate can clarify alternatives and their limits without claiming a definitive answer. If the central answer is missing, label the topic as a research lead or narrow its promise. This question is editorial scaffolding, not a required question in the hook, body, or ending.
 
+## Test why this reader would read now
+
+When recommending new topics, identify the reader's situation or existing interest and what the post offers them. A pending decision, a recurring frustration, an active aspiration, a discovery, a personal connection, or a recognizable detail can all give someone a reason to read. Ground that reason in the available material. It can recur whenever the situation comes up. If the author has already chosen a topic and requests a specific treatment, use this lens to sharpen the angle when useful and honor the requested scope.
+
+When looking for a story, start with the reader's interest or concern and find a story that helps them see it more clearly. If the author supplies a story first and asks whether to use it, test "Why this story, for this reader, now?" Recent news can justify a topic when a verified development changes what the reader can understand, discuss, or decide. An older story can illuminate either an enduring interest or a recent development. State the present-day connection as an editorial interpretation when the source establishes only the historical facts.
+
+For example, "negotiate your rates" is a theme. "A client asks you to cut your day rate before the scope is clear" identifies a moment when a freelance reader needs a response. A scene that makes the reader recognize an absurd routine can also earn attention without a practical deadline. Do not invent a deadline, a widespread frustration, a new trend, or an outcome to manufacture urgency. If the situation or payoff is unclear, narrow the candidate, mark the missing evidence or leave it out.
+
 ## Offer a useful choice
 
-Default to 3 distinct candidates when the request leaves the count open, fewer if only fewer are supported. Do not pad. Use a compact selection table with stable IDs (such as SV-001), topic/angle, why this reader would care, and available material or the central gap. Add the author goal or intended response when it helps distinguish choices. Keep the editorial question, contribution, and provenance in the reasoning and selected-topic brief; do not turn every reasoning dimension into a mandatory column. Recommend the most supportable option with a short reason, not a virality score. Similar wording is not a different topic.
+Default to 3 distinct candidates when the request leaves the count open. If only one is sufficiently supported, show that one alone. Keep alternate formats for the same insight under one ID. If the shortlist is thin or empty, offer useful research leads separately or ask a focused question about what is missing. Use a compact selection table with stable IDs (such as SV-001), topic/angle, why read it now, and available material or the central gap. In "Why read it now", name the concrete reader situation or interest and what the post offers, without predicting the reaction. Add the author goal or intended response when it helps distinguish choices. Keep the editorial question, contribution, and provenance in the reasoning and selected-topic brief; do not turn every reasoning dimension into a mandatory column. Recommend the most supportable option with a short reason, not a virality score. If a gap concerns only one candidate, show it beside that candidate and ask about it when the author chooses it.
 
 For "more", keep prior IDs and avoid previously rejected or already covered subjects within the accessible context. For "change the objective", revise the relevant choices without restarting setup or silently updating saved preferences. Do not claim to know an inaccessible publication history.
 
@@ -86,7 +94,7 @@ For a requested campaign, connect complementary subjects to the same goal and au
 After topic proposals, wait for selection unless the user has asked you to choose and continue. Selection alone does not authorize drafting. For a writing request, pass the chosen topic to `linkedin-post-writer` if available, preserving:
 
 - author intent, reader/context, desired response and reader benefit;
-- topic, angle, reader stake, question addressed, supported contribution and supportable promise;
+- topic, angle, why the reader would read it now, question addressed, supported contribution and supportable promise;
 - the author's expressed perspective, actual material with provenance, limitations and missing essentials;
 - voice, selected opening if any, optional CTA with exact supplied destination, and campaign role if relevant.
 

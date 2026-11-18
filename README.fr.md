@@ -26,7 +26,7 @@ L'analyse utilise les critères actuels et le calcul du score de BarakaSocial. U
 2. Copie sa demande **Installer ce skill** dans Claude Code ou Codex.
 3. Essaie l'exemple de cette même fiche avec ta propre matière.
 
-**Tu utilises Claude avec import ZIP ?** Télécharge les ZIP des 5 skills dans la [prérelease preview.10](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/tag/v0.1.0-preview.10). [Voir les options d'installation](docs/guide.fr.md).
+**Tu utilises Claude avec import ZIP ?** Télécharge le [Topic Finder preview.11](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.11/linkedin-topic-finder.zip) ou retrouve les ZIP des autres skills dans le [guide d'installation](docs/guide.fr.md).
 
 ## Personnalisation
 

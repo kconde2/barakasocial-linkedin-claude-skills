@@ -24,9 +24,9 @@ The source path is `skills/linkedin-hook-generator/SKILL.md`. After installation
 
 ## Install in Claude
 
-The 5 ZIPs are available in [preview.10](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/tag/v0.1.0-preview.10). Each includes `SKILL.md` and the 2 shared personalization references. Download the skill you want:
+Each ZIP includes `SKILL.md` and the 2 shared personalization references. The Topic Finder is on preview.11. The other skills are on preview.10. Download the skill you want:
 
-- [linkedin-topic-finder](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-topic-finder.zip)
+- [linkedin-topic-finder](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.11/linkedin-topic-finder.zip)
 - [linkedin-hook-generator](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-hook-generator.zip)
 - [linkedin-post-writer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-post-writer.zip)
 - [linkedin-post-analyzer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-post-analyzer.zip)

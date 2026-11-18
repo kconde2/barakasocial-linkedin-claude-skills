@@ -23,7 +23,7 @@ compare son origine et son contenu avant de le remplacer.
 Conserve mes préférences personnelles et ma configuration MCP.
 ```
 
-**Dans Claude avec import ZIP :** télécharge le [ZIP preview.10](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-topic-finder.zip) puis importe l'archive complète dans la gestion des skills. Elle contient `SKILL.md` et les 2 références communes. [Options d'installation](../../docs/guide.fr.md).
+**Dans Claude avec import ZIP :** télécharge le [ZIP preview.11](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.11/linkedin-topic-finder.zip) puis importe l'archive complète dans la gestion des skills. Elle contient `SKILL.md` et les 2 références communes. [Options d'installation](../../docs/guide.fr.md).
 
 <a id="use"></a>
 ## Utiliser le skill
@@ -34,7 +34,7 @@ Un client valide une maquette puis demande 2 écrans supplémentaires. Je propos
 Propose 3 sujets pour que les lecteurs se reconnaissent ou discutent de cet arbitrage. Ne rédige pas encore les posts.
 ```
 
-Tu obtiens un tableau court avec des IDs stables, les sujets et angles, l'intérêt pour le lecteur et la matière disponible ou manquante. Le but et la réaction recherchée apparaissent quand ils aident à choisir. La question traitée et l'apport étayé guident le brief retenu sans surcharger chaque ligne. Un problème n'est pas obligatoire. Le skill recommande une piste sans prédire sa performance. Tu peux demander un autre nombre ou format.
+Tu obtiens un tableau court avec des IDs stables, les sujets et angles, la raison de les lire maintenant et la matière disponible ou manquante. Une situation qui revient ou une curiosité durable peut donner envie de lire. Le but et la réaction recherchée apparaissent quand ils aident à choisir. La question traitée et l'apport étayé guident le brief retenu sans surcharger chaque ligne. Le skill recommande une piste sans prédire sa performance. Tu peux demander un autre nombre ou format.
 
 Que tu apportes un sujet ou choisisses un ID proposé, l'assistant reprend ce que tu as déjà dit. Si nécessaire, il te demande ton avis, une observation, une expérience ou ce que tu veux explorer. Choisir un sujet ne signifie pas approuver une conclusion proposée. Pas de nouvel entretien si la matière suffit. Pas d'opinion tranchée, de récit personnel ou de vente imposés.
 

@@ -72,3 +72,15 @@ Native checkbox behavior, connected MCP behavior, target-client installation, un
 Four automated tests passed across all 5 skills: exact archive contents, reproducibility, identical shared reference, and path traversal rejection. All 5 entrypoints passed the skill validator. All 196 local documentation links and anchors resolved. All 5 ZIPs were built locally; no release or push was performed. Final instruction review clarified that the writer's prohibition concerns invented facts, not explicitly requested fiction. No target-client fiction test is claimed.
 
 The later shared-schema extension and end-to-end trials are documented in [reader-world results](reader-world-smoke-results.md).
+
+## Why read it now? Local preview.11
+
+Date: 2026-11-18. Fresh Claude Code sessions read the local skill and received synthetic material. No account, MCP, web research, or preference save was requested.
+
+- **Pending quote:** a small-agency leader must approve a quote after a request for 2 more screens with the same delivery date. The model tied its proposed angles to that decision and excluded a broad leadership note and an unrelated product announcement. It flagged the missing author criteria and still offered some follow-up questions alongside the selection.
+- **Recurring recognition:** a freelance developer sees the same "quick sync" each Monday. Early runs split the observation into multiple formats. After the shortlist rule was tightened, the model proposed one ID and placed format alternatives under it. It did not assert the meeting's duration. Calling recurrence and short duration a contradiction is a weak editorial inference that still needs human judgment.
+- **Historical illustration:** a fictional story from 2008 about a slowdown was supplied for a freelancer deciding whether to release a change. The model retained it for that specific decision and kept it fictional. It left out an unrelated old rescue story and a recent outdoor announcement. The recommendation did not require a new technology story or claim that the suspected slowdown had been measured.
+- **Enduring curiosity:** a fictional example about removing a save icon once autosave existed produced one topic for readers interested in design history. The model treated curiosity as the reason to read and retained the fictional provenance.
+- **Chosen tribute:** an initial run answered a request for one angle with the topic table and 3 questions. After clarifying the direct path, the final run gave the requested angle without a selection table or follow-up questions. It still inferred that the habit lasted a year from the annual tribute; the author would need to confirm that chronology before drafting.
+
+The runs check whether the reason to read is visible and connected to the inputs. They do not establish whether a reader would stop scrolling.
