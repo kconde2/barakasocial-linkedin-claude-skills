@@ -21,8 +21,8 @@ def package_skill(name, destination):
     files = sorted(p for p in source.rglob("*") if p.is_file())
     if any(p.is_symlink() for p in [source, *source.rglob("*")]):
         raise ValueError("Symlinks are not packaged")
-    if any(p.name.startswith(".") or p.suffix not in {".md", ".yaml"} for p in files):
-        raise ValueError("Unexpected file in this text-only skill")
+    if any(p.name.startswith(".") or (p.suffix not in {".md", ".yaml"} and p.relative_to(source).as_posix() != "scripts/skill_updates.py") for p in files):
+        raise ValueError("Unexpected file in skill package")
     # Repository landing pages are for readers, not installed skill instructions.
     files = [p for p in files if p.relative_to(source).as_posix() not in {"README.md", "README.fr.md"}]
     destination = Path(destination)

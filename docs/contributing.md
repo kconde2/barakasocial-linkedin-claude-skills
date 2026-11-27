@@ -42,3 +42,14 @@ The generated `dist/` directory is ignored by Git. Each ZIP contains only the sk
 [Profile optimizer cases](../tests/profile-optimizer-manual-cases.md) cover supplied material, optional MCP, stale/local versions, unseen images and proposal-only boundaries. These scenarios still require execution in the target client.
 
 The [Topic Finder cases](../tests/topic-finder-manual-cases.md) cover responses, campaigns, writer handoff, and preferences. See the [preview.10 smoke results](../tests/topic-finder-smoke-results.md) for executed checks and remaining evaluation.
+
+
+## Update helper distribution
+
+The preview.14 candidate includes a Python standard-library helper and three references per skill. Keep scripts/skill_updates.py and every skills/*/scripts/skill_updates.py identical. Run python3 -m unittest discover -s tests -p 'test_*.py' before packaging.
+
+Build each ZIP with python3 scripts/package_skill.py <skill-name>, then prepare the candidate catalog with python3 scripts/build_update_catalog.py. The candidate is written to dist/updates.json. Do not expose it as the public catalog before uploading the exact release assets.
+
+After publication is explicitly authorized and the release assets are uploaded, run python3 scripts/build_update_catalog.py --verify-published --output updates.json. This checks the remotely downloaded bytes before writing the public catalog. Commit/push that catalog separately, then update the application's advertised versions. Existing published archives must never be replaced.
+
+Keep the earlier catalog release records so local modifications can be distinguished from an official installed version. No post content or private profile belongs in this catalog. The first release with the helper still requires manual installation on older clients.

@@ -2,13 +2,17 @@
 name: linkedin-hook-generator
 description: Generate or improve LinkedIn opening lines from a post, notes, or a topic. Compare hooks that fit the available material, assess an existing opening, and identify missing information when needed. Use for hook requests, not full-post writing.
 metadata:
-  version: "0.1.0-preview.10"
+  version: "0.1.0-preview.14"
   author: BarakaSocial
 ---
 
 # LinkedIn Hook Generator
 
 Give the intended reader a concrete reason to keep reading. The post must deliver what its opening promises.
+
+## Updates
+
+Follow [the shared update workflow](references/updates.md) at invocation when client capabilities permit. Checks are shared across the five skills for 48 hours. Never block the requested work or replace files without the user's approval.
 
 ## Personalization
 

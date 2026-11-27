@@ -2,7 +2,7 @@
 name: linkedin-topic-finder
 description: Find concrete LinkedIn topics and angles from an intention, a broad theme, notes, or past posts. Help define an editorial direction when needed or propose complementary topics for a campaign. Use before writing when the user wants subjects or angles, not for a local text edit.
 metadata:
-  version: "0.1.0-preview.12"
+  version: "0.1.0-preview.14"
   author: BarakaSocial
 ---
 
@@ -11,6 +11,10 @@ metadata:
 Find something worth saying to a particular reader, supported by material the author can honestly use. Work without an account or a fixed niche. Respond in the user's language.
 
 Read [shared personalization](references/personalization.md) to reuse the selected author's context or handle requested setup. Do not require a profile file, MCP, or strategy questionnaire before helping.
+
+## Updates
+
+Follow [the shared update workflow](references/updates.md) at invocation when client capabilities permit. Checks are shared across the five skills for 48 hours. Never block the requested work or replace files without the user's approval.
 
 ## Ask before starting a guided search
 

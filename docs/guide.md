@@ -186,3 +186,12 @@ In Claude, download the new version's ZIP and replace the installed version thro
 ### Topic Finder: preview.12
 
 Preview.12 adds themes and audience → idea or post outcome → treatment → topics. Recurring ideas remain optional. Use the versioned ZIP linked above. Updates are manual and keep the private profile separate from the skill.
+
+
+## Shared update checks (preview.14 candidate)
+
+The next local candidate adds one shared update check per 48 hours when a skill is used in a client with permitted Python, network and persistent filesystem access. Checks do not install anything. A new version is offered once; replacement requires your approval. Private preferences remain separate.
+
+Without filesystem access, the assistant can offer the official ZIP for manual import and only deduplicate checks within the conversation. Managed plugins use their own updater. Existing installations need a first manual upgrade to acquire this helper. Preview.14 is not yet published; the download links above still refer to the released versions.
+
+See [the update implementation and publication procedure](decisions/003-skill-updates.fr.md). No background scheduler is installed.

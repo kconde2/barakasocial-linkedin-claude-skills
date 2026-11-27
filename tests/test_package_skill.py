@@ -10,7 +10,7 @@ packaging = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(packaging)
 
 
-REFERENCES = ("personalization.md", "profile-schema.md")
+REFERENCES = ("personalization.md", "profile-schema.md", "updates.md")
 
 SKILLS = ("linkedin-hook-generator", "linkedin-post-writer", "linkedin-post-analyzer", "linkedin-profile-optimizer", "linkedin-topic-finder")
 
@@ -21,7 +21,7 @@ class SkillDistributionTest(unittest.TestCase):
             with self.subTest(skill=name), tempfile.TemporaryDirectory() as directory:
                 archive = packaging.package_skill(name, Path(directory) / "skill.zip")
                 with zipfile.ZipFile(archive) as bundle:
-                    self.assertEqual(bundle.namelist(), [f"{name}/SKILL.md", *[f"{name}/references/{ref}" for ref in REFERENCES]])
+                    self.assertEqual(bundle.namelist(), [f"{name}/SKILL.md", *[f"{name}/references/{ref}" for ref in REFERENCES], f"{name}/scripts/skill_updates.py"])
                     bundle.extractall(Path(directory) / "skills")
                 installed = Path(directory) / "skills" / name / "SKILL.md"
                 self.assertEqual(installed.read_bytes(), (ROOT / "skills" / name / "SKILL.md").read_bytes())
@@ -29,6 +29,8 @@ class SkillDistributionTest(unittest.TestCase):
                     reference = installed.parent / "references" / ref
                     self.assertEqual(reference.read_bytes(), (ROOT / "skills" / name / "references" / ref).read_bytes())
                 self.assertIn("references/personalization.md", installed.read_text())
+                self.assertIn("references/updates.md", installed.read_text())
+                self.assertEqual((installed.parent / "scripts/skill_updates.py").read_bytes(), (ROOT / "scripts/skill_updates.py").read_bytes())
 
     def test_archives_are_reproducible(self):
         for name in SKILLS:

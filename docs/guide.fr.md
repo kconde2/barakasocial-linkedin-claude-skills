@@ -179,3 +179,12 @@ Dans Claude, télécharge le ZIP de la nouvelle version et remplace la version i
 ### Topic Finder : preview.12
 
 La preview.12 ajoute le parcours thèmes et public → idée ou objectif du post → traitement → sujets. Les grandes idées restent facultatives. Utilise le ZIP versionné indiqué ci-dessus. La mise à jour est manuelle et conserve le profil privé séparé du skill.
+
+
+## Contrôle partagé des mises à jour (candidate preview.14)
+
+La prochaine candidate locale ajoute un contrôle partagé toutes les 48 heures à l'utilisation si le client dispose de Python, du réseau et du stockage persistant autorisés. Le contrôle ne remplace rien. Une nouvelle version est proposée une fois ; son installation attend ton accord. Les préférences privées restent séparées.
+
+Sans accès à l'installation, l'assistant propose le ZIP officiel à importer manuellement. Sans stockage persistant, il limite les contrôles à la conversation. Les plugins gérés utilisent leur propre gestionnaire. Les anciennes installations nécessitent une première mise à jour manuelle pour recevoir ce mécanisme. La preview.14 n'est pas encore publiée ; les liens ci-dessus restent ceux des versions distribuées.
+
+Voir [le fonctionnement et la procédure de publication](decisions/003-skill-updates.fr.md). Aucun processus planifié en arrière-plan.

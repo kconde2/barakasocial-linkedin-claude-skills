@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "skills": {
+    "linkedin-topic-finder": {
+      "latest": "0.1.0-preview.12",
+      "releases": {
+        "0.1.0-preview.10": {
+          "url": "https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-topic-finder.zip",
+          "sha256": "743eef99c807a01dd9cd984e918e08be7faa3db72c99f83fa0e40adf0e8c7125",
+          "files": {
+            "SKILL.md": "7a46f5a7ae62de4f30219f349c5a2daf6c6126f5226563f0ab75e31a03bc3299",
+            "references/personalization.md": "632d4fa7cac4b5db9c48352ee6dc68785e3d7eb19a18b90660a8e44a0186991d",
+            "references/profile-schema.md": "219686ff84ca6967b802ca50b1ecf22925fb8960d2448db5b29c67336a80606b"
+          },
+          "notes": "Version publiée avant le contrôle partagé des mises à jour."
+        },
+        "0.1.0-preview.12": {
+          "url": "https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.12/linkedin-topic-finder.zip",
+          "sha256": "1298163bcf2d6d26893e1136f93c9bb1956ae7aac296d4d397c6809ad24c3d43",
+          "files": {
+            "SKILL.md": "41015337f6614aabd969cf0f2ec63cc4f4136f5c70aff70abdeb92d8c05fa070",
+            "references/personalization.md": "632d4fa7cac4b5db9c48352ee6dc68785e3d7eb19a18b90660a8e44a0186991d",
+            "references/profile-schema.md": "219686ff84ca6967b802ca50b1ecf22925fb8960d2448db5b29c67336a80606b"
+          },
+          "notes": "Version publiée avant le contrôle partagé des mises à jour."
+        }
+      }
+    },
+    "linkedin-hook-generator": {
+      "latest": "0.1.0-preview.10",
+      "releases": {
+        "0.1.0-preview.10": {
+          "url": "https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-hook-generator.zip",
+          "sha256": "c5d6554bda8c9bce5bcddfc53d930abdc42202141337bf8f074eef3ae9865f7b",
+          "files": {
+            "SKILL.md": "1156fd352b0e2abd16d2476212988fd633f2ba4d75629c324b0aa26e07d076e8",
+            "references/personalization.md": "632d4fa7cac4b5db9c48352ee6dc68785e3d7eb19a18b90660a8e44a0186991d",
+            "references/profile-schema.md": "219686ff84ca6967b802ca50b1ecf22925fb8960d2448db5b29c67336a80606b"
+          },
+          "notes": "Version publiée avant le contrôle partagé des mises à jour."
+        }
+      }
+    },
+    "linkedin-post-writer": {
+      "latest": "0.1.0-preview.10",
+      "releases": {
+        "0.1.0-preview.10": {
+          "url": "https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-post-writer.zip",
+          "sha256": "f1fcff9435f96339ef9d817900acaae2ae62013fcf7c024133e662ab20217083",
+          "files": {
+            "SKILL.md": "2bc419a7333129ca37d7b5f2e60ad1edc790ab97838a6cbe874afadd465834fb",
+            "references/personalization.md": "632d4fa7cac4b5db9c48352ee6dc68785e3d7eb19a18b90660a8e44a0186991d",
+            "references/profile-schema.md": "219686ff84ca6967b802ca50b1ecf22925fb8960d2448db5b29c67336a80606b"
+          },
+          "notes": "Version publiée avant le contrôle partagé des mises à jour."
+        }
+      }
+    },
+    "linkedin-post-analyzer": {
+      "latest": "0.1.0-preview.13",
+      "releases": {
+        "0.1.0-preview.10": {
+          "url": "https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-post-analyzer.zip",
+          "sha256": "9995cc1f7b7f2624a1903ef54afa02b1b58bda503f6d07845a074e0c81e4ad26",
+          "files": {
+            "SKILL.md": "6edde1ea88cb19588e2e92926bcc97d68f11f9560f1a8a2fd8a07f4fffe39f8d",
+            "references/personalization.md": "632d4fa7cac4b5db9c48352ee6dc68785e3d7eb19a18b90660a8e44a0186991d",
+            "references/profile-schema.md": "219686ff84ca6967b802ca50b1ecf22925fb8960d2448db5b29c67336a80606b"
+          },
+          "notes": "Version publiée avant le contrôle partagé des mises à jour."
+        },
+        "0.1.0-preview.13": {
+          "url": "https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.13/linkedin-post-analyzer.zip",
+          "sha256": "b4195fe406ff0e1cb4d444802e7f7cf4b5671fc4d901e0b541ad94496ef999fe",
+          "files": {
+            "SKILL.md": "8c413e8e741d57d7432143010096fea025b5f3cebc097bdae4538925a143f4df",
+            "references/personalization.md": "632d4fa7cac4b5db9c48352ee6dc68785e3d7eb19a18b90660a8e44a0186991d",
+            "references/profile-schema.md": "219686ff84ca6967b802ca50b1ecf22925fb8960d2448db5b29c67336a80606b"
+          },
+          "notes": "Version publiée avant le contrôle partagé des mises à jour."
+        }
+      }
+    },
+    "linkedin-profile-optimizer": {
+      "latest": "0.1.0-preview.10",
+      "releases": {
+        "0.1.0-preview.10": {
+          "url": "https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-profile-optimizer.zip",
+          "sha256": "52cf706f376636556d31156af6a2d61ccdfab944cf49d80509845b013e600638",
+          "files": {
+            "SKILL.md": "164e8b3d8877eb6700272de97881116458f49a5a699b6f0073f1955846533040",
+            "references/personalization.md": "632d4fa7cac4b5db9c48352ee6dc68785e3d7eb19a18b90660a8e44a0186991d",
+            "references/profile-schema.md": "219686ff84ca6967b802ca50b1ecf22925fb8960d2448db5b29c67336a80606b"
+          },
+          "notes": "Version publiée avant le contrôle partagé des mises à jour."
+        }
+      }
+    }
+  }
+}
