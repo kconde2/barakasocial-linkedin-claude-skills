@@ -12,9 +12,19 @@
             "scripts/skill_updates.py": "acb21858542b3d6cc642a027549d5442b0752de51b199385c12b6aa8507167b2"
           },
           "notes": "Recherche web de mèmes, aperçus et textes proposés. Montage du candidat choisi avec les outils disponibles. Cinq propositions par défaut."
+        },
+        "0.1.0-preview.16": {
+          "url": "https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.16/linkedin-image-finder.zip",
+          "sha256": "56bf064a5a7470e29f633d7940745a1550aaef727bbcd88b7630abde10aacc6f",
+          "files": {
+            "SKILL.md": "200f81d1815a1d2859149b6029909a85236b302b4545d61bd8da8f0f1d78a7eb",
+            "references/updates.md": "e9b37c0a06b48f540fcd22a8b9d4ec3793fc52854efd4c0b0bb7d4eca1aa4891",
+            "scripts/skill_updates.py": "acb21858542b3d6cc642a027549d5442b0752de51b199385c12b6aa8507167b2"
+          },
+          "notes": "Recherche web de mèmes, aperçus et textes proposés. Montage du candidat choisi avec les outils disponibles. Cinq propositions par défaut."
         }
       },
-      "latest": "0.1.0-preview.15"
+      "latest": "0.1.0-preview.16"
     },
     "linkedin-meme-finder": {
       "releases": {
@@ -27,9 +37,19 @@
             "scripts/skill_updates.py": "acb21858542b3d6cc642a027549d5442b0752de51b199385c12b6aa8507167b2"
           },
           "notes": "Recherche web de mèmes, aperçus et textes proposés. Montage du candidat choisi avec les outils disponibles. Cinq propositions par défaut."
+        },
+        "0.1.0-preview.16": {
+          "url": "https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.16/linkedin-meme-finder.zip",
+          "sha256": "7cece3dc6cea656142a8ae2277256f22c03f07bd32e229659be969f3ea104247",
+          "files": {
+            "SKILL.md": "7e06f232d8e596012e5b663df0deeeafa1e723edd776d355860ccb8b7daf7ca8",
+            "references/updates.md": "e9b37c0a06b48f540fcd22a8b9d4ec3793fc52854efd4c0b0bb7d4eca1aa4891",
+            "scripts/skill_updates.py": "acb21858542b3d6cc642a027549d5442b0752de51b199385c12b6aa8507167b2"
+          },
+          "notes": "Recherche web de mèmes, aperçus et textes proposés. Montage du candidat choisi avec les outils disponibles. Cinq propositions par défaut."
         }
       },
-      "latest": "0.1.0-preview.15"
+      "latest": "0.1.0-preview.16"
     }
   }
 }
