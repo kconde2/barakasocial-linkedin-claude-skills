@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "skills": {
+    "linkedin-image-finder": {
+      "releases": {
+        "0.1.0-preview.15": {
+          "url": "https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.15/linkedin-image-finder.zip",
+          "sha256": "854be494448d0ff1a44d5784e5f4500b14b78fb7438f49ffd3cfc413a3166fb1",
+          "files": {
+            "SKILL.md": "784cb8ab7c37f12b34b4eaf11079f92753685fced966f62f2f0103c518e3d021",
+            "references/updates.md": "e9b37c0a06b48f540fcd22a8b9d4ec3793fc52854efd4c0b0bb7d4eca1aa4891",
+            "scripts/skill_updates.py": "acb21858542b3d6cc642a027549d5442b0752de51b199385c12b6aa8507167b2"
+          },
+          "notes": "Recherche web de mèmes, aperçus et textes proposés. Montage du candidat choisi avec les outils disponibles. Cinq propositions par défaut."
+        }
+      },
+      "latest": "0.1.0-preview.15"
+    },
+    "linkedin-meme-finder": {
+      "releases": {
+        "0.1.0-preview.15": {
+          "url": "https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.15/linkedin-meme-finder.zip",
+          "sha256": "898c0a48bce7bb7355820db70de0508f0d4260704cf71e23c5272a5cec860d8c",
+          "files": {
+            "SKILL.md": "d3121a259b7872f1a9210ce89bf9307d7e9b46c36232e0fd449561634e099214",
+            "references/updates.md": "e9b37c0a06b48f540fcd22a8b9d4ec3793fc52854efd4c0b0bb7d4eca1aa4891",
+            "scripts/skill_updates.py": "acb21858542b3d6cc642a027549d5442b0752de51b199385c12b6aa8507167b2"
+          },
+          "notes": "Recherche web de mèmes, aperçus et textes proposés. Montage du candidat choisi avec les outils disponibles. Cinq propositions par défaut."
+        }
+      },
+      "latest": "0.1.0-preview.15"
+    }
+  }
+}
