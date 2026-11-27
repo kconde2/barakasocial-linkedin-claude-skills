@@ -6,10 +6,13 @@ Trouve des sujets précis et des angles pour ton public à partir d'une intentio
 
 **Prérequis :** ton contexte ou ta matière, complétés par quelques questions utiles si nécessaire. Aucun compte BarakaSocial obligatoire.
 
-[Installer](#install) · [Utiliser](#use) · [Exemples à copier](#examples) · [Personnaliser](#personalize)
+[Installer](#install) · [Mettre à jour](#update) · [Utiliser](#use) · [Exemples à copier](#examples) · [Personnaliser](#personalize)
 
 <a id="install"></a>
 ## Installer ce skill
+
+**Version distribuée : preview.12.** Elle contient le parcours thèmes → idée ou objectif du post → traitement → sujets. Importe le ZIP versionné ci-dessous dans Claude Desktop, depuis Customize > Skills. Le mode Code n'est pas nécessaire. Les installations existantes ne sont pas mises à jour automatiquement.
+
 
 Dans Claude Code ou Codex, copie cette demande :
 
@@ -23,10 +26,31 @@ compare son origine et son contenu avant de le remplacer.
 Conserve mes préférences personnelles et ma configuration MCP.
 ```
 
-**Dans Claude avec import ZIP :** télécharge le [ZIP preview.11](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.11/linkedin-topic-finder.zip) puis importe l'archive complète dans la gestion des skills. Elle contient `SKILL.md` et les 2 références communes. [Options d'installation](../../docs/guide.fr.md).
+**Dans Claude avec import ZIP :** télécharge le [ZIP preview.12](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.12/linkedin-topic-finder.zip) puis importe l'archive complète dans la gestion des skills. Elle contient `SKILL.md` et les 2 références communes. [Options d'installation](../../docs/guide.fr.md).
+
+<a id="update"></a>
+## Mettre à jour ce skill
+
+Si tu as installé le skill localement, copie cette demande dans Claude Code ou Codex.
+
+```text
+Mets à jour mon linkedin-topic-finder depuis la branche main.
+Dépôt : https://github.com/kconde2/barakasocial-linkedin-claude-skills
+Dossier source : skills/linkedin-topic-finder
+Identifie la copie installée. Si elle contient des modifications personnelles
+ou vient d'une autre source, montre-moi les différences et demande mon accord
+avant de la remplacer. Si les fichiers sont déjà identiques, dis-le-moi.
+Sinon, mets à jour le même dossier avec SKILL.md et tout references/.
+Conserve mon profil éditorial, mes préférences et ma configuration MCP.
+Indique la version installée.
+```
+
+Si ton skill est synchronisé depuis Claude.ai, mets à jour l'original dans Claude avec le ZIP indiqué plus haut. [Comment Claude synchronise les skills](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
 <a id="use"></a>
 ## Utiliser le skill
+
+Lance `/linkedin-topic-finder` seul pour choisir ton point de départ. Tu peux explorer sans idée précise, partir d'un thème ou de notes ou choisir un objectif pour un post ou une campagne. Le skill pose les questions utiles puis te laisse ajuster les critères, les sources, les mots à utiliser souvent et le format. Pour un tableau, tu peux choisir la disposition ou laisser le skill décider. Tu peux aussi donner une demande prête à exécuter.
 
 ```text
 Utilise linkedin-topic-finder. Je parle aux dirigeants de petites agences.
@@ -41,6 +65,25 @@ Que tu apportes un sujet ou choisisses un ID proposé, l'assistant reprend ce qu
 Choisis un sujet puis demande sa rédaction. Si `linkedin-post-writer` est disponible, il reprend les mêmes décisions sans recommencer les questions. Sinon, l'assistant peut rédiger à partir du brief sur demande. Choisir un sujet seul ne déclenche pas l'écriture.
 
 Le skill peut aussi t'aider à définir le monde de tes lecteurs et proposer de conserver ce contexte dans ton profil privé partagé. Il réutilise ce qu'il sait déjà et distingue les observations des hypothèses. [Voir la sauvegarde et le profil partagé](../../docs/guide.fr.md#construire-et-conserver-le-contexte-partagé).
+
+## Partir de tes thèmes sans remplir une stratégie
+
+Les thèmes et le public sont tes repères. L'objectif peut changer pour chaque post. Le skill peut t'aider à définir tes grandes idées, mais ne l'impose pas avant les sujets. Il réutilise le contexte et propose des pistes si tu ne sais pas encore préciser ton public. Les questions utilisent les contrôles natifs uniquement s'ils sont disponibles, sinon le chat.
+
+```text
+Utilise linkedin-topic-finder. Mon thème est [thème] et mon public est [public].
+Voici mon idée : [idée ou observation]. Pour ce post, je veux [objectif].
+Aide-moi à la préciser et propose un traitement adapté à ma matière.
+Ne me demande pas de définir une stratégie globale ou des messages centraux.
+```
+
+```text
+Je n'ai pas d'idée. Dans le thème [thème], aide-moi à trouver des sujets
+pour [public] afin de [objectif de ce post]. Voici ce que je peux apporter :
+[matière]. Si une précision est indispensable, pose une question.
+```
+
+Pour revenir sur une grande idée, demande un nouvel exemple, une objection ou une démonstration. Le skill vérifie l'apport différent dans les contenus accessibles. Il ne promet pas une nouveauté absolue ni une performance.
 
 <a id="examples"></a>
 ## Demandes prêtes à copier

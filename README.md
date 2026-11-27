@@ -26,7 +26,7 @@ The analyzer uses BarakaSocial's current criteria and score calculation. A score
 2. Copy its **Install this skill** request into Claude Code or Codex.
 3. Try the usage example on that same page with your own material.
 
-**Using Claude with ZIP import?** Download [Topic Finder preview.11](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.11/linkedin-topic-finder.zip) or find the other skill ZIPs in the [installation guide](docs/guide.md).
+**Using Claude with ZIP import?** Download [Topic Finder preview.12](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.12/linkedin-topic-finder.zip) or find the other skill ZIPs in the [installation guide](docs/guide.md).
 
 ## Personalization
 
@@ -43,3 +43,8 @@ Tell the assistant your audience, tone and preferences. It asks only for what is
 - [Testing and contributing](docs/contributing.md): evaluation cases and ZIP packaging.
 
 Built by [BarakaSocial](https://barakasocial.com). Free under the [MIT license](LICENSE). Independent of Anthropic and LinkedIn.
+
+
+### Topic Finder: preview.12
+
+Preview.12 adds themes and audience → idea or post outcome → treatment → topics. Recurring ideas remain optional. Use the versioned ZIP linked above. Updates are manual and keep the private profile separate from the skill.

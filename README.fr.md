@@ -26,7 +26,7 @@ L'analyse utilise les critères actuels et le calcul du score de BarakaSocial. U
 2. Copie sa demande **Installer ce skill** dans Claude Code ou Codex.
 3. Essaie l'exemple de cette même fiche avec ta propre matière.
 
-**Tu utilises Claude avec import ZIP ?** Télécharge le [Topic Finder preview.11](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.11/linkedin-topic-finder.zip) ou retrouve les ZIP des autres skills dans le [guide d'installation](docs/guide.fr.md).
+**Tu utilises Claude avec import ZIP ?** Télécharge le [Topic Finder preview.12](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.12/linkedin-topic-finder.zip) ou retrouve les ZIP des autres skills dans le [guide d'installation](docs/guide.fr.md).
 
 ## Personnalisation
 
@@ -43,3 +43,8 @@ Indique ton public, ton ton et tes préférences. L'assistant demande seulement 
 - [Tests et contribution](docs/contributing.fr.md) : cas de recette et fabrication des ZIP.
 
 Créé par [BarakaSocial](https://barakasocial.com). Gratuit sous [licence MIT](LICENSE). Indépendant d'Anthropic et de LinkedIn.
+
+
+### Topic Finder : preview.12
+
+La preview.12 ajoute le parcours thèmes et public → idée ou objectif du post → traitement → sujets. Les grandes idées restent facultatives. Utilise le ZIP versionné indiqué ci-dessus. La mise à jour est manuelle et conserve le profil privé séparé du skill.

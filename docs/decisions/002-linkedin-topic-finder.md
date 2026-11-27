@@ -61,3 +61,29 @@ The user requested explicit definitions and composable formulas before further c
 - [x] Validate the follow-up framing with Kaba.
 - [x] Implement the approved schema, context reuse, inference boundaries and save offer.
 - [x] Record independent end-to-end and persistence trials in [reader-world results](../../tests/reader-world-smoke-results.md), including actual files and limits.
+
+## Follow-up: guided search at launch
+
+The Prompt Assistant form (`feat/prompt-assistant`, decision 036) provides the settings model. The skill uses those choices in conversation and asks questions in the order needed by the current request.
+
+| Réf. | Question | Proposition | Décision |
+| --- | --- | --- | --- |
+| Q11 | ~~What happens when the user launches the skill alone?~~ | P1: ask where the user wants to start and wait for the answer. Use known context for suggestions after that choice. | Requested after the skill began searching from previous account context on a bare invocation. |
+| Q12 | ~~What can the user configure before searching?~~ | P1: follow the selected path, then show a short review. Let the user adjust criteria, desired responses, sources and output. A complete request can go straight to results. | Requested as a guided flow based on the Prompt Assistant. Questions use available client controls with a chat fallback. |
+| Q13 | ~~Should the other Prompt Assistant settings be available during adjustment?~~ | P1: accept optional preferred words or phrases and offer automatic table layout alongside manual horizontal and vertical choices. | Added to the guided flow. Preferred wording follows the material and automatic layout keeps the requested fields readable. |
+
+
+## 27 November 2026: themes and purpose per post
+
+Kaba explicitly requested implementation after clarifying the interactive method. Keep local preview.12, which was already in progress; publication remains separate.
+
+| Réf. | Question | Proposition | Décision |
+| --- | --- | --- | --- |
+| Q14 | ~~Must central messages precede every topic search?~~ | P1: help define them when useful, but use themes/audience and an idea or this post's outcome as entry points. | Approved in the implementation request. No mandatory central-message setup or global goal. |
+| Q15 | ~~How should treatments and repetition work?~~ | P1: choose a supported treatment and revisit ideas only with a different contribution. | Implemented: opinion, explanation, method, demonstration, comparison, experience, objection or belief to examine. |
+
+- [x] Update the skill, bilingual topic pages, catalogues, guides and working map.
+- [x] Keep existing shared references unchanged; themes use optional pillars and viewpoints use the existing sourced perspective entries. One-post choices remain temporary.
+- [ ] Validate behavior in the customer's Claude Desktop session, including actual native question controls and writer handoff.
+
+Publication and installation are separate from source edits. Do not label a download or connector connection as verified skill installation.

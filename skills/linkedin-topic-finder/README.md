@@ -6,10 +6,13 @@ Find concrete topics and angles for your readers from an intention, a theme, not
 
 **Requires:** your context or material, completed through a few useful questions if needed. No BarakaSocial account required.
 
-[Install](#install) · [Use](#use) · [Copyable examples](#examples) · [Personalize](#personalize)
+[Install](#install) · [Update](#update) · [Use](#use) · [Copyable examples](#examples) · [Personalize](#personalize)
 
 <a id="install"></a>
 ## Install this skill
+
+**Distributed version: preview.12.** It includes themes → idea or post outcome → treatment → topics. Import the versioned ZIP below in Claude Desktop through Customize > Skills. Code mode is not required. Existing installations are not automatically updated.
+
 
 In Claude Code or Codex, copy this request:
 
@@ -23,10 +26,30 @@ compare its origin and contents before replacing it.
 Preserve my personal preferences and MCP configuration.
 ```
 
-**In Claude with ZIP import:** download the [preview.11 ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.11/linkedin-topic-finder.zip) and upload the complete archive through skill management. It contains `SKILL.md` and the 2 shared references. [Installation options](../../docs/guide.md).
+**In Claude with ZIP import:** download the [preview.12 ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.12/linkedin-topic-finder.zip) and upload the complete archive through skill management. It contains `SKILL.md` and the 2 shared references. [Installation options](../../docs/guide.md).
+
+<a id="update"></a>
+## Update this skill
+
+If you installed the skill locally, copy this request into Claude Code or Codex:
+
+```text
+Update my existing linkedin-topic-finder from main.
+Repository: https://github.com/kconde2/barakasocial-linkedin-claude-skills
+Source folder: skills/linkedin-topic-finder
+Check which copy is installed. If it has personal edits or comes from a different
+source, show me the differences and ask before replacing it. If the files
+already match, tell me. Otherwise update the existing skill folder with
+SKILL.md and all of references/. Preserve my editorial profile, personal
+preferences and MCP configuration. Tell me the installed version.
+```
+
+If your skill is synced from Claude.ai, update the original in Claude with the ZIP linked above. [How Claude syncs skills](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
 <a id="use"></a>
 ## Use the skill
+
+Run `/linkedin-topic-finder` by itself to start with a choice. Explore from scratch, bring a theme or notes, or choose an outcome for a post or campaign. The skill asks questions for the path you choose, then lets you adjust the criteria, sources, preferred wording and output. For tables, you can pick a layout or let the skill choose. You can also give a ready-to-run request:
 
 ```text
 Use linkedin-topic-finder. I write for small-agency leaders.
@@ -41,6 +64,25 @@ Whether you bring a topic or choose a proposed ID, the assistant reuses what you
 Choose a topic, then ask to write it. If `linkedin-post-writer` is available, it receives the same decisions without another discovery questionnaire. Otherwise, the assistant can draft from the brief when requested. Selecting a topic alone does not start writing.
 
 The skill can also help define your readers' world and offer to retain it in your shared private profile. It reuses known context and distinguishes observations from hypotheses. [See shared context and saving](../../docs/guide.md#build-and-retain-shared-context).
+
+## Start from your themes without a strategy form
+
+Themes and audience are reusable context. Each post can have its own purpose. The skill can help articulate recurring ideas, but does not require central messages before topics. It reuses context and helps narrow an uncertain audience. Native question controls are used only when available, otherwise questions stay in chat.
+
+```text
+Use linkedin-topic-finder. My theme is [theme] and my readers are [audience].
+Here is my idea: [idea or observation]. For this post I want [outcome].
+Help me sharpen it and suggest a treatment supported by my material.
+Do not require a global strategy or central messages.
+```
+
+```text
+I have no idea. Within [theme], help me find topics for [audience]
+to [outcome of this post]. Here is what I can contribute: [material].
+Ask a question if an essential detail is missing.
+```
+
+To revisit a recurring idea, ask for a new example, objection or demonstration. The skill checks for a different contribution in accessible content without promising complete novelty or performance.
 
 <a id="examples"></a>
 ## Ready-to-copy requests

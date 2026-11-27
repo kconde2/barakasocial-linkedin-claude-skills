@@ -172,3 +172,20 @@ Exemple fictif de fonctionnement, sans lien avec un client réel.
 Le [compte rendu des essais](../../tests/reader-world-smoke-results.md) décrit un parcours en 3 tours : contexte connu, choix et matière fournie, rédaction puis acceptation de la sauvegarde. Un autre agent a relu un profil synthétique enregistré pour rédiger sans reprendre l'entretien. Les fichiers produits ont été inspectés.
 
 La conservation des champs existants et le rejeu identique ont aussi été vérifiés sur un profil temporaire. Ce rejeu utilisait la même fonction de test créée par l'agent ; il ne prouve pas une idempotence universelle de tous les modèles. Les essais humains, les connexions réelles et les comparaisons de qualité restent à faire.
+
+
+## Mise à jour du 27 novembre 2026 : les thèmes comme repères
+
+Pour la preview.12, la direction peut commencer par un public et des thèmes/sous-thèmes. Un objectif global et des messages centraux ne sont pas des prérequis. Chaque post peut avoir son propre objectif. Cette précision remplace toute lecture obligatoire de la formule « Direction éditoriale » plus haut.
+
+```text
+PUBLIC + THÈMES / SOUS-THÈMES
+        |
+IDÉE APPORTÉE OU RECHERCHE DANS UN THÈME OU OBJECTIF DU POST
+        |
+SUJET PRÉCIS + TRAITEMENT ADAPTÉ + MATIÈRE
+        |
+BRIEF TRANSMIS AU WRITER
+```
+
+Une opinion est un traitement, pas un thème. Une croyance à examiner demande une formulation observée ou une hypothèse explicite et un appui pour la discuter. Les grandes idées peuvent se préciser avec l'auteur puis être reprises sous un autre angle. Elles ne bloquent pas le premier sujet. Une idée hors thème peut être une exploration ponctuelle sans modifier le profil. Les mots du lecteur ne se confondent pas avec les mots préférés de l'auteur.

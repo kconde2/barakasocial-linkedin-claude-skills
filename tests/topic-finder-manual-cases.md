@@ -4,6 +4,10 @@ Run from the installed package with synthetic material, no live account and a se
 
 | Case | Input | Observable check |
 | --- | --- | --- |
+| Bare launch with rich context | Earlier discussion has a known audience, a campaign, published posts and a pending save. Next input is only `/linkedin-topic-finder`. | First response asks which path to take. No candidates, account calls or continuation of the previous task. |
+| Guided campaign and revision | Choose Campaign after a bare launch. Supply an offer and goal while leaving proof unspecified. Ask to use a vertical table and aim for discussions. | Asks about gaps that matter to the offer, accepts the changes and carries the selected audience and offer through to the final topics after confirmation. No drafts unless requested. |
+| Complete request from Prompt Assistant | Request 3 new, recognizable topics for freelancers, grounded in supplied examples, in a vertical table. | Delivers the requested results with the criteria applied and skips the launch question. |
+| Preferred wording and automatic layout | Choose Adjust. Add "mission", "TJM" and "CDI" for a search grounded only in freelance rate negotiations. Delegate the table layout and keep the existing criteria. | Shows both new settings in the review and keeps the other choices. On launch, selects a readable layout, keeps the requested fields and uses relevant terms without forcing CDI into the topics. |
 | No idea | Author, audience and goal known, no material | Asks for a useful source of material; no invented personal story or repeated setup. |
 | Theme only | AI for agency leaders, no evidence supplied | Concrete research leads with gaps, not asserted client events or a list of abstract categories. |
 | Shared scene | A hypothetical negotiation in generic "you" | Illustration stays illustrative, no claim the author experienced it. |
@@ -37,3 +41,18 @@ Run from the installed package with synthetic material, no live account and a se
 | Neutral explanation | Explicit request to explain a documented concept neutrally | Does not require personal experience, feelings, a strong opinion, or a sales goal. |
 
 For a quality comparison, give the same raw material to writer-only and finder-plus-writer runs. Hide their origin and vary presentation order for human review of relevance, fidelity, voice, emotional effect and revision effort. This comparison remains to be run with human readers.
+
+
+## Preview.12: themes and purpose per post (prepared, not executed)
+
+| Case | Input | Observable check |
+| --- | --- | --- |
+| Theme and complete idea | AI / AI-assisted development; tech leads; observed generated code with no tests; ask for 2 opinion angles to build credibility. | Delivers scoped angles without global strategy or central-message setup; no invented outcome or personal conviction. |
+| Outcome without idea | Training provider wants one post explaining an existing course to junior managers; curriculum supplied. | Suggests supported topics, does not require a campaign, testimonials or a sales funnel. |
+| Unknown reader | Consultant knows their service but says they do not know whom to address. | Offers provisional reader choices grounded in supplied service, waits for choice rather than fabricating a settled audience. |
+| New purpose | Previous goal was credibility; now ask to explain an offer for this post only. | Changes this brief without overwriting persistent goal or redoing setup. |
+| Recurring idea | Same takeaway with a newly supplied demonstration and one older post. | Allows a new contribution, avoids duplicate variants and does not claim knowledge of unavailable posts. |
+| Belief without evidence | Ask to break the belief that everyone thinks AI replaces all developers; no source supplied. | Does not assert universal belief or manufacture a quote; narrows or asks for support. |
+| Outside theme | Existing theme is software; user brings a gardening observation. | Flags fit if relevant, permits an explicit one-off without silently changing the profile. |
+| Requested recurring ideas | User explicitly asks for help defining their main messages. | Helps formulate and confirm them, no forced count or automatic persistence. |
+| Writer handoff | Select a topic, then ask to write. | Preserves reader, theme, per-post purpose, treatment and evidence without repeating the interview. |

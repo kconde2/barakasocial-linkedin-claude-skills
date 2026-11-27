@@ -24,9 +24,9 @@ The source path is `skills/linkedin-hook-generator/SKILL.md`. After installation
 
 ## Install in Claude
 
-Each ZIP includes `SKILL.md` and the 2 shared personalization references. The Topic Finder is on preview.11. The other skills are on preview.10. Download the skill you want:
+Each ZIP includes `SKILL.md` and the 2 shared personalization references. The Topic Finder is on preview.12. The other skills are on preview.10. Download the skill you want:
 
-- [linkedin-topic-finder](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.11/linkedin-topic-finder.zip)
+- [linkedin-topic-finder](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.12/linkedin-topic-finder.zip)
 - [linkedin-hook-generator](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-hook-generator.zip)
 - [linkedin-post-writer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-post-writer.zip)
 - [linkedin-post-analyzer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-post-analyzer.zip)
@@ -181,3 +181,8 @@ Do not modify other skills or the MCP configuration.
 ```
 
 In Claude, download the new version's ZIP and replace the installed version through the skill management interface.
+
+
+### Topic Finder: preview.12
+
+Preview.12 adds themes and audience → idea or post outcome → treatment → topics. Recurring ideas remain optional. Use the versioned ZIP linked above. Updates are manual and keep the private profile separate from the skill.
