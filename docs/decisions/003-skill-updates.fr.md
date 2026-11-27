@@ -1,6 +1,6 @@
 # 003. Mise à jour proposée à l'utilisation des skills
 
-Statut : parcours et implémentation validés par Kaba le 27 novembre 2026. Délai retenu : 48 heures. Implémentation locale préparée en preview.14 ; publication et essais dans les clients restent distincts.
+Statut : parcours et implémentation validés par Kaba le 27 novembre 2026. Délai retenu : 48 heures. Preview.14 publiée avec cinq ZIP vérifiés. Les essais interactifs dans les clients restent distincts.
 
 ## Décisions retenues
 
@@ -32,7 +32,7 @@ La vérification des empreintes contrôle la cohérence avec le catalogue offici
 5. Vérifier les téléchargements publiés avec scripts/build_update_catalog.py --verify-published --output updates.json.
 6. Publier ce catalogue seulement après la réussite de cette vérification puis aligner les fiches du site.
 
-Le catalogue actuel conserve les versions déjà publiées (10, 12 et 13 selon le skill). La candidate 14 reste dans dist/updates.json tant que ses ZIP ne sont pas publiés. Aucune installation automatique depuis la branche main.
+Le catalogue conserve les versions 10, 12 et 13 selon le skill et propose désormais la version 14 pour les cinq skills après vérification des ZIP publiés. Aucune installation automatique depuis la branche main.
 
 ## Validation et limites
 
@@ -46,4 +46,4 @@ La publication initiale nécessite une installation manuelle de la preview.14 : 
 - [ ] Tester le parcours interactif dans une nouvelle session Claude Code et Codex avec un environnement de test.
 - [ ] Tester le secours sans installation accessible dans Claude Chat ou ChatGPT.
 - [ ] Vérifier le verrou Windows sur Windows (les essais locaux portent sur macOS).
-- [ ] Publier preview.14 puis son catalogue après validation.
+- [x] Publier preview.14 puis son catalogue après validation de Kaba et vérification des cinq archives distantes.

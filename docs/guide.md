@@ -24,13 +24,13 @@ The source path is `skills/linkedin-hook-generator/SKILL.md`. After installation
 
 ## Install in Claude
 
-Each ZIP includes `SKILL.md` and the 2 shared personalization references. The Topic Finder is on preview.12. The Post Analyzer is on preview.13. The other skills are on preview.10. Download the skill you want:
+Each ZIP includes `SKILL.md` with three shared references and the update helper. All five skills are on preview.14. Download the skill you want:
 
-- [linkedin-topic-finder](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.12/linkedin-topic-finder.zip)
-- [linkedin-hook-generator](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-hook-generator.zip)
-- [linkedin-post-writer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-post-writer.zip)
-- [linkedin-post-analyzer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.13/linkedin-post-analyzer.zip)
-- [linkedin-profile-optimizer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-profile-optimizer.zip)
+- [linkedin-topic-finder](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-topic-finder.zip)
+- [linkedin-hook-generator](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-hook-generator.zip)
+- [linkedin-post-writer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-post-writer.zip)
+- [linkedin-post-analyzer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-post-analyzer.zip)
+- [linkedin-profile-optimizer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-profile-optimizer.zip)
 
 To build a ZIP from source, see the [contribution guide](contributing.md).
 
@@ -86,7 +86,7 @@ For a campaign, ask for complementary subjects around your offer and audience. N
 
 ## Write a complete post
 
-Download the [linkedin-post-writer preview.10 ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-post-writer.zip) to try it.
+Download the [linkedin-post-writer preview.14 ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-post-writer.zip) to try it.
 
 ```text
 Use linkedin-post-writer. Write one post for freelance designers.
@@ -101,7 +101,7 @@ When the material would produce a generic text, it explains what is missing and 
 
 ## Analyze a post
 
-`linkedin-post-analyzer` requires the BarakaSocial MCP. Without the required tools or access, it explains what is missing and stops instead of inventing an official score. Download the [linkedin-post-analyzer preview.13 ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.13/linkedin-post-analyzer.zip) to try it.
+`linkedin-post-analyzer` requires the BarakaSocial MCP. Without the required tools or access, it explains what is missing and stops instead of inventing an official score. Download the [linkedin-post-analyzer preview.14 ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-post-analyzer.zip) to try it.
 
 ```text
 Use linkedin-post-analyzer. Analyze this draft without saving anything.
@@ -188,10 +188,10 @@ In Claude, download the new version's ZIP and replace the installed version thro
 Preview.12 adds themes and audience → idea or post outcome → treatment → topics. Recurring ideas remain optional. Use the versioned ZIP linked above. Updates are manual and keep the private profile separate from the skill.
 
 
-## Shared update checks (preview.14 candidate)
+## Shared update checks (preview.14)
 
-The next local candidate adds one shared update check per 48 hours when a skill is used in a client with permitted Python, network and persistent filesystem access. Checks do not install anything. A new version is offered once; replacement requires your approval. Private preferences remain separate.
+Preview.14 adds one shared update check per 48 hours when a skill is used in a client with permitted Python, network and persistent filesystem access. Checks do not install anything. A new version is offered once; replacement requires your approval. Private preferences remain separate.
 
-Without filesystem access, the assistant can offer the official ZIP for manual import and only deduplicate checks within the conversation. Managed plugins use their own updater. Existing installations need a first manual upgrade to acquire this helper. Preview.14 is not yet published; the download links above still refer to the released versions.
+Without filesystem access, the assistant can offer the official ZIP for manual import and only deduplicate checks within the conversation. Managed plugins use their own updater. Existing installations need a first manual upgrade to acquire this helper. Preview.14 is published; use the versioned download links above.
 
 See [the update implementation and publication procedure](decisions/003-skill-updates.fr.md). No background scheduler is installed.

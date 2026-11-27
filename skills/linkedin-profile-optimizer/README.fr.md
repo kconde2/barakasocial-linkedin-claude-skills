@@ -23,7 +23,7 @@ compare son origine et son contenu avant de le remplacer.
 Conserve mes préférences personnelles et ma configuration MCP.
 ```
 
-**Dans Claude avec import ZIP :** télécharge le [ZIP preview.10](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-profile-optimizer.zip) puis importe l'archive complète dans la gestion des skills. Elle contient `SKILL.md` et les 2 références communes. [Options d'installation](../../docs/guide.fr.md).
+**Dans Claude avec import ZIP :** télécharge le [ZIP preview.14](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-profile-optimizer.zip) puis importe l'archive complète dans la gestion des skills. Elle contient `SKILL.md` avec trois références communes et le script de mise à jour. [Options d'installation](../../docs/guide.fr.md).
 
 Une carte du client qui ne prend en charge que `SKILL.md` ne peut pas installer ce paquet complet. Utilise le ZIP ou un client avec accès aux fichiers. Le dossier `references/` ne doit pas être omis.
 

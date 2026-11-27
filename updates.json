@@ -2,7 +2,7 @@
   "schema_version": 1,
   "skills": {
     "linkedin-topic-finder": {
-      "latest": "0.1.0-preview.12",
+      "latest": "0.1.0-preview.14",
       "releases": {
         "0.1.0-preview.10": {
           "url": "https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-topic-finder.zip",
@@ -23,11 +23,23 @@
             "references/profile-schema.md": "219686ff84ca6967b802ca50b1ecf22925fb8960d2448db5b29c67336a80606b"
           },
           "notes": "Version publiée avant le contrôle partagé des mises à jour."
+        },
+        "0.1.0-preview.14": {
+          "url": "https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-topic-finder.zip",
+          "sha256": "7e8462fca0351f93a5c8229a35e0b1a430114b501c0c6a84252d8c26914cb60d",
+          "files": {
+            "SKILL.md": "b311a2da9f33e1cf00f25346690032628efc97256dee80f6419784ddfc43815b",
+            "references/personalization.md": "632d4fa7cac4b5db9c48352ee6dc68785e3d7eb19a18b90660a8e44a0186991d",
+            "references/profile-schema.md": "219686ff84ca6967b802ca50b1ecf22925fb8960d2448db5b29c67336a80606b",
+            "references/updates.md": "f7a4af76603d77b3a54b973ced1676718f69440b2ffeef9a10f3542dca4e09c3",
+            "scripts/skill_updates.py": "a7d3bed5c390636a5a11a9036323bb65c27fcffe18c94f0cd15616e32edb9a4b"
+          },
+          "notes": "Contrôle partagé des mises à jour toutes les 48 heures. Installation après accord avec vérification et sauvegarde."
         }
       }
     },
     "linkedin-hook-generator": {
-      "latest": "0.1.0-preview.10",
+      "latest": "0.1.0-preview.14",
       "releases": {
         "0.1.0-preview.10": {
           "url": "https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-hook-generator.zip",
@@ -38,11 +50,23 @@
             "references/profile-schema.md": "219686ff84ca6967b802ca50b1ecf22925fb8960d2448db5b29c67336a80606b"
           },
           "notes": "Version publiée avant le contrôle partagé des mises à jour."
+        },
+        "0.1.0-preview.14": {
+          "url": "https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-hook-generator.zip",
+          "sha256": "22b38cfee809d590d8e0dd1eb9b910be44a59253f6a9bf99676aa2fd9635c6fb",
+          "files": {
+            "SKILL.md": "21f797aa5adcd82beaf99f35f377b667840fb7d2bdfb025933475cbc9a2869cd",
+            "references/personalization.md": "632d4fa7cac4b5db9c48352ee6dc68785e3d7eb19a18b90660a8e44a0186991d",
+            "references/profile-schema.md": "219686ff84ca6967b802ca50b1ecf22925fb8960d2448db5b29c67336a80606b",
+            "references/updates.md": "f7a4af76603d77b3a54b973ced1676718f69440b2ffeef9a10f3542dca4e09c3",
+            "scripts/skill_updates.py": "a7d3bed5c390636a5a11a9036323bb65c27fcffe18c94f0cd15616e32edb9a4b"
+          },
+          "notes": "Contrôle partagé des mises à jour toutes les 48 heures. Installation après accord avec vérification et sauvegarde."
         }
       }
     },
     "linkedin-post-writer": {
-      "latest": "0.1.0-preview.10",
+      "latest": "0.1.0-preview.14",
       "releases": {
         "0.1.0-preview.10": {
           "url": "https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-post-writer.zip",
@@ -53,11 +77,23 @@
             "references/profile-schema.md": "219686ff84ca6967b802ca50b1ecf22925fb8960d2448db5b29c67336a80606b"
           },
           "notes": "Version publiée avant le contrôle partagé des mises à jour."
+        },
+        "0.1.0-preview.14": {
+          "url": "https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-post-writer.zip",
+          "sha256": "a2061f846882e45ce63c58ec5ab4c1c6cebd7a5477d284aea08189cfff640ba3",
+          "files": {
+            "SKILL.md": "d9c6b3b5ccfacafdf8cffad49956aa78ea3a1e394297a24d576ac912644e3280",
+            "references/personalization.md": "632d4fa7cac4b5db9c48352ee6dc68785e3d7eb19a18b90660a8e44a0186991d",
+            "references/profile-schema.md": "219686ff84ca6967b802ca50b1ecf22925fb8960d2448db5b29c67336a80606b",
+            "references/updates.md": "f7a4af76603d77b3a54b973ced1676718f69440b2ffeef9a10f3542dca4e09c3",
+            "scripts/skill_updates.py": "a7d3bed5c390636a5a11a9036323bb65c27fcffe18c94f0cd15616e32edb9a4b"
+          },
+          "notes": "Contrôle partagé des mises à jour toutes les 48 heures. Installation après accord avec vérification et sauvegarde."
         }
       }
     },
     "linkedin-post-analyzer": {
-      "latest": "0.1.0-preview.13",
+      "latest": "0.1.0-preview.14",
       "releases": {
         "0.1.0-preview.10": {
           "url": "https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-post-analyzer.zip",
@@ -78,11 +114,23 @@
             "references/profile-schema.md": "219686ff84ca6967b802ca50b1ecf22925fb8960d2448db5b29c67336a80606b"
           },
           "notes": "Version publiée avant le contrôle partagé des mises à jour."
+        },
+        "0.1.0-preview.14": {
+          "url": "https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-post-analyzer.zip",
+          "sha256": "14ab7588fadb3d1bdf219d9421b3cf02f9b5be9be4bd59a22e08d1694e6f27c0",
+          "files": {
+            "SKILL.md": "a4a9e89f434fe11765f207b72812ec7a40077fc35da7c9e979fe1f007174e76b",
+            "references/personalization.md": "632d4fa7cac4b5db9c48352ee6dc68785e3d7eb19a18b90660a8e44a0186991d",
+            "references/profile-schema.md": "219686ff84ca6967b802ca50b1ecf22925fb8960d2448db5b29c67336a80606b",
+            "references/updates.md": "f7a4af76603d77b3a54b973ced1676718f69440b2ffeef9a10f3542dca4e09c3",
+            "scripts/skill_updates.py": "a7d3bed5c390636a5a11a9036323bb65c27fcffe18c94f0cd15616e32edb9a4b"
+          },
+          "notes": "Contrôle partagé des mises à jour toutes les 48 heures. Installation après accord avec vérification et sauvegarde."
         }
       }
     },
     "linkedin-profile-optimizer": {
-      "latest": "0.1.0-preview.10",
+      "latest": "0.1.0-preview.14",
       "releases": {
         "0.1.0-preview.10": {
           "url": "https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-profile-optimizer.zip",
@@ -93,6 +141,18 @@
             "references/profile-schema.md": "219686ff84ca6967b802ca50b1ecf22925fb8960d2448db5b29c67336a80606b"
           },
           "notes": "Version publiée avant le contrôle partagé des mises à jour."
+        },
+        "0.1.0-preview.14": {
+          "url": "https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-profile-optimizer.zip",
+          "sha256": "aeec650966277cdab940685b9e17436c72e7783a98ef37672693a6735c43fdca",
+          "files": {
+            "SKILL.md": "a7f58bfd6f9c1d0db959124946c478062ff1c04d5072792f6da8409f294c4dae",
+            "references/personalization.md": "632d4fa7cac4b5db9c48352ee6dc68785e3d7eb19a18b90660a8e44a0186991d",
+            "references/profile-schema.md": "219686ff84ca6967b802ca50b1ecf22925fb8960d2448db5b29c67336a80606b",
+            "references/updates.md": "f7a4af76603d77b3a54b973ced1676718f69440b2ffeef9a10f3542dca4e09c3",
+            "scripts/skill_updates.py": "a7d3bed5c390636a5a11a9036323bb65c27fcffe18c94f0cd15616e32edb9a4b"
+          },
+          "notes": "Contrôle partagé des mises à jour toutes les 48 heures. Installation après accord avec vérification et sauvegarde."
         }
       }
     }

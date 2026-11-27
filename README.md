@@ -26,7 +26,7 @@ The analyzer uses BarakaSocial's current criteria and score calculation. A score
 2. Copy its **Install this skill** request into Claude Code or Codex.
 3. Try the usage example on that same page with your own material.
 
-**Using Claude with ZIP import?** Download [Topic Finder preview.12](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.12/linkedin-topic-finder.zip) or find the other skill ZIPs in the [installation guide](docs/guide.md).
+**Using Claude with ZIP import?** Download [Topic Finder preview.14](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-topic-finder.zip) or find the other skill ZIPs in the [installation guide](docs/guide.md).
 
 ## Personalization
 

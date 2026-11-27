@@ -24,13 +24,13 @@ Le chemin source est `skills/linkedin-hook-generator/SKILL.md`. Après installat
 
 ## Installer dans Claude
 
-Chaque ZIP contient `SKILL.md` et les 2 références de personnalisation communes. Le Topic Finder est en preview.12. Le Post Analyzer est en preview.13. Les autres skills sont en preview.10. Télécharge le skill souhaité :
+Chaque ZIP contient `SKILL.md` avec trois références communes et le script de mise à jour. Les cinq skills sont en preview.14. Télécharge le skill souhaité :
 
-- [linkedin-topic-finder](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.12/linkedin-topic-finder.zip)
-- [linkedin-hook-generator](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-hook-generator.zip)
-- [linkedin-post-writer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-post-writer.zip)
-- [linkedin-post-analyzer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.13/linkedin-post-analyzer.zip)
-- [linkedin-profile-optimizer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-profile-optimizer.zip)
+- [linkedin-topic-finder](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-topic-finder.zip)
+- [linkedin-hook-generator](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-hook-generator.zip)
+- [linkedin-post-writer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-post-writer.zip)
+- [linkedin-post-analyzer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-post-analyzer.zip)
+- [linkedin-profile-optimizer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-profile-optimizer.zip)
 
 Pour construire un ZIP depuis les sources, consulte le [guide de contribution](contributing.fr.md).
 
@@ -79,7 +79,7 @@ Pour une campagne, demande des sujets complémentaires autour de ton offre et de
 
 ## Rédiger un post complet
 
-Télécharge le [ZIP linkedin-post-writer preview.10](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-post-writer.zip) pour l'essayer.
+Télécharge le [ZIP linkedin-post-writer preview.14](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-post-writer.zip) pour l'essayer.
 
 ```text
 Utilise linkedin-post-writer. Rédige un seul post pour les designers freelances.
@@ -94,7 +94,7 @@ Si la matière conduit à un texte générique, il explique ce qui manque et pro
 
 ## Analyser un post
 
-`linkedin-post-analyzer` nécessite le MCP BarakaSocial. Sans les outils ou les accès requis, il explique ce qui manque puis s'arrête au lieu d'inventer un score officiel. Télécharge le [ZIP linkedin-post-analyzer preview.13](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.13/linkedin-post-analyzer.zip) pour l'essayer.
+`linkedin-post-analyzer` nécessite le MCP BarakaSocial. Sans les outils ou les accès requis, il explique ce qui manque puis s'arrête au lieu d'inventer un score officiel. Télécharge le [ZIP linkedin-post-analyzer preview.14](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-post-analyzer.zip) pour l'essayer.
 
 ```text
 Utilise linkedin-post-analyzer. Analyse ce brouillon sans rien enregistrer.
@@ -181,10 +181,10 @@ Dans Claude, télécharge le ZIP de la nouvelle version et remplace la version i
 La preview.12 ajoute le parcours thèmes et public → idée ou objectif du post → traitement → sujets. Les grandes idées restent facultatives. Utilise le ZIP versionné indiqué ci-dessus. La mise à jour est manuelle et conserve le profil privé séparé du skill.
 
 
-## Contrôle partagé des mises à jour (candidate preview.14)
+## Contrôle partagé des mises à jour (preview.14)
 
-La prochaine candidate locale ajoute un contrôle partagé toutes les 48 heures à l'utilisation si le client dispose de Python, du réseau et du stockage persistant autorisés. Le contrôle ne remplace rien. Une nouvelle version est proposée une fois ; son installation attend ton accord. Les préférences privées restent séparées.
+La preview.14 ajoute un contrôle partagé toutes les 48 heures à l'utilisation si le client dispose de Python, du réseau et du stockage persistant autorisés. Le contrôle ne remplace rien. Une nouvelle version est proposée une fois ; son installation attend ton accord. Les préférences privées restent séparées.
 
-Sans accès à l'installation, l'assistant propose le ZIP officiel à importer manuellement. Sans stockage persistant, il limite les contrôles à la conversation. Les plugins gérés utilisent leur propre gestionnaire. Les anciennes installations nécessitent une première mise à jour manuelle pour recevoir ce mécanisme. La preview.14 n'est pas encore publiée ; les liens ci-dessus restent ceux des versions distribuées.
+Sans accès à l'installation, l'assistant propose le ZIP officiel à importer manuellement. Sans stockage persistant, il limite les contrôles à la conversation. Les plugins gérés utilisent leur propre gestionnaire. Les anciennes installations nécessitent une première mise à jour manuelle pour recevoir ce mécanisme. La preview.14 est publiée ; utilise les liens de téléchargement versionnés ci-dessus.
 
 Voir [le fonctionnement et la procédure de publication](decisions/003-skill-updates.fr.md). Aucun processus planifié en arrière-plan.

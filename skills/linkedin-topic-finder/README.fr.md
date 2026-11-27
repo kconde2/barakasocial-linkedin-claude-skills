@@ -11,7 +11,7 @@ Trouve des sujets précis et des angles pour ton public à partir d'une intentio
 <a id="install"></a>
 ## Installer ce skill
 
-**Version distribuée : preview.12.** Elle contient le parcours thèmes → idée ou objectif du post → traitement → sujets. Importe le ZIP versionné ci-dessous dans Claude Desktop, depuis Customize > Skills. Le mode Code n'est pas nécessaire. Les installations existantes ne sont pas mises à jour automatiquement.
+**Version distribuée : preview.14.** Elle contient le parcours thèmes → idée ou objectif du post → traitement → sujets. Importe le ZIP versionné ci-dessous dans Claude Desktop, depuis Customize > Skills. Le mode Code n'est pas nécessaire. Les installations existantes ne sont pas mises à jour automatiquement.
 
 
 Dans Claude Code ou Codex, copie cette demande :
@@ -26,7 +26,7 @@ compare son origine et son contenu avant de le remplacer.
 Conserve mes préférences personnelles et ma configuration MCP.
 ```
 
-**Dans Claude avec import ZIP :** télécharge le [ZIP preview.12](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.12/linkedin-topic-finder.zip) puis importe l'archive complète dans la gestion des skills. Elle contient `SKILL.md` et les 2 références communes. [Options d'installation](../../docs/guide.fr.md).
+**Dans Claude avec import ZIP :** télécharge le [ZIP preview.14](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-topic-finder.zip) puis importe l'archive complète dans la gestion des skills. Elle contient `SKILL.md` avec trois références communes et le script de mise à jour. [Options d'installation](../../docs/guide.fr.md).
 
 <a id="update"></a>
 ## Mettre à jour ce skill

@@ -11,7 +11,7 @@ Find concrete topics and angles for your readers from an intention, a theme, not
 <a id="install"></a>
 ## Install this skill
 
-**Distributed version: preview.12.** It includes themes → idea or post outcome → treatment → topics. Import the versioned ZIP below in Claude Desktop through Customize > Skills. Code mode is not required. Existing installations are not automatically updated.
+**Distributed version: preview.14.** It includes themes → idea or post outcome → treatment → topics. Import the versioned ZIP below in Claude Desktop through Customize > Skills. Code mode is not required. Existing installations are not automatically updated.
 
 
 In Claude Code or Codex, copy this request:
@@ -26,7 +26,7 @@ compare its origin and contents before replacing it.
 Preserve my personal preferences and MCP configuration.
 ```
 
-**In Claude with ZIP import:** download the [preview.12 ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.12/linkedin-topic-finder.zip) and upload the complete archive through skill management. It contains `SKILL.md` and the 2 shared references. [Installation options](../../docs/guide.md).
+**In Claude with ZIP import:** download the [preview.14 ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-topic-finder.zip) and upload the complete archive through skill management. It contains `SKILL.md` with three shared references and the update helper. [Installation options](../../docs/guide.md).
 
 <a id="update"></a>
 ## Update this skill

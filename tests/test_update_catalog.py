@@ -21,6 +21,10 @@ class CatalogTests(unittest.TestCase):
         for name in SKILLS:
             package_skill(name, self.archives / (name + ".zip"))
         self.previous = json.loads((ROOT / "updates.json").read_text())
+        # Exercise an upgrade even after the candidate has become the published version.
+        for item in self.previous["skills"].values():
+            item["releases"].pop("0.1.0-preview.14", None)
+            item["latest"] = max(item["releases"], key=lambda v: int(v.rsplit(".", 1)[1]))
 
     def test_candidate_keeps_published_history_and_matches_all_packages(self):
         candidate = builder.build(self.previous, self.archives)

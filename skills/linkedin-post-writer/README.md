@@ -23,7 +23,7 @@ compare its origin and contents before replacing it.
 Preserve my personal preferences and MCP configuration.
 ```
 
-**In Claude with ZIP import:** download the [preview.10 ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-post-writer.zip) and upload the complete archive through skill management. It contains `SKILL.md` and the 2 shared references. [Installation options](../../docs/guide.md).
+**In Claude with ZIP import:** download the [preview.14 ZIP](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.14/linkedin-post-writer.zip) and upload the complete archive through skill management. It contains `SKILL.md` with three shared references and the update helper. [Installation options](../../docs/guide.md).
 
 [Installation options and updates](../../docs/guide.md)
 
