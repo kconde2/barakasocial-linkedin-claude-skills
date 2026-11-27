@@ -15,7 +15,7 @@ class ImageSkillsTest(unittest.TestCase):
         for name in updates.SKILLS:
             with self.subTest(name=name), tempfile.TemporaryDirectory() as tmp:
                 source=ROOT/'skills'/name
-                self.assertEqual(updates.read_identity(source),(name,'0.1.0-preview.15'))
+                self.assertEqual(updates.read_identity(source),(name,'0.1.0-preview.16'))
                 self.assertEqual((source/'scripts/skill_updates.py').read_bytes(),(ROOT/'scripts/image_skill_updates.py').read_bytes())
                 a=package_skill(name,Path(tmp)/'a.zip')
                 b=package_skill(name,Path(tmp)/'b.zip')
@@ -35,6 +35,6 @@ class ImageSkillsTest(unittest.TestCase):
                 archive=package_skill(name,Path(tmp)/'a.zip').read_bytes()
                 with zipfile.ZipFile(__import__('io').BytesIO(archive)) as z:
                     files={str(Path(p).relative_to(name)):updates.digest(z.read(p)) for p in z.namelist()}
-                release={'url':f'{updates.REPOSITORY}/releases/download/v0.1.0-preview.15/{name}.zip','sha256':updates.digest(archive),'files':files,'notes':'New visual skill'}
-                updates.validate_catalog({'schema_version':1,'skills':{name:{'latest':'0.1.0-preview.15','releases':{'0.1.0-preview.15':release}}}})
-                updates.unpack(archive,name,'0.1.0-preview.15',release,Path(tmp)/'stage')
+                release={'url':f'{updates.REPOSITORY}/releases/download/v0.1.0-preview.16/{name}.zip','sha256':updates.digest(archive),'files':files,'notes':'New visual skill'}
+                updates.validate_catalog({'schema_version':1,'skills':{name:{'latest':'0.1.0-preview.16','releases':{'0.1.0-preview.16':release}}}})
+                updates.unpack(archive,name,'0.1.0-preview.16',release,Path(tmp)/'stage')

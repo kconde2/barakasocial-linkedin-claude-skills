@@ -4,6 +4,7 @@
 
 Chercher des mèmes sur le Web, afficher les images et leurs textes puis monter le candidat choisi.
 
+<a id="install"></a>
 ## Installation
 
 ```text
@@ -14,7 +15,7 @@ Copy each complete folder, including references/ and scripts/.
 Compare existing installations before replacing them. Preserve personal preferences.
 ```
 
-[ZIP preview.15](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.15/linkedin-meme-finder.zip)
+[ZIP preview.16](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.16/linkedin-meme-finder.zip)
 
 ## Utilisation
 
