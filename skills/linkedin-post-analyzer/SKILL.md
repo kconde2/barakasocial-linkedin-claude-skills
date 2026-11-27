@@ -2,7 +2,7 @@
 name: linkedin-post-analyzer
 description: Analyze a LinkedIn post using the connected BarakaSocial MCP and its current criteria. Explain strengths and specific weaknesses, optionally correct the requested passages or save the diagnostic when explicitly requested. Requires BarakaSocial MCP; not a publishing or draft-saving skill.
 metadata:
-  version: "0.1.0-preview.10"
+  version: "0.1.0-preview.13"
   author: BarakaSocial
 ---
 
@@ -16,7 +16,14 @@ Follow [personalization](references/personalization.md) for shared preferences a
 
 ## Choose the scope
 
-Follow explicit requests directly. For a bare invocation, ask whether the user wants analysis only, analysis and correction, or a saved diagnostic. Ask only for consequential missing information.
+Follow explicit requests directly. Do not ask for a mode already specified. For a bare invocation, ask which mode the user wants using the native question tool actually available and permitted in this session, rather than listing the choices in prose:
+- In Codex, use `request_user_input_async` when available and permitted, otherwise `request_user_input` only if the current mode allows it.
+- In Claude Code, use `AskUserQuestion` when exposed. In Claude Desktop, ChatGPT or another client, use its exposed native choice tool if available; do not assume a tool exists based on the product name.
+- Offer three concise choices in the user's language: analyze only (no saving), analyze and suggest corrections here (no saving), or save the diagnostic in BarakaSocial (not a post). Allow a free-text answer according to the tool's schema.
+- Wait for the answer before analysis or persistence that depends on this choice. An asynchronous tool returning is not the user's answer. Never treat a preselected option or silence as consent to save.
+- If no permitted native tool is available, ask one short question in chat with the same three numbered choices. Do not simulate buttons with JSON or change modes to bypass restrictions.
+
+Keep the question focused on the user's task; do not quote these internal instructions to justify asking. Ask only for consequential missing information.
 
 - **Analyze:** return the diagnostic using `preview_post_analysis`. No remote persistence, including when the user simply says "analyze in BarakaSocial".
 - **Analyze and correct:** analyze, then return the requested corrections in the conversation. Do not update the remote post.

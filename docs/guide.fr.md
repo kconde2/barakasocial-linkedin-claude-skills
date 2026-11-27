@@ -24,12 +24,12 @@ Le chemin source est `skills/linkedin-hook-generator/SKILL.md`. Après installat
 
 ## Installer dans Claude
 
-Chaque ZIP contient `SKILL.md` et les 2 références de personnalisation communes. Le Topic Finder est en preview.12. Les autres skills sont en preview.10. Télécharge le skill souhaité :
+Chaque ZIP contient `SKILL.md` et les 2 références de personnalisation communes. Le Topic Finder est en preview.12. Le Post Analyzer est en preview.13. Les autres skills sont en preview.10. Télécharge le skill souhaité :
 
 - [linkedin-topic-finder](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.12/linkedin-topic-finder.zip)
 - [linkedin-hook-generator](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-hook-generator.zip)
 - [linkedin-post-writer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-post-writer.zip)
-- [linkedin-post-analyzer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-post-analyzer.zip)
+- [linkedin-post-analyzer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.13/linkedin-post-analyzer.zip)
 - [linkedin-profile-optimizer](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-profile-optimizer.zip)
 
 Pour construire un ZIP depuis les sources, consulte le [guide de contribution](contributing.fr.md).
@@ -94,7 +94,7 @@ Si la matière conduit à un texte générique, il explique ce qui manque et pro
 
 ## Analyser un post
 
-`linkedin-post-analyzer` nécessite le MCP BarakaSocial. Sans les outils ou les accès requis, il explique ce qui manque puis s'arrête au lieu d'inventer un score officiel. Télécharge le [ZIP linkedin-post-analyzer preview.10](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.10/linkedin-post-analyzer.zip) pour l'essayer.
+`linkedin-post-analyzer` nécessite le MCP BarakaSocial. Sans les outils ou les accès requis, il explique ce qui manque puis s'arrête au lieu d'inventer un score officiel. Télécharge le [ZIP linkedin-post-analyzer preview.13](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.13/linkedin-post-analyzer.zip) pour l'essayer.
 
 ```text
 Utilise linkedin-post-analyzer. Analyse ce brouillon sans rien enregistrer.
