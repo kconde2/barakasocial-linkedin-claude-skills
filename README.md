@@ -2,7 +2,7 @@
 
 **English** | [Français](README.fr.md)
 
-Find topics and openings, write or review a post, or improve your profile. Five free skills that work from your material and respond in your language.
+Find topics and openings, write or review a post, or improve your profile. Seven free skills that work from your material and respond in your language.
 
 [Skills](#skills) · [Installation](#installation) · [Personalization](#personalization) · [Documentation](#documentation)
 
@@ -17,6 +17,8 @@ Open a skill's page for its description, installation instructions and usage exa
 | Turn notes into a complete post | [Post Writer](skills/linkedin-post-writer/README.md) | [Install](skills/linkedin-post-writer/README.md#install) | Not required |
 | Understand what to improve in a draft | [Post Analyzer](skills/linkedin-post-analyzer/README.md) | [Install](skills/linkedin-post-analyzer/README.md#install) | Required, with the MCP connector |
 | Improve my LinkedIn profile | [Profile Optimizer](skills/linkedin-profile-optimizer/README.md) | [Install](skills/linkedin-profile-optimizer/README.md#install) | Optional |
+| Find a visual for my post | [Image Finder](skills/linkedin-image-finder/README.md) | [ZIP preview.15](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.15/linkedin-image-finder.zip) | Not required |
+| Find and prepare a meme | [Meme Finder](skills/linkedin-meme-finder/README.md) | [ZIP preview.15](https://github.com/kconde2/barakasocial-linkedin-claude-skills/releases/download/v0.1.0-preview.15/linkedin-meme-finder.zip) | Not required |
 
 The analyzer uses BarakaSocial's current criteria and score calculation. A score does not predict reach. None of these skills publishes posts.
 
